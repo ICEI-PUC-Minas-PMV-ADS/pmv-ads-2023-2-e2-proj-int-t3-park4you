@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-08-25T20:24:59.646Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="svvQYBiROj8s4TBgRizC" version="21.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-25T20:34:29.489Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="OCBBRf1SzX0tB5O1A5fL" version="21.6.9" type="github">
   <diagram name="Página-1" id="OqUmhLXzAGNoVV07hsoO">
     <mxGraphModel dx="880" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="7VLa77z8znclignIy_Kp-3" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="120" y="160" width="560" height="850" as="geometry" />
+          <mxGeometry x="130" y="160" width="560" height="850" as="geometry" />
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-6" value="Apresentar vagas na região desejada" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
           <mxGeometry x="336" y="530" width="140" height="70" as="geometry" />
@@ -20,19 +20,19 @@
           <mxGeometry x="176" width="140" height="80" as="geometry" />
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-13" value="Contactar mantenedor do sistema" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
-          <mxGeometry x="270" y="360" width="140" height="70" as="geometry" />
+          <mxGeometry x="336" y="400" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-16" value="Efetuar Pagamento" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
-          <mxGeometry x="110" y="630" width="140" height="70" as="geometry" />
+          <mxGeometry x="54" y="630" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-19" value="Efetuar Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
           <mxGeometry x="194" y="90" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-18" value="Compartilhar vagas disponíveis" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
-          <mxGeometry x="140" y="300" width="140" height="70" as="geometry" />
+          <mxGeometry x="194" y="340" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-17" value="Cadastrar Vagas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
-          <mxGeometry x="336" y="240" width="140" height="70" as="geometry" />
+          <mxGeometry x="334" y="240" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-15" value="Pagar&amp;nbsp; via PIX" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
           <mxGeometry x="346" y="630" width="140" height="70" as="geometry" />
@@ -41,19 +41,24 @@
           <mxGeometry x="206" y="730" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-12" value="Pesquisar vagas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
-          <mxGeometry x="176" y="210" width="140" height="70" as="geometry" />
+          <mxGeometry x="130" y="200" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="7VLa77z8znclignIy_Kp-43" value="include" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.943;exitY=0.257;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="7VLa77z8znclignIy_Kp-3" source="7VLa77z8znclignIy_Kp-12" target="7VLa77z8znclignIy_Kp-7">
+        <mxCell id="7VLa77z8znclignIy_Kp-46" value="&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7VLa77z8znclignIy_Kp-3" source="7VLa77z8znclignIy_Kp-16" target="7VLa77z8znclignIy_Kp-15">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="210" y="260" as="sourcePoint" />
-            <mxPoint x="370" y="260" as="targetPoint" />
+            <mxPoint x="180" y="560" as="sourcePoint" />
+            <mxPoint x="340" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7VLa77z8znclignIy_Kp-42" value="include" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="7VLa77z8znclignIy_Kp-3" source="7VLa77z8znclignIy_Kp-16" target="7VLa77z8znclignIy_Kp-15">
+        <mxCell id="7VLa77z8znclignIy_Kp-47" value="&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.986;exitY=0.329;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="7VLa77z8znclignIy_Kp-3" source="7VLa77z8znclignIy_Kp-12" target="7VLa77z8znclignIy_Kp-7">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="220" y="660" as="sourcePoint" />
-            <mxPoint x="320" y="660" as="targetPoint" />
-            <mxPoint as="offset" />
+            <mxPoint x="170" y="160" as="sourcePoint" />
+            <mxPoint x="376" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-50" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.243;exitY=0.014;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.571;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7VLa77z8znclignIy_Kp-3" source="7VLa77z8znclignIy_Kp-18" target="7VLa77z8znclignIy_Kp-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="170" y="260" as="sourcePoint" />
+            <mxPoint x="330" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="7VLa77z8znclignIy_Kp-4" value="Locatário" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
@@ -116,7 +121,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="7VLa77z8znclignIy_Kp-37" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.714;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7VLa77z8znclignIy_Kp-4" target="7VLa77z8znclignIy_Kp-13">
+        <mxCell id="7VLa77z8znclignIy_Kp-37" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7VLa77z8znclignIy_Kp-4" target="7VLa77z8znclignIy_Kp-13">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="300" y="420" as="sourcePoint" />
             <mxPoint x="460" y="420" as="targetPoint" />
