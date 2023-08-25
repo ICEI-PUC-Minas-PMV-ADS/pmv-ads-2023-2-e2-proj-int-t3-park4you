@@ -1,23 +1,68 @@
-<mxfile host="app.diagrams.net" modified="2023-08-25T19:16:41.442Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="T1HB6vkyUHK9A9UR12lL" version="21.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-25T19:55:53.609Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="QqmFrM0Uwf-eRK4mni0W" version="21.6.9" type="github">
   <diagram name="Página-1" id="OqUmhLXzAGNoVV07hsoO">
     <mxGraphModel dx="880" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BJIPYUts5T4QWdA3-nLG-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
-          <mxGeometry x="80" y="170" width="30" height="60" as="geometry" />
+        <mxCell id="7VLa77z8znclignIy_Kp-3" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="110" width="560" height="850" as="geometry" />
         </mxCell>
-        <mxCell id="BJIPYUts5T4QWdA3-nLG-2" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="220" y="120" width="160" height="86" as="geometry" />
+        <mxCell id="7VLa77z8znclignIy_Kp-6" value="Apresentar vagas na região desejada" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="60" y="390" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="BJIPYUts5T4QWdA3-nLG-3" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="BJIPYUts5T4QWdA3-nLG-2" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="7VLa77z8znclignIy_Kp-8" value="Visualizar o trajeto até a vaga" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="390" y="40" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="BJIPYUts5T4QWdA3-nLG-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="BJIPYUts5T4QWdA3-nLG-2" vertex="1">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        <mxCell id="7VLa77z8znclignIy_Kp-7" value="Apresentar imagem e descrição da vaga" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="250" y="240" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="BJIPYUts5T4QWdA3-nLG-5" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="BJIPYUts5T4QWdA3-nLG-2" vertex="1">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        <mxCell id="7VLa77z8znclignIy_Kp-11" value="Cadastrar Usuário" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="80" y="30" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-13" value="Contactar mantenedor do sistema" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="270" y="320" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-16" value="Efetuar Pagamento" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="360" y="390" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-19" value="Efetuar Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="120" y="160" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-18" value="Compartilhar vagas disponíveis" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="390" y="170" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-17" value="Cadastrar Vagas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="200" y="570" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-15" value="Pagar&amp;nbsp; via PIX" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="70" y="335" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-14" value="Efetuar Comentários" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="190" y="420" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-12" value="Pesquisar vagas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="7VLa77z8znclignIy_Kp-3">
+          <mxGeometry x="380" y="240" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-4" value="Locatário" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-5" value="Locador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="280" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-10" value="Sistema Global de&amp;nbsp;&lt;br&gt;Posicionamento" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="650" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-27" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="70" y="462.14" as="sourcePoint" />
+            <mxPoint x="245.00759230292556" y="200.00364950712617" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7VLa77z8znclignIy_Kp-29" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.107;entryY=0.843;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7VLa77z8znclignIy_Kp-4" target="7VLa77z8znclignIy_Kp-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="300" y="330" as="sourcePoint" />
+            <mxPoint x="460" y="330" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
