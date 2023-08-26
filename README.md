@@ -1,23 +1,24 @@
-# TÍTULO DO PROJETO
+  PARK 4 YOU
 
-`CURSO`
+`CURSO` Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA` EIXO 2 - PROJETO - Desenvolvimento de uma Aplicação Interativa
 
-`SEMESTRE`
+`SEMESTRE` 2023/2
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-
+Oferecer uma aplicação que visa simplificar a experiência dos usuários durante eventos, na busca de estacionamentos, permitindo-lhes desfrutar do momento sem preocupações, evitando altos gastos, falta de segurança, provendo praticidade e escolhas seguras ao usufruírem de um momento de lazer.  
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Alessandro Nunes Assunção 
+* Anna Luiza Vidal Lomeu de Alcantara
+* Carolina Novaes Leite
+* Paulo Henrique da Silva Carvalho
+* Rosimeire de Fátima Carvalho
+* Ruan Santos Gonzaga
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 
