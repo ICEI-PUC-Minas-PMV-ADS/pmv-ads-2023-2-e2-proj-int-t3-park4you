@@ -20,17 +20,11 @@ Com o ensejo de entender melhor as personas identificadas no projeto, foram iden
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|JORGE  | Poder ir para eventos em seu próprio carro; Ter segurança que seu carro está seguro; Pagar preço justo pelo estacionamento.          | Para não depender de transporte público de aplicativos; Assim evita eventuais furtos; Não ser explorado financeiramente.               |
+|BIANCA       | Ir a shows ou eventos esportivos com seu carro ou de amigos; Ter tranquilidade que o carro estará no local e sem avarias;                   | Evitar ter que pegar transporte público lotado, ou esperar muito tempo para conseguir uma corrida por carro de aplicativo; Porque em volta desses locais há muito vandalismo.  |
+|MARIA  | Fazer renda extra para complementar a aposentadoria; Disponibilizar seu espaço no seu terreiro, onde cabe 5 carros.          | Porque a aposentadoria recebe pouco; E assim, poder receber pelo cuidado e zelo do patrimônio de terceiros.                |
+|PEDRO      |Poder ir aos estádios/shows sem se preocupar em como ir embora ao final; Quando estiver a trabalho em eventos, poder estacionar o carro, durante todo dia, assim, ao final do trabalho, e caminhar poucos metros e saber que seu carro se encontra seguro.                  | Porque é mais fácil ir para sua casa de carro do que com transporte público; Porque as vezes é impossível encontrar local seguro para estacionar seu carro.  |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos do Projeto
 
@@ -41,30 +35,30 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-01| A aplicação deve apresentar na página principal o serviço de vagas disponíveis próximo a localidade de interesse do cliente, que será baseado no google maps.  | ALTA | 
-|RF-02| A aplicação deve apresentar, para cada localidade cadastrada de evento, imagens e descrição da vaga disponível.   | ALTA |
-|RF-03| A aplicação deve permitir ao usuário (locatário) visualizar o trajeto da vaga disponível ao local do evento de interesse, conforme google maps.    | MÉDIA |
-|RF-04| A aplicação deve oferecer um cadastro dividido entre locatário e prestador da vaga.    | ALTA | 
-|RF-05| A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar vagas de acordo com seu interesse   | ALTA |
-|RF-06| A aplicação deve permitir visualizar as informações de contatos do mantenedor da aplicação.   | MÉDIA |
-|RF-07| A aplicação deve permitir o compartilhamento de vagas disponíveis para locatários, através de um botão.    | BAIXA |
-|RF-08| A aplicação deve permitir reservar e efetuar o pagamento com antecedência.    | ALTA |
-|RF-09| A aplicação deve permitir que usuários x prestador possam efetuar comentários.    | BAIXA |
-|RF-10| A aplicação deve permitir que o usuário (prestador)(Locador)possa disponibilizar(cadastrar) suas vagas a partir de seu cadastro e login.    | ALTA |
-|RF-11| A aplicação deverá suportar o pagamento das taxas vinculadas a locação da vaga através do PIX.    | ALTA |
-|RF-12| A aplicação permitirá o login do usuário (locatário) após o seu cadastro.    | ALTA |
+|RF-01 | A aplicação deve apresentar na página principal o serviço de vagas disponíveis próximo a localidade de interesse do cliente, que será baseado no google maps.  | ALTA | 
+|RF-02 | A aplicação deve apresentar, para cada localidade cadastrada de evento, imagens e descrição da vaga disponível.   | ALTA |
+|RF-03 | A aplicação deve permitir ao usuário (locatário) visualizar o trajeto da vaga disponível ao local do evento de interesse, conforme google maps.    | MÉDIA |
+|RF-04 | A aplicação deve oferecer um cadastro dividido entre locatário e prestador da vaga.    | ALTA | 
+|RF-05 | A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar vagas de acordo com seu interesse   | ALTA |
+|RF-06 | A aplicação deve permitir visualizar as informações de contatos do mantenedor da aplicação.   | MÉDIA |
+|RF-07 | A aplicação deve permitir o compartilhamento de vagas disponíveis para locatários, através de um botão.    | BAIXA |
+|RF-08 | A aplicação deve permitir reservar e efetuar o pagamento com antecedência.    | ALTA |
+|RF-09 | A aplicação deve permitir que usuários x prestador possam efetuar comentários.    | BAIXA |
+|RF-10 | A aplicação deve permitir que o usuário (prestador)(Locador)possa disponibilizar(cadastrar) suas vagas a partir de seu cadastro e login.    | ALTA |
+|RF-11 | A aplicação deverá suportar o pagamento das taxas vinculadas a locação da vaga através do PIX.    | ALTA |
+|RF-12 | A aplicação permitirá o login do usuário (locatário) após o seu cadastro.    | ALTA |
 
 ### Requisitos não Funcionais
 A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|-----------|
-|RNF-01| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku);   | ALTA | 
-|RNF-02| A aplicação deverá ser responsiva permitindo a visualização em um celular de forma adequada.  |  ALTA | 
-|RNF-03| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade    |  MÉDIA | 
-|RNF-04| A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge)   |  ALTA | 
-|RNF-05| A interface da aplicação deve ser simples e fácil de navegar, para que os usuários possam encontrar rapidamente as vagas de estacionamento.   |  ALTA | 
-|RNF-06| A linguagem utilizada no site deve ser simples e acessível para que todos os usuários possam entender as informações presentes.   |  ALTA | 
+|RNF-01 | A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku);   | ALTA | 
+|RNF-02 | A aplicação deverá ser responsiva permitindo a visualização em um celular de forma adequada.  |  ALTA | 
+|RNF-03 | A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade    |  MÉDIA | 
+|RNF-04 | A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge)   |  ALTA | 
+|RNF-05 | A interface da aplicação deve ser simples e fácil de navegar, para que os usuários possam encontrar rapidamente as vagas de estacionamento.   |  ALTA | 
+|RNF-06 | A linguagem utilizada no site deve ser simples e acessível para que todos os usuários possam entender as informações presentes.   |  ALTA | 
 
 
 ## Restrições
@@ -73,9 +67,9 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|RE-01|O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de XX/XX/XXXX  |
-|RE-02| O aplicativo deve se restringir às tecnologias básicas da Web no Frontend        |
-|RE-03| A equipe não pode subcontratar o desenvolvimento do trabalho.        |
+|RE-01 |O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de XX/XX/XXXX   |
+|RE-02 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend        |
+|RE-03 | A equipe não pode subcontratar o desenvolvimento do trabalho.        |
 
 
 ## Diagrama de Casos de Uso
