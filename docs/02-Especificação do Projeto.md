@@ -15,7 +15,7 @@ Assim os detalhes desse processo de pesquisa de campo, foram consolidadas na for
 
 ## Histórias de Usuários
 
-CCom o ensejo de entender melhor as personas identificadas no projeto, foram identificadas as seguintes histórias de usuários. 
+Com o ensejo de entender melhor as personas identificadas no projeto, foram identificadas as seguintes histórias de usuários. 
 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
@@ -41,46 +41,42 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve apresentar na página principal o serviço de vagas disponíveis próximo a localidade de interesse do cliente, que será baseado no google maps.  | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-01| A aplicação deve apresentar na página principal o serviço de vagas disponíveis próximo a localidade de interesse do cliente, que será baseado no google maps.  | ALTA | 
+|RF-02| A aplicação deve apresentar, para cada localidade cadastrada de evento, imagens e descrição da vaga disponível.   | ALTA |
+|RF-03| A aplicação deve permitir ao usuário (locatário) visualizar o trajeto da vaga disponível ao local do evento de interesse, conforme google maps.    | MÉDIA |
+|RF-04| A aplicação deve oferecer um cadastro dividido entre locatário e prestador da vaga.    | ALTA | 
+|RF-05| A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar vagas de acordo com seu interesse   | ALTA |
+|RF-06| A aplicação deve permitir visualizar as informações de contatos do mantenedor da aplicação.   | MÉDIA |
+|RF-07| A aplicação deve permitir o compartilhamento de vagas disponíveis para locatários, através de um botão.    | BAIXA |
+|RF-08| A aplicação deve permitir reservar e efetuar o pagamento com antecedência.    | ALTA |
+|RF-09| A aplicação deve permitir que usuários x prestador possam efetuar comentários.    | BAIXA |
+|RF-10| A aplicação deve permitir que o usuário (prestador)(Locador)possa disponibilizar(cadastrar) suas vagas a partir de seu cadastro e login.    | ALTA |
+|RF-11| A aplicação deverá suportar o pagamento das taxas vinculadas a locação da vaga através do PIX.    | ALTA |
+|RF-12| A aplicação permitirá o login do usuário (locatário) após o seu cadastro.    | ALTA |
 
 ### Requisitos não Funcionais
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|-----------|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-01| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku);   | ALTA | 
+|RNF-02| A aplicação deverá ser responsiva permitindo a visualização em um celular de forma adequada.  |  ALTA | 
+|RNF-03| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade    |  MÉDIA | 
+|RNF-04| A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge)   |  ALTA | 
+|RNF-05| A interface da aplicação deve ser simples e fácil de navegar, para que os usuários possam encontrar rapidamente as vagas de estacionamento.   |  ALTA | 
+|RNF-06| A linguagem utilizada no site deve ser simples e acessível para que todos os usuários possam entender as informações presentes.   |  ALTA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir. 
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RE-01|O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de XX/XX/XXXX  |
+|RE-02| O aplicativo deve se restringir às tecnologias básicas da Web no Frontend        |
+|RE-03| A equipe não pode subcontratar o desenvolvimento do trabalho.        |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
@@ -88,12 +84,3 @@ O diagrama contempla as principais ligações previstas entre casos de uso e ato
 Como atores é importante a identificação dos grupos de todos os envolvidos que interagem com o sistema, principalmente outros sistemas ou sensores. Eles são representados graficamente por bonecos-palito e serão nomeados pelos papéis nas interações nas quais estão envolvidos (ex. Cliente, Administrador). Lembre-se de que o próprio sistema não pode ser ator do diagrama que o modela. 
 Em relação aos casos de uso, eles devem representar as interações ou transações dos atores com o sistema. Cada tipo possível é representada por uma elipse nomeada e os relacionamentos são indicados por linhas que podem ter setas nos casos em que se indica a origem da interação. Os nomes dos casos de uso representam verbos no infinitivo associados aos objetos com os quais se relacionam os verbos (ex. Cadastrar usuário, Visualizar relatório). Os tipos de relacionamentos mais comuns são associações entre atores e casos de uso, generalizações entre atores e entre casos de uso, inclusões e extensões entre casos de uso. 
 
-
-
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
