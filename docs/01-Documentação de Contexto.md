@@ -28,19 +28,6 @@ Oferecer uma aplicação que visa simplificar a experiência dos usuários duran
 O projeto foi idealizado para facilitar e otimizar a experiência dos usuários que frequentam eventos de grande públicos ou que buscam segurança para estacionar seus veículos. Este baseia-se principalmente em dois pilares, praticidade e baixo custo. 
 Vale ressaltar, que este último foi pensado para viabilizar o alcance do projeto há vários públicos que não dispõe de alto investimento. 
 
- 
-
- 
-
-O porque, motivo da escolha 
-
-O que, qual a função  
-
-Quem, público alvo 
-
-Base, fonte.  
-
- 
 
 ## PÚBLICO ALVO
 
