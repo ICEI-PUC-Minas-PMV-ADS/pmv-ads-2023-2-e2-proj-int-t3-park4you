@@ -28,7 +28,6 @@ Oferecer uma aplicação que visa simplificar a experiência dos usuários duran
 O projeto foi idealizado para facilitar e otimizar a experiência dos usuários que frequentam eventos de grande públicos ou que buscam segurança para estacionar seus veículos. Este baseia-se principalmente em dois pilares, praticidade e baixo custo. 
 Vale ressaltar, que este último foi pensado para viabilizar o alcance do projeto há vários públicos que não dispõe de alto investimento. 
 
-
 ## PÚBLICO ALVO
 
 O projeto foi desenvolvido para pessoas que irão a eventos de grandes públicos, onde há escassez de vagas de estacionamentos, em que os usuários acabam pagando valores exorbitantes ou estacionam em locais indevidos, então foi desenvolvido uma aplicação, onde são disponibilizadas vagas de garagem em qualquer dia e horários em que estiver disponível pelo prestador que oferta a vaga.  
