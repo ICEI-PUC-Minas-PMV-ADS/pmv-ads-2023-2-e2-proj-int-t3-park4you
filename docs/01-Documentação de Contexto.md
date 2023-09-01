@@ -32,16 +32,6 @@ Vale ressaltar, que este último foi pensado para viabilizar o alcance do projet
 
  
 
-O porque, motivo da escolha 
-
-O que, qual a função  
-
-Quem, público alvo 
-
-Base, fonte.  
-
- 
-
 ## PÚBLICO ALVO
 
 O projeto foi desenvolvido para pessoas que irão a eventos de grandes públicos, onde há escassez de vagas de estacionamentos, em que os usuários acabam pagando valores exorbitantes ou estacionam em locais indevidos, então foi desenvolvido uma aplicação, onde são disponibilizadas vagas de garagem em qualquer dia e horários em que estiver disponível pelo prestador que oferta a vaga.  
