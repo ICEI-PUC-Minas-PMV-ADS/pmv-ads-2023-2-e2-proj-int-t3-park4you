@@ -1,46 +1,48 @@
-# Introdução
+# 1. INTRODUÇÃO
+A questão da mobilidade urbana tem se tornado crescentemente desafiadora. Essa dificuldade é ainda mais acentuada pelo aumento da escassez de espaços para estacionamento nos últimos anos. Vale ressaltar que, em ocasiões como eventos esportivos, shows e feiras, esse problema atinge um patamar ainda mais crítico. 
+De acordo com a pesquisa sobre mobilidade urbana realizada em 2022 constatou-se que 39% dos participantes optam por veículos durante seus momentos de lazer. A introdução desta solução pode satisfazer essa demanda e potencialmente atrair os 28% que atualmente preferem aplicativos de transporte. 
+A ideia central desse projeto é criar uma solução que auxilie os usuários na identificação e reserva de vagas de estacionamento em propriedade privada, onde aquele usuário que dispõe de espaço em sua residência ou afins, oferece o espaço ao usuário que necessita do espaço próximo ao evento em que ele iria. Essa iniciativa visa simplificar o acesso, promover a segurança e proporcionar uma experiência tranquila, garantindo preços justos. 
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
-
-## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
-## Objetivos
-
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+## OBJETIVOS GERAIS 
+Oferecer uma aplicação que visa simplificar a experiência dos usuários durante eventos, na busca de estacionamentos, permitindo-lhes desfrutar do momento sem preocupações, evitando altos gastos, falta de segurança, provendo praticidade e escolhas seguras ao usufruírem de um momento de lazer.  
 
-## Justificativa
+ 
+## OBJETIVOS ESPECÍFICOS
+* Aplicação deve possuir um ambiente interativo e fácil de utilizar. 
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+* Informar a disponibilidade das vagas de acordo com o local selecionado. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+* Informar a distância entre o local que o usuário está, até o seu destino. 
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+* Informar o valor de acordo com o tempo de utilização. 
 
-## Público-Alvo
+* Oferecer meios de pagamento on-line, visando a segurança entre os usuários e parceiros. 
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+* Oferecer a possibilidade de avaliar a utilização desse serviço. 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+* Informar maios detalhes a respeito da vaga.  
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+
+## JUSTIFICATIVA 
+O projeto foi idealizado para facilitar e otimizar a experiência dos usuários que frequentam eventos de grande públicos ou que buscam segurança para estacionar seus veículos. Este baseia-se principalmente em dois pilares, praticidade e baixo custo. 
+Vale ressaltar, que este último foi pensado para viabilizar o alcance do projeto há vários públicos que não dispõe de alto investimento. 
+
+ 
+
+ 
+
+O porque, motivo da escolha 
+
+O que, qual a função  
+
+Quem, público alvo 
+
+Base, fonte.  
+
+ 
+
+## PÚBLICO ALVO
+
+O projeto foi desenvolvido para pessoas que irão a eventos de grandes públicos, onde há escassez de vagas de estacionamentos, em que os usuários acabam pagando valores exorbitantes ou estacionam em locais indevidos, então foi desenvolvido uma aplicação, onde são disponibilizadas vagas de garagem em qualquer dia e horários em que estiver disponível pelo prestador que oferta a vaga.  
+Desta forma, se estabeleceu-se como público-alvo desta solução, qualquer pessoa que tenha espaço em sua residência ou qualquer unidade imobiliária, onde possa receber veículos, para determinados horários, por um determinado valor, bem como usuários que necessitam estacionar seu veículo em local seguro, principalmente em dia de grandes eventos. 

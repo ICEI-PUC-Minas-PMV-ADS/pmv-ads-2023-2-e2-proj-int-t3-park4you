@@ -1,30 +1,22 @@
-# Especificações do Projeto
-
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+# 2. ESPECIFICAÇÃO DO PROJETO 
+Pudemos definir o problema e seus pontos relevantes neste projeto através de uma consolidada participação dos usuários, em uma pesquisa realizada pelos integrantes da equipe, nas áreas dos eventos onde havia grande público, bem como demanda por estacionamentos nos arredores desses eventos, como em um estádio de futebol, onde se realizava uma partida de futebol, shows e eventos.
+Assim os detalhes desse processo de pesquisa de campo, foram consolidadas na forma de personas e histórias de usuários, a qual seguem abaixo.  
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+**Jorge Henrique** tem 51 anos, é advogado e contador, pós graduado. O seu objetivo ao usar à aplicação, é ter o Conforto em poder ir aos estádios de futebol com seu carro e segurança. Tem como motivação conforto, segurança e praticidade. Possui um carro Honda Civic.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+**Bianca Gomes** tem 19 anos, é universitária e esta graduando em odontologia. Para Binca, o objetivo para usuar a aplicação, é ter praticidade em estacionar próximo aos eventos que gosta de ir com seu próprio carro, uma vez que frequentemente vai ao Estadio de Futebol para assistir jogos e shows. Sua motivação é ter tranquilidade, segurança e praticidade.
+
+**Maria Eduarda** já aposentada, com 60 anos, tem o objetivo de usar a aplicação no intuito de fazer renda extra para complementar sua aposentadoria. Considerando que ela tem um espaço amplo em sua residencia, e por residir próximo ao Estádio do Mineirão, Maria, tem o objetivo de oferecer seu espaço de garagem, e assim obter renda extra com aplicacao.
+
+**Pedro Agostinho** tem 28 anos, e é trabalhador autônomo. Ele trabalha frequentemente em eventos no Mineirão ou entorno do Mineirão em dias de eventos. E tem com objetivo de usar a aplicação para poder usar seus veículos, carro e uma moto, para os dias que tem que ir trabalhar na região do Mineirão, e assim, ter a tranquilidade que ficará longas horas na região, e seu veículo estará seguro. Sua finalidade é ter segurança e tranquilidade.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+CCom o ensejo de entender melhor as personas identificadas no projeto, foram identificadas as seguintes histórias de usuários. 
+
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
@@ -40,21 +32,22 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
 > - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
-## Requisitos
+## Requisitos do Projeto
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir. 
 
 ### Requisitos Funcionais
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues. 
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
+|RF-001| A aplicação deve apresentar na página principal o serviço de vagas disponíveis próximo a localidade de interesse do cliente, que será baseado no google maps.  | ALTA | 
 |RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
+|-------|-------------------------|-----------|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 
@@ -91,9 +84,12 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama contempla as principais ligações previstas entre casos de uso e atores e permite detalhar os Requisitos Funcionais identificados na etapa de elicitação. Lembrando que  não se utiliza diagramas de caso de uso para requisitos não-funcionais. 
+Como atores é importante a identificação dos grupos de todos os envolvidos que interagem com o sistema, principalmente outros sistemas ou sensores. Eles são representados graficamente por bonecos-palito e serão nomeados pelos papéis nas interações nas quais estão envolvidos (ex. Cliente, Administrador). Lembre-se de que o próprio sistema não pode ser ator do diagrama que o modela. 
+Em relação aos casos de uso, eles devem representar as interações ou transações dos atores com o sistema. Cada tipo possível é representada por uma elipse nomeada e os relacionamentos são indicados por linhas que podem ter setas nos casos em que se indica a origem da interação. Os nomes dos casos de uso representam verbos no infinitivo associados aos objetos com os quais se relacionam os verbos (ex. Cadastrar usuário, Visualizar relatório). Os tipos de relacionamentos mais comuns são associações entre atores e casos de uso, generalizações entre atores e entre casos de uso, inclusões e extensões entre casos de uso. 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+
+
 
 > **Links Úteis**:
 > - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
