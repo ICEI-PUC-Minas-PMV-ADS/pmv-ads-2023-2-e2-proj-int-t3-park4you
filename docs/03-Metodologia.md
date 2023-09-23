@@ -29,26 +29,25 @@ etiquetas:
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
 
-- Scrum Master: Matheus Gonçalves de Oliveira Machado;
-- Product Owner: Carlos Henrique Santos da Silva;
-- Equipe de Desenvolvimento: Thiago Pontes Gazzinelli, Vinicius Henrique Alves Mariano, Andréia Borges da Silva de Moura Fé, Matheus Gonçalves de Oliveira Machado;
-- Equipe de Design: Bianca Cristina Sousa Santana;
+- Scrum Master: Carolina Novaes Leite;
+- Product Owner: Rosimeire de Fátima Carvalho;
+- Equipe de Desenvolvimento: Alessandro Nunes Assunção; Anna Luiza Vidal Lomeu de Alcantara; Paulo Henrique da silva Carvalho; Ruan Santos Gonzaga;
+- Equipe de Design: Alessandro Nunes Assunção; Paulo Henrique da Silva Carvalho; Ruan SAnos Gonzaga;
 
 ### Processo
 
-Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello estruturado com as seguintes listas:
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Gitub estruturado com as seguintes listas:
 
-**Backlog**: Lista que contém todas as funcionalidades que serão desenvolvidas no projeto. O Product Owner é responsável por definir as funcionalidades que serão implementadas e priorizá-las de acordo com a necessidade do cliente e do negócio.
 
-**To Do**: Lista que contém as tarefas que ainda não foram iniciadas e que precisam ser desenvolvidas. Essa lista é atualizada diariamente pelo Scrum Master, que deve garantir que as tarefas estejam claras e que a equipe tenha conhecimento das prioridades.
+**To Do**: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando.
 
 **In Progress**: Lista que contém as tarefas que estão em andamento. É importante que a equipe atualize o status das tarefas para que o Scrum Master possa acompanhar o andamento do projeto e garantir que tudo esteja caminhando conforme o planejado.
 
-**Testing**: Esta lista engloba as tarefas que estão em fase de testes. Os testadores devem verificar as funcionalidades implementadas, garantindo que estão funcionando corretamente e identificando possíveis erros para correção antes de serem movidas para a coluna "Done". Atualizações regulares nesta coluna ajudam a equipe a manter um acompanhamento preciso do progresso do projeto.
+**Test**: Esta lista engloba as tarefas que estão em fase de testes. Os testadores devem verificar as funcionalidades implementadas, garantindo que estão funcionando corretamente e identificando possíveis erros para correção antes de serem movidas para a coluna "Done".
 
-**Done**: Lista que contém as tarefas que foram concluídas. É importante que a equipe atualize essa lista diariamente para que o Scrum Master possa acompanhar o progresso do projeto e garantir que as tarefas estejam sendo concluídas dentro do prazo estabelecido.
+**Done**: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
-O uso dessas listas permite que a equipe tenha uma visão clara do que precisa ser feito, do que já foi concluído e do que está em andamento, facilitando a colaboração e o trabalho em equipe. Além disso, o Trello também permite a atribuição de responsabilidades e prazos para cada tarefa, garantindo que o projeto esteja caminhando dentro do prazo estabelecido.
+O quadro kanban do GitHub está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/546/views/1?layout=board)  e é apresentado, no estado atual. 
 
 ### Ferramentas
 
