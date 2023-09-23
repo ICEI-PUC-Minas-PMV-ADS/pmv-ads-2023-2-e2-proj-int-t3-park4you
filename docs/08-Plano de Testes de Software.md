@@ -44,25 +44,27 @@ Os testes buscarão medir os graus de acessibilidade, aceitação, visam também
 |Critério de Êxito |   •	Ao clicar na vaga as imagens são carregadas de maneira ágil;<br>
 |                  |   •	Botão compartilhar ativo no layout da vaga. |
 |  	|  	|
-| Caso de Teste 	| CT-05 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Visualizar a página principal<br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+| Caso de Teste 	| CT-05 – Apresentar Vagas na região desejada |
+|Requisito Associado | RF-01	- A aplicação deve apresentar na página principal o serviço de vagas disponíveis próximo a localidade de interesse do cliente, que será baseado no google maps. |
+| Objetivo do Teste 	| Verificar se o sistema a partir do CEP digitado busca as vagas mais próximas. |
+| Passos 	| -  Acessar o navegador <br> - Informar o endereço do site<br> - Visualizar a página principal<br> Acessar página de Login<br> - Informar Email e Senha <br> - Acessar o ícone "Vagas"<br> - Informar o CEP da região  |
+|Critério de Êxito |   •    Informando o CEP as vagas da região são imediatamente carregadas. |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Visualizar a página principal<br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+| Caso de Teste 	| CT-06 – Trajeto a pé até o evento	|
+|Requisito Associado | RF-03	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
+| Objetivo do Teste 	| Verificar se o sistema, usando uma aplicação GPS, disponibiliza corretamente o trajeto a pé até o evento. |
+| Passos 	| -  Acessar o navegador <br> - Informar o endereço do site<br> - Visualizar a página principal<br> Acessar página de Login<br> - Informar Email e Senha <br> - Acessar o ícone "Vagas"<br> - Informar o CEP da região<br> - Visualizar trajeto até o evento. |
+|Critério de Êxito |   ●  	O sistema com o auxílio do GPS carrega a distância e o melhor trajeto a pé da vaga ao evento. |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Visualizar a página principal<br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+| Caso de Teste 	| CT-07 – Pagamento	|
+|Requisito Associado | RF-08 A aplicação deve permitir reservar e efetuar o pagamento com antecedência. |
+|                    | RF-11 A aplicação deverá suportar o pagamento das taxas vinculadas a locação da vaga através do PIX. |
+| Objetivo do Teste 	|Verificar se o sistema está disponibilizando o recurso pagamento corretamente e se após a vaga está sendo reservada. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Visualizar a página principal<br> Acessar página de Login<br> - Informar Email e Senha <br> - Acessar o ícone "Vagas"<br> - Informar o CEP da região<br> - Selecionar Vaga<br> Realizar pagamento. | 
+|Critério de Êxito |   ●	Efetuado o pagamento a vaga é reservada automaticamente e ficará indisponível para os outros usuários.
+|                  |   ●	Locador receberá um alerta de pagamento e reserva da sua vaga. |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
+| Caso de Teste 	| CT-08 – Comentários	|
 |Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Acessar página de Login<br> Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Visualizar a página principal<br> - Clicar em "Login" |
