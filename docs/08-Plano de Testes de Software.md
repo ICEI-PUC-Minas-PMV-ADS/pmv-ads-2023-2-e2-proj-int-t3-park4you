@@ -65,27 +65,17 @@ Os testes buscarão medir os graus de acessibilidade, aceitação, visam também
 |                  |   ●	Locador receberá um alerta de pagamento e reserva da sua vaga. |
 |  	|  	|
 | Caso de Teste 	| CT-08 – Comentários	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Acessar página de Login<br> Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Visualizar a página principal<br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+|Requisito Associado | RF-09	- A aplicação deve permitir que usuários x prestador possam efetuar comentários. |
+| Objetivo do Teste 	| Verificar se o campo comentários está sendo disponibilizado e ao realizá-lo ficará visível a todos os usuários. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Visualizar a página principal<br> Acessar página de Login<br> - Informar Email e Senha <br> - Acessar o ícone "Vagas"<br> - Selecionar vaga<br> - Realizar Comentários. | 
+|Critério de Êxito | ●	Campo “comentários” disponibilizado;
+|                   |●	Comentários realizado com sucesso. |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Acessar página de Login<br> Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Visualizar a página principal<br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+| Caso de Teste 	| CT-09 – Serviço de Atendimento ao Usuário	|
+|Requisito Associado | RF-06	- A aplicação deve permitir visualizar as informações de contatos do mantenedor da aplicação. |
+| Objetivo do Teste 	| Verificar se o SAC, via chat e email funcionam adequadamente. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Visualizar a página principal<br> Acessar página de Login<br> - Informar Email e Senha <br> - clicar no botão SAC. |
+|Critério de Êxito | ●	Ao clicar no SAC o usuário é direcionando para as opções chat, email, telefone.|
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Acessar página de Login<br> Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Visualizar a página principal<br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
-|  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Acessar página de Login<br> Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Visualizar a página principal<br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
 
  
