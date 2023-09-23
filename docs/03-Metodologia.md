@@ -49,7 +49,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 **Done**: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
-O quadro kanban do GitHub está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/546/views/1?layout=board)  e é apresentado, no estado atual. 
+O quadro kanban do GitHub está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/546/views/1?layout=board  e é apresentado, no estado atual. 
 
 ### Ferramentas
 
@@ -63,7 +63,7 @@ As ferramentas empregadas no projeto são:
 | Projeto de Interface e Wireframes | Marvel |(https://marvelapp.com/project/6831630)|
 | Controle de Versão | Git | https://git-scm.com/ |
 | Repositório | GitHub |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you |
-
+| Diagramas e Base de Dados | Draw.io | https://www.drawio.com/ |
 
 
 
