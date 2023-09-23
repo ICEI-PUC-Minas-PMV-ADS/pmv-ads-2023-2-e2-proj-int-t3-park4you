@@ -1,8 +1,7 @@
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-A equipe utilizará uma metodologia ágil e colaborativa para desenvolver o projeto JobHub, com entregas frequentes de funcionalidades. Serão usados editores de código, navegadores e ferramentas de colaboração, como o Trello, para gerenciar o processo de desenvolvimento. O código-fonte será gerenciado usando o GitHub. A equipe também usará práticas eficazes de gestão de times para garantir que o projeto seja entregue no prazo.
+A metodologia contempla as definições das ferramentas utilizadas pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
 ## Controle de Versão
 
