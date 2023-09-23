@@ -50,6 +50,8 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 O quadro kanban do GitHub está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/546/views/1?layout=board  e é apresentado, no estado atual. 
 
+![ Project em 22/09/23](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/blob/main/docs/img/Quadro%20Kanban.png)
+
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
