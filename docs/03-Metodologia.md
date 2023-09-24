@@ -61,7 +61,7 @@ As ferramentas empregadas no projeto são:
 | Editor de Código | Visual Studio Code | https://code.visualstudio.com/ |
 | Ferramenta de comunicação | Teams | https://teams.microsoft.com/ |
 | Gerenciamento do Projeto | Github | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you |
-| Projeto de Interface e Wireframes | Marvel |(https://marvelapp.com/project/6831630)|
+| Projeto de Interface e Wireframes | Invision App |(https://www.invisionapp.com/)|
 | Controle de Versão | Git | https://git-scm.com/ |
 | Repositório | GitHub |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you |
 | Diagramas e Base de Dados | Draw.io | https://www.drawio.com/ |
