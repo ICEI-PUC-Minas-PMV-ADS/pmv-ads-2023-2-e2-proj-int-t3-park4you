@@ -15,7 +15,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ## Wireframes
 
-docs/park4you vf.png
+img/park4you vf.png 
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
