@@ -18,10 +18,10 @@ Os Wireframes são esboços do projeto de um site, que represetam de uma forma v
 
 ![Wireframes](img/park4you%20vf.png)
  # Tela inicial: 
-A Tela inicial possui uma relevância significativa no website, pois é a primeira página que o utilizador visualiza, e essa impressão inicial exerce um papel determinante.
+A Tela inicial possui uma relevância significativa no website, pois é a primeira página que o utilizador visualiza, e essa impressão inicial exerce um papel determinante.<br>
 Neste projeto a Tela Inicial, se apresenta da seguinte forma:
-**Logomarca:** Estrategicamente posicionada no centro do website, buscando atrair a atenção para o conteúdo da página.
-**Conteúdo:**São disponibilizadas barras de busca para que o usuário possa inserir o estádio, a data e o tempo de permanência que ficará na vaga alocada. 
+**Logomarca:** Estrategicamente posicionada no centro do website, buscando atrair a atenção para o conteúdo da página.<br>
+**Conteúdo:** São disponibilizadas barras de busca para que o usuário possa inserir o estádio, a data e o tempo de permanência que ficará na vaga alocada. 
 ![Wireframes](<img/Wireframe_park4you 1.png>)<br>
 # Página de vagas: 
 Na página de vagas a aplicação retorna o resultado da busca realizada na tela anterior, apresentando as vagas disponíveis ao usuário. 
