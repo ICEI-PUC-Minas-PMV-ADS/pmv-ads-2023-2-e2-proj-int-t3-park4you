@@ -34,7 +34,7 @@ O usuário que optar por ser um parceiro fará o login na seguinte tela:
 ![Wireframes](<img/Wireframe_park4you%204.png>)<br>
 # Página para efetivação do pagamento: 
 Ao realizar o cadastro e/ou login o usuário será direcionado para a página do pagamento.
-![Wireframes](<img/Wireframe_park4you%205.png)<br>
+![Wireframes](<img/Wireframe_park4you 5.png>)<br>
 
 Também há o wireframes representando a forma visual para mobiles, conforme segue abaixo:<br>
 ![Wireframes](<img/Wireframe_park4you Mobile 1.png>)
