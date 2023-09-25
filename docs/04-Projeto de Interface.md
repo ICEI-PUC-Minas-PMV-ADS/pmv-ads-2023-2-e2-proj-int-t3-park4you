@@ -17,14 +17,14 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ![Wireframes](img/park4you%20vf.png)
 
-![Wireframes](img/p4y%20img%201.JPG)
-![Wireframes](img/p4y%20img%202.JPG)
-![Wireframes](img/p4y%20img%203.JPG)
-![Wireframes](img/p4y%20img%204.JPG)
-![Wireframes](img/p4y%20img%205.JPG)
+![Wireframes](img/p4y%20img%201.JPG)<br>
+![Wireframes](img/p4y%20img%202.JPG)<br>
+![Wireframes](img/p4y%20img%203.JPG)<br>
+![Wireframes](img/p4y%20img%204.JPG)<br>
+![Wireframes](img/p4y%20img%205.JPG)<br>
 
-![Wireframes](img/p4y%20img%201%20mobile.JPG)
-![Wireframes](img/p4y%20img%202%20mobile.JPG)
-![Wireframes](img/p4y%20img%203%20mobile.JPG)
-![Wireframes](img/p4y%20img%204%20mobile.JPG)
-![Wireframes](img/p4y%20img%205%20mobile.JPG)
+![Wireframes](img/p4y%20img%201%20mobile.JPG)<br>
+![Wireframes](img/p4y%20img%202%20mobile.JPG)<br>
+![Wireframes](img/p4y%20img%203%20mobile.JPG)<br>
+![Wireframes](img/p4y%20img%204%20mobile.JPG)<br>
+![Wireframes](img/p4y%20img%205%20mobile.JPG)<br>
