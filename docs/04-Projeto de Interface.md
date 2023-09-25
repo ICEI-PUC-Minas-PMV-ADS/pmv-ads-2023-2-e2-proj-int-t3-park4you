@@ -18,15 +18,15 @@ Os Wireframes são esboços do projeto de um site, que represetam de uma forma v
 
 ![Wireframes](img/park4you%20vf.png)
   A 1ª página 1 da aplicação é tela de pesquisa, onde o usuário colocará todas as informações relativas ao evento desejado.
-![Wireframes](img/p4y%20img%201.JPG)<br>
-![Wireframes](img/p4y%20img%202.JPG)<br>
-![Wireframes](img/p4y%20img%203.JPG)<br>
-![Wireframes](img/p4y%20img%204.JPG)<br>
-![Wireframes](img/p4y%20img%205.JPG)<br>
+!![!\[Alt text\](<img/Wireframe_park4you 1.png>)]<br>
+![!\[Wireframes\](<img/Wireframe_park4you 2.png>)<br>
+![!\[Wireframes\](<img/Wireframe_park4you 3.png>)<br>
+![!\[Wireframes\](<img/Wireframe_park4you 4.png>)<br>
+![!\[Wireframes\](<img/p4y%20img%205.JPG)<br>
 
 Também há o wireframes representando a forma visual para mobiles, conforme segue abaixo:<br>
-![Wireframes](img/p4y%20img%201%20mobile.JPG)
-![Wireframes](img/p4y%20img%202%20mobile.JPG)
-![Wireframes](img/p4y%20img%203%20mobile.JPG)
-![Wireframes](img/p4y%20img%204%20mobile.JPG)
-![Wireframes](img/p4y%20img%205%20mobile.JPG)
+![Wireframes]![(<img/Wireframe_park4you Mobile 1.png>)]
+![Wireframes]!(<img/Wireframe_park4you Mobile 2.png>)
+![Wireframes]!(<img/Wireframe_park4you 3.png>)
+![Wireframes]!(<img/Wireframe_park4you Mobile 4.png>)
+![Wireframes]!(<img/Wireframe_park4you Mobile 5.png>)
