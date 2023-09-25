@@ -15,15 +15,29 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ## Wireframes
 
-
-
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+(img/componetes.png)
+(img/Diagrama de classe Park4you.png)
+(img/Diagrama Park4You.drawio.png)
+(img/DiagramaDeFluxo.png)
+(img/diagramafluxo2.png)
+(img/github.png)
+(img/LOGOP4YAT.jpeg)
+(img/p4y img 1 mobile.JPG)
+(img/p4y img 2 mobile.JPG)
+(img/p4y img 3 mobile.JPG)
+(img/p4y img 4 mobile.JPG)
+(img/p4y img 5 mobile.JPG)
+(img/p4y img 1.jpg)
+(img/p4y img 2.jpg)
+(img/p4y img 3.jpg)
+(img/p4y img 4.jpg)
+(img/p4y img 5.jpg)
+(img/park4you vf.png)
+(img/project.png)
+(img/Projeto de Base de Dados.png)
+(img/Qaudro Kanban.png)
+(img/redbooth.png)
+(img/slack.jpg)
+(img/trello.png)
+(img/userflow.jpg)
+(img/wireframe-example.png)
