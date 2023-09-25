@@ -29,11 +29,7 @@ Na página de vagas a aplicação retorna o resultado da busca realizada na tela
  # Página de Login: 
 Após o usuário escolher a vaga de desejo será direcionado a página de login.
 ![Wireframes](<img/Wireframe_park4you 3.png>)<br>
-# Página para Cadastro de Vaga: 
-O usuário que optar por ser um parceiro fará o login na seguinte tela: 
 ![Wireframes](<img/Wireframe_park4you%204.png>)<br>
-# Página para efetivação do pagamento: 
-Ao realizar o cadastro e/ou login o usuário será direcionado para a página do pagamento.
 ![Wireframes](<img/Wireframe_park4you%205.png)<br>
 
 Também há o wireframes representando a forma visual para mobiles, conforme segue abaixo:<br>
