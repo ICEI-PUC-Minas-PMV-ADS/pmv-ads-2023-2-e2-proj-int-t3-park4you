@@ -24,7 +24,7 @@ Os Wireframes são esboços do projeto de um site, que represetam de uma forma v
 ![Wireframes](img/p4y%20img%204.JPG)<br>
 ![Wireframes](img/p4y%20img%205.JPG)<br>
 
-Também há o wireframes representando a forma visual para mobiles, conforme segue abaixo:
+Também há o wireframes representando a forma visual para mobiles, conforme segue abaixo:<br>
 ![Wireframes](img/p4y%20img%201%20mobile.JPG)
 ![Wireframes](img/p4y%20img%202%20mobile.JPG)
 ![Wireframes](img/p4y%20img%203%20mobile.JPG)
