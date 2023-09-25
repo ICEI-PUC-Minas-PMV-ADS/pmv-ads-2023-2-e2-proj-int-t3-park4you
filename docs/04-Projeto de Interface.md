@@ -17,7 +17,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 Os Wireframes são esboços do projeto de um site, que represetam de uma forma visual e básica a estrutura do site, nas páginas a seguir, veja o detalhamento de cada uma dessas páginas.
 
 ![Wireframes](img/park4you%20vf.png)
-
+  A 1ª página 1 da aplicação é tela de pesquisa, onde o usuário colocará todas as informações relativas ao evento desejado.
 ![Wireframes](img/p4y%20img%201.JPG)<br>
 ![Wireframes](img/p4y%20img%202.JPG)<br>
 ![Wireframes](img/p4y%20img%203.JPG)<br>
