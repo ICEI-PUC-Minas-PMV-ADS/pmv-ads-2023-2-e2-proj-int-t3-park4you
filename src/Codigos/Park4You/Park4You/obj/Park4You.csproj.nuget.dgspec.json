@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ricky\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {}
+    "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Park4You.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ricky\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {
+    "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Park4You.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ricky\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
+        "projectUniqueName": "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Park4You.csproj",
         "projectName": "Park4You",
-        "projectPath": "C:\\Users\\ricky\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
-        "packagesPath": "C:\\Users\\ricky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricky\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\",
+        "projectPath": "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Park4You.csproj",
+        "packagesPath": "/Users/ricky/.nuget/packages/",
+        "outputPath": "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ricky\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ricky/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
         }
       }
     }
