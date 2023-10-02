@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Park4You.csproj": {}
+    "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {}
   },
   "projects": {
-    "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Park4You.csproj": {
+    "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Park4You.csproj",
+        "projectUniqueName": "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
         "projectName": "Park4You",
-        "projectPath": "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Park4You.csproj",
-        "packagesPath": "/Users/ricky/.nuget/packages/",
-        "outputPath": "/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/obj/",
+        "projectPath": "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
+        "packagesPath": "C:\\Users\\nunes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ricky/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\nunes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +39,30 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
