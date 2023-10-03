@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {}
+    "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {
+    "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
+        "projectUniqueName": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
         "projectName": "Park4You",
-        "projectPath": "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
+        "projectPath": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
         "packagesPath": "C:\\Users\\nunes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nunes\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\",
+        "outputPath": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nunes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,6 +61,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             }
           },
           "imports": [

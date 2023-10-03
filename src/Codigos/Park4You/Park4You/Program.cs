@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Park4You.Models;
+
 namespace Park4You
 {
     public class Program
@@ -10,6 +13,8 @@ namespace Park4You
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
+            builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 

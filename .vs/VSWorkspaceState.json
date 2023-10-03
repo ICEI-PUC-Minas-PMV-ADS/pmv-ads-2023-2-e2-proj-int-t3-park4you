@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
+    "\\.github\\workflows",
     "\\src",
     "\\src\\Codigos",
     "\\src\\Codigos\\Park4You",
-    "\\src\\Codigos\\Park4You\\Park4You",
-    "\\src\\Telas"
+    "\\src\\Codigos\\Park4You\\Park4You"
   ],
   "PreviewInSolutionExplorer": false
 }
