@@ -12,7 +12,7 @@ build_property.RootNamespace = Park4You
 build_property.ProjectDir = C:\Users\nunes\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\Codigos\Park4You\Park4You\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\nunes\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\Codigos\Park4You\Park4You
 build_property._RazorSourceGeneratorDebug = 
 
