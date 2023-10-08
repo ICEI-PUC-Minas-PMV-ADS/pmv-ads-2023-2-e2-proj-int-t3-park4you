@@ -40,3 +40,4 @@ Após a conclusão dos testes, o usuário terá de responder um questionário pa
 O questionário a ser respondido foi elaborado com base nas Heurísticas de Nielsen, um conjunto de diretrizes amplamente reconhecidas que ajudam a avaliar a usabilidade de aplicações. Permitindo-nos identificar áreas de melhoria e aprimorar a experiência do usuário. 
 <p>Segue abaixo o link para acesso ao questionário: 
 <p>https://forms.gle/Z49ubhNiM1qhwKdz6
+<p>Não se esqueça de preencher todos os dados, responder as perguntas e enviar o seu formulário no final da página. Obrigado!
