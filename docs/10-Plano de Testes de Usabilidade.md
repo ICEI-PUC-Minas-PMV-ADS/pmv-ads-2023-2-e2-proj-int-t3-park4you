@@ -5,7 +5,7 @@ O objetivo deste teste é avaliar a eficácia, a usabilidade e a satisfação do
 
 
 ## **Participantes:**
-O público-alvo para os testes de usabilidade será composto por usuários reais e potenciais da aplicação. Iremos recrutar pelo menos 5 participantes que representem uma variedade de perfis de usuários, incluindo:
+O público-alvo para os testes de usabilidade será composto por usuários reais e potenciais da aplicação. Iremos recrutar pelo menos 6 participantes que representem uma variedade de perfis de usuários, incluindo:
 * Pessoas que frequentam eventos regularmente, como shows, jogos, etc.
 * Pessoas que raramente participam de eventos devido a preocupações com gastos, segurança ou falta de praticidade.
 * Usuário Locador que tem interesse em disponibilizar vagas para estacionamento de veículos.
@@ -39,4 +39,5 @@ Após a conclusão dos testes, o usuário terá de responder um questionário pa
 ## **Questionário para avaliação do Teste de Usabilidade:**
 O questionário a ser respondido foi elaborado com base nas Heurísticas de Nielsen, um conjunto de diretrizes amplamente reconhecidas que ajudam a avaliar a usabilidade de aplicações. Permitindo-nos identificar áreas de melhoria e aprimorar a experiência do usuário. 
 <p>Segue abaixo o link para acesso ao questionário: 
+  
 <p>https://forms.gle/Z49ubhNiM1qhwKdz6
