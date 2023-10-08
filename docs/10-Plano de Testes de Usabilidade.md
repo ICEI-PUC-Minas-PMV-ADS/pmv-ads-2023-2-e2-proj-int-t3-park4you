@@ -38,5 +38,5 @@ Após a conclusão dos testes, o usuário terá de responder um questionário pa
 
 ## **Questionário para avaliação do Teste de Usabilidade:**
 O questionário a ser respondido foi elaborado com base nas Heurísticas de Nielsen, um conjunto de diretrizes amplamente reconhecidas que ajudam a avaliar a usabilidade de aplicações. Permitindo-nos identificar áreas de melhoria e aprimorar a experiência do usuário. 
-<p>Segue abaixo o link para acesso ao questionário, favor preencher as suas informações, responder as perguntas e não se esqueça de enviar o seu formulário. Obrigado!
+<p>Segue abaixo o link para acesso ao questionário: 
 <p>https://forms.gle/Z49ubhNiM1qhwKdz6
