@@ -1,120 +1,160 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Park4You.Models;
 
 namespace Park4You.Controllers
-
-/// Criar Usuário
 {
     public class UsuariosController : Controller
     {
         private readonly AppDbContext _context;
+
         public UsuariosController(AppDbContext context)
         {
             _context = context;
         }
+
+        // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            var dados = await _context.cadast_Usuario.ToListAsync();
-
-            return View(dados);
+              return View(await _context.cadast_Usuario.ToListAsync());
         }
 
+        // GET: Usuarios/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.cadast_Usuario == null)
+            {
+                return NotFound();
+            }
+
+            var cadast_Usuario = await _context.cadast_Usuario
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cadast_Usuario == null)
+            {
+                return NotFound();
+            }
+
+            return View(cadast_Usuario);
+        }
+
+        // GET: Usuarios/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        // POST: Usuarios/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-
-        public async Task<IActionResult> Create(cadast_Usuario cadast_Usuario)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,CPF,Nome,Email,Senha,Endereco,Telefone")] cadast_Usuario cadast_Usuario)
         {
             if (ModelState.IsValid)
             {
-                _context.cadast_Usuario.Add(cadast_Usuario);
+                _context.Add(cadast_Usuario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
+            }
+            return View(cadast_Usuario);
+        }
+
+        // GET: Usuarios/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null || _context.cadast_Usuario == null)
+            {
+                return NotFound();
+            }
+
+            var cadast_Usuario = await _context.cadast_Usuario.FindAsync(id);
+            if (cadast_Usuario == null)
+            {
+                return NotFound();
+            }
+            return View(cadast_Usuario);
+        }
+
+        // POST: Usuarios/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CPF,Nome,Email,Senha,Endereco,Telefone")] cadast_Usuario cadast_Usuario)
+        {
+            if (id != cadast_Usuario.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(cadast_Usuario);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!cadast_UsuarioExists(cadast_Usuario.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(cadast_Usuario);
+        }
+
+        // GET: Usuarios/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.cadast_Usuario == null)
+            {
+                return NotFound();
+            }
+
+            var cadast_Usuario = await _context.cadast_Usuario
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cadast_Usuario == null)
+            {
+                return NotFound();
             }
 
             return View(cadast_Usuario);
         }
-        // Editar
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-                return NotFound();
 
-            var dados = await _context.cadast_Usuario.FindAsync(id);
-
-            if (dados == null)
-                return NotFound();
-
-            return View(dados);
-        }
-        [HttpPost]
-        public async Task<IActionResult> Edit(int id, cadast_Usuario cadast_Usuario)
-        {
-            if (id != cadast_Usuario.Id)
-                return NotFound();
-
-            if (ModelState.IsValid)
-            {
-                _context.cadast_Usuario.Update(cadast_Usuario);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
-
-            return View();
-
-        }
-        // Visualizar
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-                return NotFound();
-
-            var dados = await _context.cadast_Usuario.FindAsync(id);
-
-            if (dados == null)
-
-                return NotFound();
-
-            return View(dados);
-        }
-        // Apagar 
-
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-                return NotFound();
-
-            var dados = await _context.cadast_Usuario.FindAsync(id);
-
-            if (dados == null)
-
-                return NotFound();
-
-            return View(dados);
-
-        }
+        // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int? id)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (id == null)
-                return NotFound();
-
-            var dados = await _context.cadast_Usuario.FindAsync(id);
-
-            if (dados == null)
-
-                return NotFound();
-
-            _context.cadast_Usuario.Remove(dados);
+            if (_context.cadast_Usuario == null)
+            {
+                return Problem("Entity set 'AppDbContext.cadast_Usuario'  is null.");
+            }
+            var cadast_Usuario = await _context.cadast_Usuario.FindAsync(id);
+            if (cadast_Usuario != null)
+            {
+                _context.cadast_Usuario.Remove(cadast_Usuario);
+            }
+            
             await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
-            return RedirectToAction("Index");
+        private bool cadast_UsuarioExists(int id)
+        {
+          return _context.cadast_Usuario.Any(e => e.Id == id);
         }
     }
 }
