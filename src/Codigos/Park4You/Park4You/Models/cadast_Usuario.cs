@@ -9,23 +9,20 @@ namespace Park4You.Models
         {
             [Key]
         public int Id { get; set; }
-           [Required(ErrorMessage ="Obrigatório informar o CPF!")]
-
+           
+        [Required(ErrorMessage ="Obrigatório informar o CPF!")]
         public string CPF { get; set; }
-            [Required(ErrorMessage = "Obrigatório informar o nome!")]
-      
-        public string Nome { get; set; }
-            [Required(ErrorMessage = "Obrigatório informar o E-mail!")]
-      
-        public string Email { get; set; }
-            [Required(ErrorMessage = "Obrigatório informar a Senha!")]
-      
-        public string Senha { get; set; }
-            [Required(ErrorMessage = "Obrigatório informar a Endereço!")]
             
-        public string Endereco { get; set; }
-            [Required(ErrorMessage = "Obrigatório informar o Telefone!")]
+        [Required(ErrorMessage = "Obrigatório informar o nome!")]
+        public string Nome { get; set; }
       
+        [Required(ErrorMessage = "Obrigatório informar o E-mail!")]
+        public string Email { get; set; }
+      
+        [Required(ErrorMessage = "Obrigatório informar a Senha!")]
+        public string Senha { get; set; }
+        
+        [Required(ErrorMessage = "Obrigatório informar o Telefone!")]
         public string Telefone { get; set; }
         }
     }
