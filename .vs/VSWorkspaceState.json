@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Codigos",
+    "\\src\\Codigos\\Park4You"
   ],
-  "SelectedNode": "\\Park4You.sln",
+  "SelectedNode": "\\src\\Codigos\\Park4You\\Park4You.sln",
   "PreviewInSolutionExplorer": false
 }
