@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Park4You.Models;
 
@@ -15,10 +16,21 @@ namespace Park4You
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
             builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-           
-            var app = builder.Build();
 
-            
+            builder.Services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = ContextBoundObject => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;               
+
+            });
+
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie (options =>{
+                    options.AccessDeniedPath = "/Usuarios/AcessDenied/";
+                    options.LoginPath = "/Usuarios/Login/";
+                });
+
+            var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -32,6 +44,8 @@ namespace Park4You
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

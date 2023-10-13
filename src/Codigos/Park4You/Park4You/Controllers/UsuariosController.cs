@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using BCrypt.Net;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +25,62 @@ namespace Park4You.Controllers
         public async Task<IActionResult> Index()
         {
               return View(await _context.cadast_Usuario.ToListAsync());
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(cadast_Usuario cadast_Usuario)
+        {
+            var dados = await _context.cadast_Usuario
+                .FirstOrDefaultAsync(u => u.Email == cadast_Usuario.Email);
+
+            if (dados == null)
+            {
+                ViewBag.Message = "Usuário e/ou senha inválidos!";
+                return View();
+            }
+
+            bool senhaOK = BCrypt.Net.BCrypt.Verify(cadast_Usuario.Senha, dados.Senha);
+
+            if (senhaOK)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, dados.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, dados.CPF.ToString()),
+                    new Claim(ClaimTypes.Role, dados.Email.ToString())
+                };
+
+                var usuarioIdentity = new ClaimsIdentity(claims, "login");
+                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                    IsPersistent = true,
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                return Redirect("/");
+            }
+            else
+            {
+                ViewBag.Message = "Usuário e/ou senha inválidos!";
+            }
+            return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+
+            return RedirectToAction("Login", "Usuarios");
         }
 
         // GET: Usuarios/Details/5
@@ -57,6 +116,7 @@ namespace Park4You.Controllers
         {
             if (ModelState.IsValid)
             {
+                cadast_Usuario.Senha = BCrypt.Net.BCrypt.HashPassword(cadast_Usuario.Senha);
                 _context.Add(cadast_Usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,6 +156,7 @@ namespace Park4You.Controllers
             {
                 try
                 {
+                    cadast_Usuario.Senha = BCrypt.Net.BCrypt.HashPassword(cadast_Usuario.Senha);
                     _context.Update(cadast_Usuario);
                     await _context.SaveChangesAsync();
                 }

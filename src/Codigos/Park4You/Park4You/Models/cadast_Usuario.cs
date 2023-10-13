@@ -20,6 +20,7 @@ namespace Park4You.Models
         public string Email { get; set; }
       
         [Required(ErrorMessage = "Obrigatório informar a Senha!")]
+        [DataType(DataType.Password)]
         public string Senha { get; set; }
         
         [Required(ErrorMessage = "Obrigatório informar o Telefone!")]
