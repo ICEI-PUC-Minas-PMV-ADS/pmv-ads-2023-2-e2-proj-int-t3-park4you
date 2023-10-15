@@ -1703,3 +1703,4 @@ C:\Users\carol\Source\Repos\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\Codigos\P
 C:\Users\carol\Source\Repos\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\Codigos\Park4You\Park4You\obj\Debug\net6.0\Park4You.genruntimeconfig.cache
 C:\Users\carol\Source\Repos\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\Codigos\Park4You\Park4You\obj\Debug\net6.0\ref\Park4You.dll
 C:\Users\carol\Source\Repos\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\Codigos\Park4You\Park4You\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\nunes\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\Codigos\Park4You\Park4You\bin\Debug\net6.0\BCrypt.Net-Next.dll
