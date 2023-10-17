@@ -12,8 +12,8 @@ using Park4You.Models;
 namespace Park4You.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231015224718_M04-Edit_Ender_Vaga")]
-    partial class M04Edit_Ender_Vaga
+    [Migration("20231017133343_M05-Edit_Ender_Vaga")]
+    partial class M05Edit_Ender_Vaga
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -117,12 +117,17 @@ namespace Park4You.Migrations
             modelBuilder.Entity("Park4You.Models.Endereco_Vaga", b =>
                 {
                     b.HasOne("Park4You.Models.cadast_Usuario", "cadast_Usuario")
-                        .WithMany()
+                        .WithMany("endereco_Vaga")
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("cadast_Usuario");
+                });
+
+            modelBuilder.Entity("Park4You.Models.cadast_Usuario", b =>
+                {
+                    b.Navigation("endereco_Vaga");
                 });
 #pragma warning restore 612, 618
         }

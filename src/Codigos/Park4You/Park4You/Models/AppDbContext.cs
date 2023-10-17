@@ -10,6 +10,6 @@ namespace Park4You.Models
 
         public DbSet<cadast_Usuario> cadast_Usuario { get; set; }
 
-        public DbSet<Endereco_Vaga> endereco_Vaga  { get; set; }
+        public DbSet<Endereco_Vaga> endereco_Vaga { get; set; }
     }
 }

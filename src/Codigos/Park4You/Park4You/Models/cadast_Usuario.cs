@@ -25,8 +25,11 @@ namespace Park4You.Models
         
         [Required(ErrorMessage = "Obrigatório informar o Telefone!")]
         public string Telefone { get; set; }
-        }
+
+        public ICollection<Endereco_Vaga> endereco_Vaga{ get; set; }
     }
+    }
+
 
 
 

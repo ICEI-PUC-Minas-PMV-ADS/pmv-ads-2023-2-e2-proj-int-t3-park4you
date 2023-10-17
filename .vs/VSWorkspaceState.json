@@ -1,15 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
     "\\src",
     "\\src\\Codigos",
     "\\src\\Codigos\\Park4You",
     "\\src\\Codigos\\Park4You\\Park4You",
-    "\\src\\Codigos\\Park4You\\Park4You\\Controllers",
     "\\src\\Codigos\\Park4You\\Park4You\\Models",
-    "\\src\\Codigos\\Park4You\\Park4You\\Views",
-    "\\src\\Codigos\\Park4You\\Park4You\\Views\\Usuarios"
+    "\\src\\Codigos\\Park4You\\Park4You\\Views"
   ],
   "SelectedNode": "\\src\\Codigos\\Park4You\\Park4You\\Models\\Endereco_Vaga.cs",
   "PreviewInSolutionExplorer": false
