@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Park4You.Models;
 
 namespace Park4You.Controllers
 {
+    [Authorize]
     public class Ender_VagasController : Controller
     {
         private readonly AppDbContext _context;

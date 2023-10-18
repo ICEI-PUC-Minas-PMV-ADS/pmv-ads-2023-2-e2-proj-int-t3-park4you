@@ -11636,19 +11636,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nunes\\.nuget\\packages\\": {}
+    "C:\\Users\\ruang\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
+      "projectUniqueName": "C:\\Users\\ruang\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
       "projectName": "Park4You",
-      "projectPath": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
-      "packagesPath": "C:\\Users\\nunes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\",
+      "projectPath": "C:\\Users\\ruang\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
+      "packagesPath": "C:\\Users\\ruang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ruang\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nunes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ruang\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11732,7 +11732,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
