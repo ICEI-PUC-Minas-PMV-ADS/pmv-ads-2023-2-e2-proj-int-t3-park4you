@@ -1,6 +1,22 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
+        "projectName": "Park4You",
+        "projectPath": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj",
+        "packagesPath": "C:\\Users\\nunes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nunes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
     "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\Park4You.csproj": {}
   },
   "projects": {
@@ -15,6 +31,7 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ricky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

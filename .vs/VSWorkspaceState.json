@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Codigos",
+    "\\src\\Codigos\\Park4You",
+    "\\src\\Codigos\\Park4You\\Park4You",
+    "\\src\\Codigos\\Park4You\\Park4You\\Views"
   ],
   "PreviewInSolutionExplorer": false
 }

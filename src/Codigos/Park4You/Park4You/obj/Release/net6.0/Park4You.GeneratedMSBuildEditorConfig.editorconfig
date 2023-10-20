@@ -20,6 +20,26 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VwQ29udHJvbGxlcjFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+[C:/Users/nunes/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Views/Endereco_Vagas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nunes/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Views/Endereco_Vagas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nunes/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Views/Endereco_Vagas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nunes/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Views/Endereco_Vagas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nunes/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Views/Endereco_Vagas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYXNcSW5kZXguY3NodG1s
+=======
 [C:/Users/ricky/OneDrive/Área de Trabalho/PArk/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Views/Ender_Vagas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJfVmFnYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +58,7 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ricky/OneDrive/Área de Trabalho/PArk/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Views/Ender_Vagas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJfVmFnYXNcSW5kZXguY3NodG1s
+>>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ricky/OneDrive/Área de Trabalho/PArk/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/Codigos/Park4You/Park4You/Views/Home/Index.cshtml]
