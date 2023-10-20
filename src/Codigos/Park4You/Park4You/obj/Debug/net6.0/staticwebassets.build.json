@@ -1,10 +1,14 @@
 {
   "Version": 1,
 <<<<<<< HEAD
+  "Hash": "glgb8cbVBzWdRv3kBkTk9tQgnWO0Ev57cyDBajN7suQ=",
+=======
+<<<<<<< HEAD
   "Hash": "FFlRj005rsDS1y1hGSIqub7rxFyW4Pxzrufp1MSwUE4=",
 =======
   "Hash": "q+zpeHQH8/8Vt1k1KXoIZwj3zrKy7qWmOYCAMu1sHqQ=",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
   "Source": "Park4You",
   "BasePath": "_content/Park4You",
   "Mode": "Default",
@@ -15,16 +19,26 @@
       "Name": "Park4You\\wwwroot",
       "Source": "Park4You",
 <<<<<<< HEAD
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 =======
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Park4You.styles.css",
+      "SourceId": "Park4You",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+=======
 <<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Park4You.styles.css",
       "SourceId": "Park4You",
@@ -36,6 +50,7 @@
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "Park4You.styles.css",
       "AssetKind": "All",
@@ -47,6 +62,9 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
 <<<<<<< HEAD
+      "OriginalItemSpec": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Park4You.styles.css"
+=======
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Park4You.styles.css"
     },
     {
@@ -56,13 +74,18 @@
       "ContentRoot": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
 =======
       "OriginalItemSpec": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Park4You.styles.css"
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
     },
     {
-      "Identity": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Park4You.bundle.scp.css",
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Park4You.bundle.scp.css",
       "SourceId": "Park4You",
       "SourceType": "Computed",
+<<<<<<< HEAD
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+=======
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "Park4You.bundle.scp.css",
       "AssetKind": "All",
@@ -74,6 +97,9 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
 <<<<<<< HEAD
+      "OriginalItemSpec": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Park4You.bundle.scp.css"
+=======
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Park4You.bundle.scp.css"
     },
     {
@@ -83,13 +109,18 @@
       "ContentRoot": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 =======
       "OriginalItemSpec": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Park4You.bundle.scp.css"
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
     },
     {
-      "Identity": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\css\\site.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
+<<<<<<< HEAD
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -104,6 +135,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\favicon.ico",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\favicon.ico",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -114,6 +151,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -128,6 +166,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\js\\site.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\js\\site.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -138,6 +182,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -152,6 +197,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -162,6 +213,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -176,6 +228,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -186,6 +244,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -200,6 +259,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -210,6 +275,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -224,6 +290,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -234,6 +306,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -248,6 +321,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -258,6 +337,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -272,6 +352,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -282,6 +368,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -296,6 +383,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -306,6 +399,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -320,6 +414,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -330,6 +430,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -344,6 +445,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -354,6 +461,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -368,6 +476,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -378,6 +492,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -392,6 +507,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -402,6 +523,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -416,6 +538,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -426,6 +554,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -440,6 +569,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -450,6 +585,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -464,6 +600,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -474,6 +616,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -488,6 +631,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -498,6 +647,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -512,6 +662,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -522,6 +678,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -536,6 +693,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -546,6 +709,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -560,6 +724,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -570,6 +740,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -584,6 +755,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -594,6 +771,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -608,6 +786,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -618,6 +802,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -632,6 +817,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -642,6 +833,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -656,6 +848,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -666,6 +864,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -680,6 +879,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -690,6 +895,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -704,6 +910,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -714,6 +926,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -728,6 +941,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -738,6 +957,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -752,6 +972,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -762,6 +988,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -776,6 +1003,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -786,6 +1019,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -800,6 +1034,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -810,6 +1050,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -824,6 +1065,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -834,6 +1081,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -848,6 +1096,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -858,6 +1112,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -872,6 +1127,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -882,6 +1143,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -896,6 +1158,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -906,6 +1174,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -920,6 +1189,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -930,6 +1205,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -944,6 +1220,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -954,6 +1236,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -968,6 +1251,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -978,6 +1267,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -992,6 +1282,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1002,6 +1298,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1016,6 +1313,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1026,6 +1329,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1040,6 +1344,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1050,6 +1360,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1064,6 +1375,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1074,6 +1391,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1088,6 +1406,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1098,6 +1422,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1112,6 +1437,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1122,6 +1453,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1136,6 +1468,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1146,6 +1484,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1160,6 +1499,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1170,6 +1515,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1184,6 +1530,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1194,6 +1546,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1208,6 +1561,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1218,6 +1577,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1232,6 +1592,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1242,6 +1608,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1256,6 +1623,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1266,6 +1639,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1280,6 +1654,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1290,6 +1670,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1304,6 +1685,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1314,6 +1701,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1328,6 +1716,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1338,6 +1732,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1352,6 +1747,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1362,6 +1763,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1376,6 +1778,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1386,6 +1794,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1400,6 +1809,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1410,6 +1825,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1424,6 +1840,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1434,6 +1856,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1448,6 +1871,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1458,6 +1887,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1472,6 +1902,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1482,6 +1918,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1496,6 +1933,12 @@
     },
     {
 <<<<<<< HEAD
+      "Identity": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "Park4You",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
+=======
+<<<<<<< HEAD
       "Identity": "C:\\Users\\nunes\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Park4You",
       "SourceType": "Discovered",
@@ -1506,6 +1949,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Área de Trabalho\\PArk\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\Codigos\\Park4You\\Park4You\\wwwroot\\",
 >>>>>>> cb346514ebd7b975ce2d2b764e9d52c51d20938f
+>>>>>>> c7a4933ee3ba81f383263eb5b4a34a7883a6d807
       "BasePath": "_content/Park4You",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
