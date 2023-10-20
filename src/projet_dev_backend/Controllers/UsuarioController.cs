@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +26,62 @@ namespace projet_dev_backend.Controllers
         public async Task<IActionResult> Index()
         {
               return View(await _context.Usuarios.ToListAsync());
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(Usuarios Usuarios)
+        {
+            var dados = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.Email == Usuarios.Email);
+
+            if (dados == null)
+            {
+                ViewBag.Message = "Usuário e/ou senha inválidos!";
+                return View();
+            }
+
+            bool senhaOK = BCrypt.Net.BCrypt.Verify(Usuarios.Senha, dados.Senha);
+
+            if (senhaOK)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, dados.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, dados.CPF.ToString()),
+                    new Claim(ClaimTypes.Role, dados.Email.ToString())
+                };
+
+                var usuarioIdentity = new ClaimsIdentity(claims, "login");
+                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                    IsPersistent = true,
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                return Redirect("/");
+            }
+            else
+            {
+                ViewBag.Message = "Usuário e/ou senha inválidos!";
+            }
+            return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+
+            return RedirectToAction("Login", "usuario");
         }
 
         // GET: Usuario/Details/5
@@ -54,15 +113,16 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CPF,Nome,Email,Senha,Telefone")] Usuarios usuarios)
+        public async Task<IActionResult> Create([Bind("Id,CPF,Nome,Email,Senha,Telefone")] Usuarios Usuarios)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(usuarios);
+                Usuarios.Senha = BCrypt.Net.BCrypt.HashPassword(Usuarios.Senha);
+                _context.Add(Usuarios);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(usuarios);
+            return View(Usuarios);
         }
 
         // GET: Usuario/Edit/5
@@ -86,9 +146,9 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CPF,Nome,Email,Senha,Telefone")] Usuarios usuarios)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CPF,Nome,Email,Senha,Telefone")] Usuarios Usuarios)
         {
-            if (id != usuarios.Id)
+            if (id != Usuarios.Id)
             {
                 return NotFound();
             }
@@ -97,12 +157,13 @@ namespace projet_dev_backend.Controllers
             {
                 try
                 {
-                    _context.Update(usuarios);
+                    Usuarios.Senha = BCrypt.Net.BCrypt.HashPassword(Usuarios.Senha);
+                    _context.Update(Usuarios);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UsuariosExists(usuarios.Id))
+                    if (!UsuariosExists(Usuarios.Id))
                     {
                         return NotFound();
                     }
@@ -113,7 +174,7 @@ namespace projet_dev_backend.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(usuarios);
+            return View(Usuarios);
         }
 
         // GET: Usuario/Delete/5

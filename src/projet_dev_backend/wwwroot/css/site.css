@@ -16,3 +16,84 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Barra de pesquisa */
+.search-bar {
+    text-align: center;
+}
+
+.input-container {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 12px; 
+    color: #000000
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+button {
+    padding: 8px 10px;
+    background-color: #8e0b0b;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #c80909;
+    }
+
+/*Imagens da home*/
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    border-radius: 15px;
+}
+
+.image-item {
+    position: relative;
+    border-radius: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+.image-item img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.image-caption {
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+.price {
+    color: #5e5c5c; 
+}
+.adress {
+    font-weight: bold;
+    font-size: 15px;
+}
+.image-caption p {
+    line-height: 0.4; 
+}
