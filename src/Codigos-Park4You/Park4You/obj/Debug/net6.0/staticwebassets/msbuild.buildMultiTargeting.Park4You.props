@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Park4You.props" />
+</Project>

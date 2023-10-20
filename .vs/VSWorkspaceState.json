@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Codigos-Park4You",
+    "\\src\\Codigos-Park4You\\Park4You",
+    "\\src\\Codigos-Park4You\\Park4You\\Models"
   ],
-  "SelectedNode": "\\C:\\Users\\carol\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you",
+  "SelectedNode": "\\src\\Codigos-Park4You\\Park4You",
   "PreviewInSolutionExplorer": false
 }
