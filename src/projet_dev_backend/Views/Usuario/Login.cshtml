@@ -4,34 +4,36 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
+<div class="login-box">
+    <h1 class="login-opcao">Entrar ou Cadastrar-se</h1>
 
-<h4>Usuario</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Login">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+<h4 class="login-bemvindo">Bem-vindo ao Park4You</h4>
+    <div class="container">
+        <!-- Isso garante que todo o conteúdo esteja centralizado na página -->
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <hr />
+                <form asp-action="Login">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group" style="margin-top: 30px;">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="margin-top: 30px;">
+                        <label asp-for="Senha" class="control-label"></label>
+                        <input asp-for="Senha" class="form-control" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                    </div>
+                    <div class="form-group text-center" style="margin-top: 20px;">
+                        <button type="submit" class="btn btn-acess">Acessar</button> <a asp-action="Index" class="btn btn-cadast">Cadastre-se</a>
+                    </div>
+                </form>
+                <h3 class="text-center">@ViewBag.Message</h3>
             </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Acessar" class="btn btn-success" />
-            </div>
-        </form>
-        <h3>@ViewBag.Message</h3>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Cadastre-se</a>
 </div>
 
 @section Scripts {
