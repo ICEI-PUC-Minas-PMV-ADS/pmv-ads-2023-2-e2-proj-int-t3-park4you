@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nunes\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\projet_dev_backend.csproj": {}
+    "C:\\Users\\nunes\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you-2\\src\\projet_dev_backend\\projet_dev_backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nunes\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\projet_dev_backend.csproj": {
+    "C:\\Users\\nunes\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you-2\\src\\projet_dev_backend\\projet_dev_backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nunes\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\projet_dev_backend.csproj",
+        "projectUniqueName": "C:\\Users\\nunes\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you-2\\src\\projet_dev_backend\\projet_dev_backend.csproj",
         "projectName": "projet_dev_backend",
-        "projectPath": "C:\\Users\\nunes\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\projet_dev_backend.csproj",
+        "projectPath": "C:\\Users\\nunes\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you-2\\src\\projet_dev_backend\\projet_dev_backend.csproj",
         "packagesPath": "C:\\Users\\nunes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nunes\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\obj\\",
+        "outputPath": "C:\\Users\\nunes\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you-2\\src\\projet_dev_backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nunes\\AppData\\Roaming\\NuGet\\NuGet.Config",
