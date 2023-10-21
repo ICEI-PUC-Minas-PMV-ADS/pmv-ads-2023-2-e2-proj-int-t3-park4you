@@ -6,7 +6,7 @@
 
 <h1>Cadastrar Endereço/Vagas</h1>
 
-<h4>Endereco_Vaga</h4>
+<h4>Insira os Dados</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -72,15 +72,14 @@
                 <select asp-for="UsuarioId" class ="form-control" asp-items="ViewBag.UsuarioId"></select>
             </div>
             <div class="form-group">
+                <a asp-action="Index">Voltar< class="" </a>
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
