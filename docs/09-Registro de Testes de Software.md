@@ -11,7 +11,7 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
 - Visualizar a página principal
 CT-01
  CT-01
-  <Image Source="teste 00.JPG" />
+ (img/github-teste 00.JPG)
 
   
 - Acessar página de Login
