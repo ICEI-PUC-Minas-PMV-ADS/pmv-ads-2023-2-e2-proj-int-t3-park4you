@@ -10,7 +10,7 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
 - Informar o endereço do site
 - Visualizar a página principal
 CT-01
-
+docs/teste 00.JPG
 - Acessar página de Login
 CT-01
 
