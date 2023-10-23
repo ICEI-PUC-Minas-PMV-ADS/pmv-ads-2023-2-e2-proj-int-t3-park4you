@@ -10,7 +10,6 @@ Oferecer uma aplicação que visa simplificar a experiência dos usuários duran
 ## Integrantes
 
 * Alessandro Nunes Assunção 
-* Anna Luiza Vidal Lomeu de Alcantara
 * Carolina Novaes Leite
 * Paulo Henrique da Silva Carvalho
 * Rosimeire de Fátima Carvalho
