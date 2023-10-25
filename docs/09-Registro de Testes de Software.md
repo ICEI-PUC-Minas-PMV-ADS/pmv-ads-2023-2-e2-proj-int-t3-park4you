@@ -10,18 +10,18 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
 - Informar o endereço do site
 - Visualizar a página principal
 CT-01
-  (img/Registro de Testes de Software/teste 00.JPG)
+ [Plano de Testes de Software](<img/teste 00.jpg>)
   
 - Acessar página de Login
 CT-01
-![Alt text](<img/teste 01.jpg>)
+![Plano de Testes de Software](<img/teste 01.jpg>)
 
 - Cadastrar usuário
 CT-01
-![Alt text](<img/teste 02.jpg>)
+![Plano de Testes de Software](<img/teste 02.jpg>)
 
 CT-01
-![Alt text](<img/teste 03.jpg>)
+[Plano de Testes de Software](<img/teste 02.jpg>)
 
 CT-01 Teste realizado com êxito, cadastro realizada com sucesso, cadastros devidamente realizados.
 
@@ -158,3 +158,6 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+
+
+[def]: <img/teste 03.jpg>
