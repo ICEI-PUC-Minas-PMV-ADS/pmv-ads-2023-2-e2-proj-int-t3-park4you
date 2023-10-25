@@ -10,17 +10,17 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
 - Informar o endereço do site
 - Visualizar a página principal
 CT-01
- CT-01
- ![Teste de Software](img/teste
-
-  
+ (<img/teste 01.jpg>)
 - Acessar página de Login
 CT-01
+![Plano de Testes de Software](<img/teste 01.jpg>)
 
 - Cadastrar usuário
 CT-01
+![Plano de Testes de Software](<img/teste 02.jpg>)
 
 CT-01
+[Plano de Testes de Software](<img/teste 02.jpg>)
 
 CT-01 Teste realizado com êxito, cadastro realizada com sucesso, cadastros devidamente realizados.
 
@@ -30,12 +30,15 @@ RF-12 - A aplicação permitirá o login do usuário Locador/Locatário após o 
 - Informar o endereço do Site
 - Visualizar a página principal 
 CT-02
+![Alt text](<img/teste 05.jpg>)
 
 - Acessar página de Login
 CT-02
+![Alt text](<img/teste 04.jpg>)
 
 - Informar Email e Senha
 CT-02
+![Alt text](<img/teste 06.jpg>)
 
 CT-02
 -Acesso devidamente testados, login realizado com sucesso.
@@ -49,16 +52,16 @@ RF-10 -A aplicação deve permitir que o usuário (prestador)(Locador)possa disp
 
   
 CT-03
-
+![Alt text](<img/teste 00.jpg>)
 Acessar página de Login
 CT-03
-
+![Alt text](<img/teste 07.jpg>)
 - Informar Email e Senha
 - Acessar o ícone "Cadastrar Vagas"
 CT-03
-
+![Alt text](<img/teste 08.jpg>)
 CT-03
-
+![Alt text](<img/teste 09.jpg>)
 CT-03
 Cadastro realizado com sucesso, vaga cadastrada.
 
@@ -154,3 +157,6 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+
+
+[def]: <img/teste 03.jpg>
