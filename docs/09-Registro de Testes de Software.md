@@ -11,7 +11,7 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
 - Visualizar a página principal
 CT-01
  CT-01
-  <teste 00.jpg>
+ ![Teste de Software](img/teste
 
   
 - Acessar página de Login
