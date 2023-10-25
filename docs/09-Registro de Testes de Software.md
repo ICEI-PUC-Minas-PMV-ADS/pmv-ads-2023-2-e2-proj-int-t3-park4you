@@ -10,17 +10,18 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
 - Informar o endereço do site
 - Visualizar a página principal
 CT-01
- (<img/teste 01.jpg>)
+ ![Alt text](<img/teste 00.JPG>)
+
 - Acessar página de Login
 CT-01
-![Plano de Testes de Software](<img/teste 01.JPG>)
+![Plano de Testes de Software](<img/teste 01.jpg>)
 
 - Cadastrar usuário
 CT-01
-![Plano de Testes de Software](<img/teste 02.JPG>)
+![Plano de Testes de Software](<img/teste 02.jpg>)
 
 CT-01
-[Plano de Testes de Software](<img/teste 02.JPG>)
+[Plano de Testes de Software](<img/teste 02.jpg>)
 
 CT-01 Teste realizado com êxito, cadastro realizada com sucesso, cadastros devidamente realizados.
 
@@ -30,7 +31,7 @@ RF-12 - A aplicação permitirá o login do usuário Locador/Locatário após o 
 - Informar o endereço do Site
 - Visualizar a página principal 
 CT-02
-![Alt text](<img/teste 05.JPG>)
+![Alt text](<img/teste
 
 - Acessar página de Login
 CT-02
