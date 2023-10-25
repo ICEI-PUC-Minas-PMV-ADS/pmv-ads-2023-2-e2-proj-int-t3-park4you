@@ -35,11 +35,12 @@ Confirmar o pagamento de uma reserva (Em desenvolvimento)
 Avaliar o locatário.(Em desenvolvimento)
 
 **AVALIAÇÃO E RELATÓRIO** (Em andamento)
+
 Os testes parciais realizados apresentaram êxito.
 
 Relatório será inserido após a finalização da aplicação.
 
-**RESULTADO DOS QUESTIONÁRIO** (Em andamento)
+**RESULTADO DOS QUESTIONÁRIOS** (Em andamento)
 
 Resultados dos questionários serão inseridos após a finalização da aplicação.
 
