@@ -10,17 +10,17 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
 - Informar o endereço do site
 - Visualizar a página principal
 CT-01
- (<img/teste 01.jpg>)
+ ![Alt text](<img/teste 00.JPG>)
+
 - Acessar página de Login
 CT-01
-![Plano de Testes de Software](<img/teste 01.JPG>)
-
+![Alt text](<img/teste 01.JPG>)
 - Cadastrar usuário
 CT-01
-![Plano de Testes de Software](<img/teste 02.JPG>)
+![Alt text](<img/teste 02.JPG>)
 
 CT-01
-[Plano de Testes de Software](<img/teste 02.JPG>)
+![Alt text](<img/teste 03.JPG>)
 
 CT-01 Teste realizado com êxito, cadastro realizada com sucesso, cadastros devidamente realizados.
 
@@ -34,11 +34,11 @@ CT-02
 
 - Acessar página de Login
 CT-02
-![Alt text](<img/teste 04.jpg>)
+![Alt text](<img/teste 04.JPG>)
 
 - Informar Email e Senha
 CT-02
-![Alt text](<img/teste 06.jpg>)
+![Alt text](<img/teste 06.JPG>)
 
 CT-02
 -Acesso devidamente testados, login realizado com sucesso.
@@ -52,16 +52,16 @@ RF-10 -A aplicação deve permitir que o usuário (prestador)(Locador)possa disp
 
   
 CT-03
-![Alt text](<img/teste 00.jpg>)
+![Alt text](<img/teste 00.JPG>)
 Acessar página de Login
 CT-03
-![Alt text](<img/teste 07.jpg>)
+![Alt text](<img/teste 07.JPG>)
 - Informar Email e Senha
 - Acessar o ícone "Cadastrar Vagas"
 CT-03
-![Alt text](<img/teste 08.jpg>)
+![Alt text](<img/teste 08.JPG>)
 CT-03
-![Alt text](<img/teste 09.jpg>)
+![Alt text](<img/teste 09.JPG>)
 CT-03
 Cadastro realizado com sucesso, vaga cadastrada.
 
