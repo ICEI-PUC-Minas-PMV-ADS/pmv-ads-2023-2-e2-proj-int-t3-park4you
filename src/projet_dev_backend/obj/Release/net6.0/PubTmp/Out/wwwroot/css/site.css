@@ -1,0 +1,190 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Logo */
+.custom-logo {
+    width: 100px; /* Defina o tamanho desejado para a logo */
+    height: auto; /* Isso manterá a proporção original da imagem */
+    margin-top: 10px; /* Ajuste a margem superior conforme necessário para posicionar a logo */
+    overflow: hidden;
+    margin-left: 50px;
+    border-radius: 0;
+}
+
+/*Icone Login*/
+.user-icon {
+    margin-right: 50px; /* Adicione a margem desejada à esquerda */
+}
+
+.login-box {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento interno para criar a área de login */
+    border: 2px solid #8e0b0b; /* Borda vermelha #8e0b0b */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 0 auto;
+}
+
+.login-opcao {
+    border-bottom: 2px solid black; /* Linha preta para separar o cabeçalho */
+    margin-bottom: 20px; /* Espaçamento inferior para criar espaço entre o cabeçalho e o conteúdo abaixo */
+    padding-bottom: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.login-bemvindo {
+    font-size: 35px;
+}
+
+.caixas-login {
+    text-align: center; /* Centraliza o texto dentro do campo de entrada */
+    margin: 0 auto; /* Centraliza o campo de entrada horizontalmente */
+    display: block; /* Garante que cada campo de entrada fique em uma linha separada */
+}
+
+.btn-acess {
+    background-color: #064b1d;
+    color: white;
+}
+
+.btn-cadast {
+    background-color: #8e0b0b;
+    color: white;
+}
+
+/*Botão Anuncie*/
+.anuncie-vaga {
+    font-weight: bold;
+    color: #FF0000; /* Cor padrão do texto */
+    margin-right: 15px;
+    background-color: transparent; /* Fundo transparente por padrão */
+    border-radius: 25px;
+    padding: 10px 20px; /* Espaçamento interno para o botão */
+    text-decoration: none; /* Remova sublinhado de links */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves de cor e fundo */
+    /* Estilo quando o mouse passa por cima (hover) */
+    &:hover
+
+{
+    color: #FFFFFF; /* Nova cor do texto ao passar o mouse (branco, por exemplo) */
+    background-color: #edecec; /* Nova cor de fundo ao passar o mouse (cinza, por exemplo) */
+    border-radius: 25px; /* Nova cor da borda ao passar o mouse (cinza, por exemplo) */
+}
+
+}
+
+/* Barra de pesquisa */
+.search-bar {
+    text-align: center;
+}
+
+.input-container {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #000000;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 100%; /* Faça os campos de entrada preencherem 100% da largura disponível */
+}
+
+button {
+    padding: 8px 10px;
+    background-color: #8e0b0b;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #c80909;
+    }
+
+/* Imagens da home */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Layout responsivo */
+    gap: 20px;
+    border-radius: 15px;
+    margin-top: 40px; /* Reduzi a margem superior para 20px */
+}
+
+.image-item {
+    position: relative;
+    border-radius: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    object-fit: cover;
+    width: 100%; /* Assegura que a imagem ocupa todo o espaço disponível */
+}
+
+.image-caption {
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.price {
+    color: #5e5c5c;
+}
+
+.address { /* Corrigi o erro de digitação em "address" */
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.image-caption p {
+    margin: 0.5px 0; /* Aumentei o espaço entre os parágrafos */
+}
+
+footer {
+    background-color: #f7f7f7; /* Fundo cinza */
+    padding: 15px 0; /* Espaçamento interno para cima e para baixo */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); /* Sombra para separar o rodapé do conteúdo */
+    z-index: 1; /* Eleva o rodapé acima do conteúdo principal */
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 14px; /* Ajuste o tamanho da fonte para telas menores, se necessário */
+    }
+}

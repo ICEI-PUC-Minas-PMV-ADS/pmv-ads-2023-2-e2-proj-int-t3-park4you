@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Park4You.Models;
 
+
 namespace projet_dev_backend.Models
 {
 
@@ -13,29 +14,32 @@ public class Endereco_Vaga
 {
     [Key]
     public int Id { get; set; }
-    [Required(ErrorMessage = "Obrigatório informar o CEP!")]
+
+    [Required(ErrorMessage = "O campo \"{0}\" é de preenchimento obrigatório.")]
+    [RegularExpression(@"[0-9]{8}$", ErrorMessage = "O campo \"{0}\" é de preenchimento obrigatório.")]
+    [UIHint("_CepTemplate")]
     public string CEP { get; set; }
 
-    [Required(ErrorMessage = "Obrigatório informar o nome do logradouro!")]
+    [Required(ErrorMessage = "O CEP informado não retornou um endereço válido!")]
     public string Logradouro { get; set; }
 
-    [Required(ErrorMessage = "Obrigatório informar o número da residência!")]
+    [Required(ErrorMessage = "O campo \"{0}\" é de preenchimento obrigatório.")]
     [Display(Name = "Número")]
     public int Numero { get; set; }
 
-    [Required(ErrorMessage = "Obrigatório informar o complemento!")]
     public string Complemento { get; set; }
 
-    [Required(ErrorMessage = "Obrigatório informar o bairro!")]
+    [Required(ErrorMessage = "O campo \"{0}\" é de preenchimento obrigatório.")]
     public string Bairro { get; set; }
 
-    [Required(ErrorMessage = "Obrigatório informar o nome da Cidade!")]
+    [Required(ErrorMessage = "O campo \"{0}\" é de preenchimento obrigatório.")]
     public string Cidade { get; set; }
 
-    [Required(ErrorMessage = "Obrigatório informar a UF!")]
+    [Required(ErrorMessage = "O campo \"{0}\" é de preenchimento obrigatório.")]
     public string UF { get; set; }
 
     [Required(ErrorMessage = "Obrigatório informar a Data!")]
+    [DataType(DataType.Date)]
     public DateTime Data { get; set; }
 
     [Required(ErrorMessage = "Obrigatório informar a Quantidade de vagas!")]

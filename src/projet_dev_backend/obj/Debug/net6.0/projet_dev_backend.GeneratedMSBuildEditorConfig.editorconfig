@@ -9,85 +9,85 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = projet_dev_backend
 build_property.RootNamespace = projet_dev_backend
-build_property.ProjectDir = C:\Users\ricky\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\
+build_property.ProjectDir = /Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\ricky\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend
+build_property.MSBuildProjectDirectory = /Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYVxDcmVhdGUuY3NodG1s
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5kZXJlY29fVmFnYS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYVxEZWxldGUuY3NodG1s
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5kZXJlY29fVmFnYS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYVxEZXRhaWxzLmNzaHRtbA==
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5kZXJlY29fVmFnYS9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYVxFZGl0LmNzaHRtbA==
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5kZXJlY29fVmFnYS9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29fVmFnYVxJbmRleC5jc2h0bWw=
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Endereco_Vaga/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5kZXJlY29fVmFnYS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/_ConsultaCEP.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db25zdWx0YUNFUC5jc2h0bWw=
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/_ConsultaCEP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Db25zdWx0YUNFUC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ricky/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-peaixe3sds
+[/Users/Ricky/Desktop/Projeto - Park4you/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-sbrhg8c0zf
