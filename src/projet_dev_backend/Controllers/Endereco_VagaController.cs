@@ -44,7 +44,7 @@ namespace projet_dev_backend.Controllers
             return View(endereco_Vaga);
         }
 
-        // GET: Endereco_Vaga/Create
+        // GET: Criando e Salvando a Vaga
         public IActionResult Create()
         {
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF");
@@ -56,7 +56,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId")] Endereco_Vaga endereco_Vaga)
+        public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,Imagem")] Endereco_Vaga endereco_Vaga)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId")] Endereco_Vaga endereco_Vaga)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,Imagem")] Endereco_Vaga endereco_Vaga)
         {
             if (id != endereco_Vaga.Id)
             {

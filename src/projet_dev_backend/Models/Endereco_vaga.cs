@@ -60,7 +60,10 @@ public class Endereco_Vaga
 
     [ForeignKey("UsuarioId")]
     public Usuarios usuario { get; set; }
+
+    public Imagem Imagem { get; set; }
 }
+        
 
 public enum TamanhoVagas
 {
