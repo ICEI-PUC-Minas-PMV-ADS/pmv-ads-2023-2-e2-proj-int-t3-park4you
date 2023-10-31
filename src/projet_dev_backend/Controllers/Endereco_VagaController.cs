@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using projet_dev_backend.Models;
+
 
 namespace projet_dev_backend.Controllers
 {
@@ -58,14 +60,20 @@ namespace projet_dev_backend.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,Imagem")] Endereco_Vaga endereco_Vaga)
         {
-            if (ModelState.IsValid)
+            if (endereco_Vaga.ImagemFile != null)
             {
-                _context.Add(endereco_Vaga);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                using (var memoryStream = new MemoryStream())
+                {
+                    await endereco_Vaga.ImagemFile.CopyToAsync(memoryStream);
+                    endereco_Vaga.Imagem = memoryStream.ToArray();
+                }
             }
+
+
+
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
+
         }
 
         // GET: Endereco_Vaga/Edit/5
@@ -90,7 +98,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,Imagem")] Endereco_Vaga endereco_Vaga)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,ImagemFile")] Endereco_Vaga endereco_Vaga)
         {
             if (id != endereco_Vaga.Id)
             {
@@ -99,6 +107,16 @@ namespace projet_dev_backend.Controllers
 
             if (ModelState.IsValid)
             {
+                // Verifique se um novo arquivo de imagem foi fornecido
+                if (endereco_Vaga.Imagem!= null)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                       
+                    }
+                }
+
+
                 try
                 {
                     _context.Update(endereco_Vaga);
@@ -117,9 +135,11 @@ namespace projet_dev_backend.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
         }
+
 
         // GET: Endereco_Vaga/Delete/5
         public async Task<IActionResult> Delete(int? id)

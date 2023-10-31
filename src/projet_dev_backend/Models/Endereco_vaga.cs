@@ -61,15 +61,23 @@ public class Endereco_Vaga
     [ForeignKey("UsuarioId")]
     public Usuarios usuario { get; set; }
 
-    public Imagem Imagem { get; set; }
-}
-        
+            // Classe para Imagem
 
-public enum TamanhoVagas
+    [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados
+    public IFormFile ImagemFile { get; set; }
+
+    public byte[] Imagem { get; set; }
+        }
+
+
+    }
+
+
+    public enum TamanhoVagas
 {
     PequenoPorte,
     MedioPorte,
     GrandePorte
 }
-}
+
 

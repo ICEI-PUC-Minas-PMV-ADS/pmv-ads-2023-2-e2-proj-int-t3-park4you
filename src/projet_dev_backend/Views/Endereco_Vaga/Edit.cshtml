@@ -74,6 +74,11 @@
                 <span asp-validation-for="UsuarioId" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Imagem"></label>
+                <input asp-for="Imagem" type="file" class="form-control">
+            </div>
+
+            <div class="form-group">
                 <a asp-action="Index" class="btn btn-info">Voltar</a>
                 <input type="submit" value="Salvar" class="btn btn-warning" />
             </div>
