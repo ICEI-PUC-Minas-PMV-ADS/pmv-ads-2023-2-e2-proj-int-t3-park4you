@@ -58,7 +58,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,Imagem")] Endereco_Vaga endereco_Vaga)
+        public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,ImagemFile")] Endereco_Vaga endereco_Vaga)
         {
             if (endereco_Vaga.ImagemFile != null)
             {
@@ -69,12 +69,19 @@ namespace projet_dev_backend.Controllers
                 }
             }
 
+            if (ModelState.IsValid)
+            {
+                _context.Add(endereco_Vaga);
+                await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
 
+                return RedirectToAction(nameof(Index));
+            }
 
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
-
         }
+
+
 
         // GET: Endereco_Vaga/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -108,19 +115,20 @@ namespace projet_dev_backend.Controllers
             if (ModelState.IsValid)
             {
                 // Verifique se um novo arquivo de imagem foi fornecido
-                if (endereco_Vaga.Imagem!= null)
+                if (endereco_Vaga.ImagemFile != null)
                 {
                     using (var memoryStream = new MemoryStream())
                     {
-                       
+                        await endereco_Vaga.ImagemFile.CopyToAsync(memoryStream);
+                        endereco_Vaga.Imagem = memoryStream.ToArray();
                     }
                 }
-
 
                 try
                 {
                     _context.Update(endereco_Vaga);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -133,12 +141,12 @@ namespace projet_dev_backend.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
             }
 
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
         }
+
 
 
         // GET: Endereco_Vaga/Delete/5
@@ -183,5 +191,25 @@ namespace projet_dev_backend.Controllers
         {
           return _context.Endereco_Vagas.Any(e => e.Id == id);
         }
+
+            // ...
+
+            public async Task<IActionResult> GetImagem(int id)
+            {
+                var enderecoVaga = await _context.Endereco_Vagas.FindAsync(id);
+
+                if (enderecoVaga != null && enderecoVaga.Imagem != null)
+                {
+                    return File(enderecoVaga.Imagem, "image/jpeg"); // Substitua "image/jpeg" pelo tipo MIME apropriado
+                }
+
+                // Se a imagem não foi encontrada ou é nula, retorne uma imagem de espaço reservado ou outra resposta adequada.
+                // Por exemplo, você pode retornar uma imagem padrão ou uma mensagem de erro.
+                return File("~/path-to-placeholder-image.jpg", "image/jpeg"); // Substitua pelo caminho da imagem de espaço reservado
+            }
+
+            // ...
+        
+
     }
 }

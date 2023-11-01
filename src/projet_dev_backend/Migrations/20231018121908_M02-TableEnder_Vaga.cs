@@ -27,7 +27,7 @@ namespace projet_dev_backend.Migrations
                     Valor = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Tipo = table.Column<int>(type: "int", nullable: false),
                     UsuarioId = table.Column<int>(type: "int", nullable: false),
-                    Imagem = table.Column<int>(type: "nvarchar(max)", nullable: false)
+                    Imagem = table.Column<int>(type: "varbinary(max)", nullable: true)
                 },
                 constraints: table =>
                 {

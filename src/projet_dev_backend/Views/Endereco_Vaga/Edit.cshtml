@@ -75,8 +75,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="Imagem"></label>
-                <input asp-for="Imagem" type="file" class="form-control">
+                <input type="file" id="imagemInput" accept="image/*" onchange="previewImage()" />
+                <img id="imagemPreview" src="#" alt="Imagem de prévia" style="display: none; max-width: 200px; max-height: 200px;" />
             </div>
+          
 
             <div class="form-group">
                 <a asp-action="Index" class="btn btn-info">Voltar</a>
@@ -89,5 +91,23 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     @{await Html.RenderPartialAsync("_ConsultaCEP");}
+
         
 }
+<script>
+    function previewImage() {
+        var imagemInput = document.getElementById('imagemInput');
+        var imagemPreview = document.getElementById('imagemPreview');
+
+        if (imagemInput.files && imagemInput.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                imagemPreview.src = e.target.result;
+                imagemPreview.style.display = 'block';
+            };
+
+            reader.readAsDataURL(imagemInput.files[0]);
+        }
+    }
+</script>
