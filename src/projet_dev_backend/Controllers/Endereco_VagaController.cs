@@ -15,9 +15,12 @@ namespace projet_dev_backend.Controllers
     {
         private readonly AppDbContext _context;
 
-        public Endereco_VagaController(AppDbContext context)
+        public IWebHostEnvironment _hostEnvironment { get; }
+
+        public Endereco_VagaController(AppDbContext context,IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            this._hostEnvironment = hostEnvironment;
         }
 
         // GET: Endereco_Vaga
@@ -62,17 +65,22 @@ namespace projet_dev_backend.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,ImagemFile")] Endereco_Vaga endereco_Vaga)
         {
-            if (endereco_Vaga.ImagemFile != null)
-            {
-                using (var memoryStream = new MemoryStream())
-                {
-                    await endereco_Vaga.ImagemFile.CopyToAsync(memoryStream);
-                    endereco_Vaga.Imagem = memoryStream.ToArray();
-                }
-            }
-
+          
             if (ModelState.IsValid)
+
+                //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
             {
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                string fileName = Path.GetFileNameWithoutExtension(endereco_Vaga.ImagemFile.FileName);
+                string extention = Path.GetExtension(endereco_Vaga.ImagemFile.FileName);
+                endereco_Vaga.ImagemNome = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
+                string path = Path.Combine(wwwRootPath + "/imagem/", fileName); 
+                using (var fileStream = new FileStream(path,FileMode.Create))
+                {
+                    await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
+                }
+
+
                 _context.Add(endereco_Vaga);
                 await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
 
@@ -118,14 +126,7 @@ namespace projet_dev_backend.Controllers
             if (ModelState.IsValid)
             {
                 // Verifique se um novo arquivo de imagem foi fornecido
-                if (endereco_Vaga.ImagemFile != null)
-                {
-                    using (var memoryStream = new MemoryStream())
-                    {
-                        await endereco_Vaga.ImagemFile.CopyToAsync(memoryStream);
-                        endereco_Vaga.Imagem = memoryStream.ToArray();
-                    }
-                }
+                
 
                 try
                 {
@@ -202,10 +203,7 @@ namespace projet_dev_backend.Controllers
             {
                 var enderecoVaga = await _context.Endereco_Vagas.FindAsync(id);
 
-                if (enderecoVaga != null && enderecoVaga.Imagem != null)
-                {
-                    return File(enderecoVaga.Imagem, "image/jpeg"); // Substitua "image/jpeg" pelo tipo MIME apropriado
-                }
+               
 
                 // Se a imagem não foi encontrada ou é nula, retorne uma imagem de espaço reservado ou outra resposta adequada.
                 // Por exemplo, você pode retornar uma imagem padrão ou uma mensagem de erro.

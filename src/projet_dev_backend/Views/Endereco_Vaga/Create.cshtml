@@ -15,7 +15,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="CEP" class="control-label"></label>
@@ -77,9 +77,9 @@
                 <select asp-for="UsuarioId" class ="form-control" asp-items="ViewBag.UsuarioId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Imagem"></label>
-                <input type="file" id="imagemInput" accept="image/*" onchange="previewImage()" />
-                <img id="imagemPreview" src="#" alt="Imagem de prévia" style="display: none; max-width: 200px; max-height: 200px;" />
+                <label asp-for="ImagemFile"></label>
+                <input asp-for="ImagemFile" accept="image/*" id="imagemInput" onchange="previewImage()" type="file" />
+                <span asp-validation-for="ImagemFile" class=" text-danger"></span>
             </div>
 
 

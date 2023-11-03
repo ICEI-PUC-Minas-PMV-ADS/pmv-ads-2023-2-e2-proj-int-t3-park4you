@@ -46,9 +46,11 @@ public class Endereco_Vaga
     [Display(Name = "Quantidade de vagas")]
     public int QuantVagas { get; set; }
 
-    //[Required(ErrorMessage = "Obrigatório informar o tamanho da vaga!")]
-    //public float TamVagas { get; set; }
+        //[Required(ErrorMessage = "Obrigatório informar o tamanho da vaga!")]
+        //public float TamVagas { get; set; }
     [Required(ErrorMessage = "Obrigatório informar o valor da reserva!")]
+    [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
+    [Display(Name = "Valor da Reserva")]
     public decimal Valor { get; set; }
 
     [Display(Name = "Tamanho da Vaga")]
@@ -61,13 +63,17 @@ public class Endereco_Vaga
     [ForeignKey("UsuarioId")]
     public Usuarios usuario { get; set; }
 
-            // Classe para Imagem
+        // Classe para Imagem
+    [Display(Name = "Nome do Arquivo")]
+    public string ImagemNome { get; set; }
 
     [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados
+    [Display(Name ="Upload da Foto da Vaga")]
     public IFormFile ImagemFile { get; set; }
 
-    public byte[] Imagem { get; set; }
-        }
+    
+
+    }
 
 
     }
