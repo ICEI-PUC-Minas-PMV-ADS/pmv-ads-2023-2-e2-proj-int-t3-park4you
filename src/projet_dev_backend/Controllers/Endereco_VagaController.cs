@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using projet_dev_backend.Models;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace projet_dev_backend.Controllers
 {
@@ -28,6 +28,7 @@ namespace projet_dev_backend.Controllers
         }
 
         // GET: Endereco_Vaga/Details/5
+        [Authorize] // Somente usuários autenticados podem acessar essa ação
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Endereco_Vagas == null)
@@ -47,6 +48,7 @@ namespace projet_dev_backend.Controllers
         }
 
         // GET: Criando e Salvando a Vaga
+        [Authorize] // Somente usuários autenticados podem acessar essa ação
         public IActionResult Create()
         {
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF");
@@ -84,6 +86,7 @@ namespace projet_dev_backend.Controllers
 
 
         // GET: Endereco_Vaga/Edit/5
+        [Authorize] // Somente usuários autenticados podem acessar essa ação
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Endereco_Vagas == null)
@@ -150,6 +153,7 @@ namespace projet_dev_backend.Controllers
 
 
         // GET: Endereco_Vaga/Delete/5
+        [Authorize] // Somente usuários autenticados podem acessar essa ação
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Endereco_Vagas == null)

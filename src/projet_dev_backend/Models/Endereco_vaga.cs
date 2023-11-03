@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Park4You.Models;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace projet_dev_backend.Models
 {

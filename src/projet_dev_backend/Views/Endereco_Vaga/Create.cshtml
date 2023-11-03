@@ -6,6 +6,11 @@
 
 <h1>Cadastrar Endereço/Vagas</h1>
 
+@if (User.Identity.IsAuthenticated)
+{
+    <a asp-action="Create" asp-controller="Endereco_Vaga" class="btn btn-primary">Cadastre sua vaga</a>
+}
+
 <h4>Insira os Dados</h4>
 <hr />
 <div class="row">
