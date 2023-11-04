@@ -74,7 +74,7 @@ namespace projet_dev_backend.Controllers
                 string fileName = Path.GetFileNameWithoutExtension(endereco_Vaga.ImagemFile.FileName);
                 string extention = Path.GetExtension(endereco_Vaga.ImagemFile.FileName);
                 endereco_Vaga.ImagemNome = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
-                string path = Path.Combine(wwwRootPath + "/imagemVaga/", fileName); 
+                string path = Path.Combine(wwwRootPath + "/ImagemVaga/", fileName); 
                 using (var fileStream = new FileStream(path,FileMode.Create))
                 {
                     await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
