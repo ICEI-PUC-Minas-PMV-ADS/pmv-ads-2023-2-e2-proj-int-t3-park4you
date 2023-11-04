@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pMrXBPk8jKWcQIG3ZlH/vnuAdgjPuZ9RfJKmPCR0NmA=",
+  "Hash": "ufEoPSPtrjkVVNJ47+ELbYG8dvNWmNwtR2Onk0sj3AM=",
   "Source": "projet_dev_backend",
   "BasePath": "_content/projet_dev_backend",
   "Mode": "Default",
@@ -85,12 +85,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\Imagem\\CarPArk235757133.jpg",
+      "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\CarPArk230614657.jpg",
       "SourceId": "projet_dev_backend",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\",
       "BasePath": "_content/projet_dev_backend",
-      "RelativePath": "Imagem/CarPArk235757133.jpg",
+      "RelativePath": "ImagemVaga/CarPArk230614657.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,7 +99,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagem\\CarPArk235757133.jpg"
+      "OriginalItemSpec": "wwwroot\\ImagemVaga\\CarPArk230614657.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\CarPArk233430167.jpg",
+      "SourceId": "projet_dev_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\",
+      "BasePath": "_content/projet_dev_backend",
+      "RelativePath": "ImagemVaga/CarPArk233430167.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagemVaga\\CarPArk233430167.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\CarPArk235757133.jpg",
+      "SourceId": "projet_dev_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\",
+      "BasePath": "_content/projet_dev_backend",
+      "RelativePath": "ImagemVaga/CarPArk235757133.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagemVaga\\CarPArk235757133.jpg"
     },
     {
       "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\img\\logo\\logo-front.png",

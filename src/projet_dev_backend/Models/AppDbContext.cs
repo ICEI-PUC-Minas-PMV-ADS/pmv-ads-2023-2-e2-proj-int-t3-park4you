@@ -7,11 +7,13 @@ namespace projet_dev_backend.Models
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
 
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Endereco_Vaga> Endereco_Vagas { get; set; }
+
+        public DbSet<Evento> Evento { get; set; }
     }
 
     

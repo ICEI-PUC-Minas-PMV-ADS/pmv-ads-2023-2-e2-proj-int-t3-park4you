@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Image\**" />
+    <Content Remove="Image\**" />
+    <EmbeddedResource Remove="Image\**" />
+    <None Remove="Image\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Controllers\Endereco_VagasController.cs" />
   </ItemGroup>
 
@@ -27,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Image\" />
+    <Folder Include="wwwroot\ImagemEvento\" />
   </ItemGroup>
 
 </Project>
