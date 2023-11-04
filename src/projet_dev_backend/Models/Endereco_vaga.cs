@@ -64,9 +64,12 @@ public class Endereco_Vaga
             // Classe para Imagem
 
     [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados
+
+
     public IFormFile ImagemFile { get; set; }
 
     public byte[] Imagem { get; set; }
+
         }
 
 

@@ -34,7 +34,10 @@
                 @Html.DisplayNameFor(model => model.GestorId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.endereco_Vaga)
+                @Html.DisplayNameFor(model => model.Endereco_Vaga)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagemEvento)
             </th>
             <th></th>
         </tr>
@@ -64,7 +67,10 @@
                 @Html.DisplayFor(modelItem => item.GestorId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.endereco_Vaga.Bairro)
+                @Html.DisplayFor(modelItem => item.Endereco_Vaga.Bairro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagemEvento)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdEvento">Edit</a> |

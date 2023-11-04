@@ -147,6 +147,9 @@ namespace projet_dev_backend.Migrations
                     b.Property<DateTime>("Hora")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("ImagemEvento")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Local")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -179,13 +182,13 @@ namespace projet_dev_backend.Migrations
 
             modelBuilder.Entity("projet_dev_backend.Models.Evento", b =>
                 {
-                    b.HasOne("projet_dev_backend.Models.Endereco_Vaga", "endereco_Vaga")
+                    b.HasOne("projet_dev_backend.Models.Endereco_Vaga", "Endereco_Vaga")
                         .WithMany()
                         .HasForeignKey("Endereco_VagaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("endereco_Vaga");
+                    b.Navigation("Endereco_Vaga");
                 });
 
             modelBuilder.Entity("Park4You.Models.Usuarios", b =>

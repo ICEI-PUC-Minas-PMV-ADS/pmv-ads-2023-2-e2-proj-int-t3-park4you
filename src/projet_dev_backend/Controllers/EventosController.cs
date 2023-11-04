@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Park4You.Models;
+using Microsoft.Extensions.Hosting;
 using projet_dev_backend.Models;
 
 namespace projet_dev_backend.Controllers
@@ -16,15 +14,18 @@ namespace projet_dev_backend.Controllers
     {
         private readonly AppDbContext _context;
 
-        public EventosController(AppDbContext context)
+        public IWebHostEnvironment hostEnvironment { get; }
+
+        public EventosController(AppDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            this.hostEnvironment = hostEnvironment;
         }
 
         // GET: Eventos
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Evento.Include(e => e.endereco_Vaga);
+            var appDbContext = _context.Evento.Include(e => e.Endereco_Vaga);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -37,7 +38,7 @@ namespace projet_dev_backend.Controllers
             }
 
             var evento = await _context.Evento
-                .Include(e => e.endereco_Vaga)
+                .Include(e => e.Endereco_Vaga)
                 .FirstOrDefaultAsync(m => m.IdEvento == id);
             if (evento == null)
             {
@@ -59,10 +60,30 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdEvento,NomeEvento,Descricao,Local,Endereco,Data,Hora,GestorId,Endereco_VagaId")] Evento evento)
+        public async Task<IActionResult> Create([Bind("IdEvento,NomeEvento,Descricao,Local,Endereco,Data,Hora,GestorId,Endereco_VagaId,ImagemFileEventos")] Evento evento, MemoryStream memoryStream)
         {
+
             if (ModelState.IsValid)
+
             {
+                //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
+                {
+                    string wwwRootPath = hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(evento.ImagemFileEvento.FileName);
+                    string extention = Path.GetExtension(evento.ImagemFileEvento.FileName);
+                    evento.ImagemEvento = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
+                    string path = Path.Combine(wwwRootPath + "/ImagemEventos/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await evento.ImagemFileEvento.CopyToAsync(fileStream);
+                    }
+
+
+                    _context.Add(evento);
+                    await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
+
+                    return RedirectToAction(nameof(Index));
+                }
                 _context.Add(evento);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -93,7 +114,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdEvento,NomeEvento,Descricao,Local,Endereco,Data,Hora,GestorId,Endereco_VagaId")] Evento evento)
+        public async Task<IActionResult> Edit(int id, [Bind("IdEvento,NomeEvento,Descricao,Local,Endereco,Data,Hora,GestorId,Endereco_VagaId,Imagem")] Evento evento)
         {
             if (id != evento.IdEvento)
             {
@@ -102,6 +123,7 @@ namespace projet_dev_backend.Controllers
 
             if (ModelState.IsValid)
             {
+
                 try
                 {
                     _context.Update(evento);
@@ -133,7 +155,7 @@ namespace projet_dev_backend.Controllers
             }
 
             var evento = await _context.Evento
-                .Include(e => e.endereco_Vaga)
+                .Include(e => e.Endereco_Vaga)
                 .FirstOrDefaultAsync(m => m.IdEvento == id);
             if (evento == null)
             {
@@ -165,6 +187,23 @@ namespace projet_dev_backend.Controllers
         private bool EventoExists(int id)
         {
           return _context.Evento.Any(e => e.IdEvento == id);
+    
+       }
+
+        public async Task<IActionResult> GetImagem(int id)
+        {
+            var evento = await _context.Endereco_Vagas.FindAsync(id);
+
+            if (evento != null && evento.Imagem != null)
+            {
+                return File(evento.Imagem, "image/jpeg"); // Substitua "image/jpeg" pelo tipo MIME apropriado
+            }
+
+            // Se a imagem não foi encontrada ou é nula, retorne uma imagem de espaço reservado ou outra resposta adequada.
+            // Por exemplo, você pode retornar uma imagem padrão ou uma mensagem de erro.
+            return File("~/path-to-placeholder-image.jpg", "image/jpeg"); // Substitua pelo caminho da imagem de espaço reservado
         }
+
     }
+
 }

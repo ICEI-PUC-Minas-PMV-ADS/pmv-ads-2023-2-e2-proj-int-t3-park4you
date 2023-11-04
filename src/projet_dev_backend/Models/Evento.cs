@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Park4You.Models;
 
 namespace projet_dev_backend.Models
 {
@@ -36,8 +37,15 @@ namespace projet_dev_backend.Models
 
         [ForeignKey("Endereco_VagaId")]
 
-        public Endereco_Vaga endereco_Vaga { get; set; }
+        public Endereco_Vaga Endereco_Vaga { get; set; }
         public ICollection<Endereco_Vaga> Endereco_Vagas { get; set; }
+
+        [Display(Name = "Nome do Arquivo")]
+        public string ImagemEvento { get; set; }
+
+        [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados
+        [Display(Name = "Upload da Imagem do Evento")]
+        public IFormFile ImagemFileEvento { get; set; }
 
     }
 }
