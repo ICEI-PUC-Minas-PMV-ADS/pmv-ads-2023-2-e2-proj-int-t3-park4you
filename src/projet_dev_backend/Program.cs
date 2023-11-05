@@ -9,8 +9,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(@"Server=park4you.database.windows.net;Database=park4you;User Id=park4you;Password=PucMinas2023;"));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
