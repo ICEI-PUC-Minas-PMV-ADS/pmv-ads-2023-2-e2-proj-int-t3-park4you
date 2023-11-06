@@ -9,7 +9,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(@"Data Source=SQL5110.site4now.net;Initial Catalog=db_aa1126_park4you;
+                                            User Id=db_aa1126_park4you_admin;Password=PucMinas2023;"));
 
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
