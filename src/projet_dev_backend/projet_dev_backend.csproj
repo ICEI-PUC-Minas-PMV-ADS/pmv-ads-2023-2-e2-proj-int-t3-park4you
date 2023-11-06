@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Image\**" />
+    <Content Remove="Image\**" />
+    <EmbeddedResource Remove="Image\**" />
+    <None Remove="Image\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Controllers\Endereco_VagasController.cs" />
   </ItemGroup>
 
@@ -24,10 +31,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Image\" />
   </ItemGroup>
 
 </Project>
