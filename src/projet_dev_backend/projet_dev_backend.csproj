@@ -10,9 +10,17 @@
 
   <ItemGroup>
     <Compile Remove="Image\**" />
+    <Compile Remove="wwwroot\NovaPasta1\**" />
+    <Compile Remove="wwwroot\NovaPasta2\**" />
     <Content Remove="Image\**" />
+    <Content Remove="wwwroot\NovaPasta1\**" />
+    <Content Remove="wwwroot\NovaPasta2\**" />
     <EmbeddedResource Remove="Image\**" />
+    <EmbeddedResource Remove="wwwroot\NovaPasta1\**" />
+    <EmbeddedResource Remove="wwwroot\NovaPasta2\**" />
     <None Remove="Image\**" />
+    <None Remove="wwwroot\NovaPasta1\**" />
+    <None Remove="wwwroot\NovaPasta2\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +43,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\ImagemVaga\" />
+    <Folder Include="wwwroot\ImagemEvento\" />
   </ItemGroup>
 
 </Project>
