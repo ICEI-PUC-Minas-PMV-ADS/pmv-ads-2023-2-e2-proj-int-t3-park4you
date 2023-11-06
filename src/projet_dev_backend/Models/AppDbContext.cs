@@ -4,10 +4,10 @@ using Park4You.Models;
 namespace projet_dev_backend.Models
 {
     public class AppDbContext : DbContext
-    {
+    {   
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
 
         public DbSet<Usuarios> Usuarios { get; set; }
