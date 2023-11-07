@@ -75,11 +75,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="ImagemFile"></label>
-                <input type="file" id="imagemInput" accept="image/*" onchange="previewImage()" />
-                <img id="imagemPreview" src="#" alt="Imagem de prévia" style="display: none; max-width: 200px; max-height: 200px;" />
+                <input asp-for="ImagemFile" accept="image/*" id="imagemInput" onchange="previewImage()" type="file" />
+                <span asp-validation-for="ImagemFile" class=" text-danger"></span>
             </div>
           
-
             <div class="form-group">
                 <a asp-action="Index" class="btn btn-info">Voltar</a>
                 <input type="submit" value="Salvar" class="btn btn-warning" />

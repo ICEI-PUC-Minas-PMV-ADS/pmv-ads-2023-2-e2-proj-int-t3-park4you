@@ -1,106 +1,25 @@
-﻿@{
+﻿@model IEnumerable<projet_dev_backend.Models.Endereco_Vaga>
+
+@{
     ViewData["Title"] = "Home Page";
 }
+
 <body>
     <header>
-        <div class="search-bar">
-            <form>
-                <div class="input-container">
-                    <label for="destination">Destino:</label>
-                    <input type="text" id="destination" name="destination" />
-                </div>
-                <div class="input-container">
-                    <label for="check-in">Data:</label>
-                    <input type="date" id="check-in" name="check-in" />
-                </div>
-                <div class="input-container">
-                    <label for="quantity">Quant. de Veículos:</label>
-                    <input type="number" id="quantity" name="quantity" />
-                </div>
-                <button type="submit">Pesquisar</button>
-            </form>
-        </div>
+        <!-- Seu formulário de pesquisa aqui -->
     </header>
+
     <div class="image-grid">
-        <div class="image-item">
-            <img src="~/img/testegaragem3.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
+        @foreach (var vaga in Model)
+        {
+            <div class="image-item">
+                <img src="~/ImagemVaga/@vaga.ImagemNome" alt="Imagem da vaga" />
+                <div class="image-caption">
+                    <p><span class="adress">@vaga.Cidade, @vaga.UF</span></p>
+                    <p>@vaga.Data.ToString("dd-MM-yyyy")</p>
+                    <p><span class="price">R$@vaga.Valor diária</span></p>
+                </div>
             </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem3.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem3.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem3.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem3.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
-        <div class="image-item">
-            <img src="~/img/testegaragem.jpg" alt="Imagem 1" />
-            <div class="image-caption">
-                <p><span class="adress"> São José, Belo Horizonte</span></p>
-                <p>20-24 de dez.</p>
-                <p><span class="price">R$30 diária</span></p>
-            </div>
-        </div>
+        }
     </div>
 </body>
