@@ -6,14 +6,32 @@
 
 <body>
     <header>
-        <!-- Seu formulário de pesquisa aqui -->
+        <div class="search-bar">
+            <form method="get" action="@Url.Action("Index", "Endereco_Vaga")">
+                <div class="input-container">
+                    <label for="searchTerm">Pesquisar vagas</label>
+                    <input type="text" name="searchTerm" id="searchTerm" placeholder="Pesquisar vagas" />
+                </div>
+                <div class="input-container">
+                    <label for="check-in">Data:</label>
+                    <input type="date" name="check-in" id="check-in" />
+                </div>
+                <div class="input-container">
+                    <label for="quantity">Quant. de Veículos:</label>
+                    <input type="number" name="quantity" id="quantity" />
+                </div>
+                <button type="submit" class="btn-acess">Pesquisar</button>
+            </form>
+        </div>
     </header>
 
     <div class="image-grid">
         @foreach (var vaga in Model)
         {
             <div class="image-item">
-                <img src="~/ImagemVaga/@vaga.ImagemNome" alt="Imagem da vaga" />
+                <a href="@Url.Action("Details", "Endereco_Vaga", new { id = vaga.Id })">
+                    <img src="~/ImagemVaga/@vaga.ImagemNome" alt="Imagem da vaga" />
+                </a>
                 <div class="image-caption">
                     <p><span class="adress">@vaga.Cidade, @vaga.UF</span></p>
                     <p>@vaga.Data.ToString("dd-MM-yyyy")</p>
@@ -22,4 +40,12 @@
             </div>
         }
     </div>
+
+    @if (!string.IsNullOrEmpty(TempData["SearchMessage"] as string))
+    {
+        <div class="search-message">
+            @TempData["SearchMessage"]
+        </div>
+    }
+
 </body>

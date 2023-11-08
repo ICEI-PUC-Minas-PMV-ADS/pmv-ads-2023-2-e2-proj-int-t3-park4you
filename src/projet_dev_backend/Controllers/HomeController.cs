@@ -16,13 +16,27 @@ namespace projet_dev_backend.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string searchTerm)
         {
             // Consulta o banco de dados para obter as vagas disponíveis
             var vagasDisponiveis = _context.Endereco_Vagas.ToList();
 
+            // Se houver um termo de pesquisa, filtre as vagas com base nele
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                searchTerm = searchTerm.ToLower(); // Converter o termo de pesquisa para minúsculas
+                vagasDisponiveis = vagasDisponiveis.Where(v => v.Cidade.ToLower().Contains(searchTerm) || v.UF.ToLower().Contains(searchTerm)).ToList();
+            }
+
+            if (vagasDisponiveis.Count == 0)
+            {
+                // Nenhuma vaga foi encontrada para o termo de pesquisa
+                TempData["SearchMessage"] = "Nenhuma vaga encontrada para o termo de pesquisa.";
+            }
+
             return View(vagasDisponiveis);
         }
+
 
         public IActionResult Privacy()
         {

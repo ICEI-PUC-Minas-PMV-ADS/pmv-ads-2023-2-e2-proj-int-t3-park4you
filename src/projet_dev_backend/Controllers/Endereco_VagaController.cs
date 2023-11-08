@@ -96,24 +96,11 @@ namespace projet_dev_backend.Controllers
         // Configurações do EDITAR do Endereco_Vaga
 
         [Authorize] // Somente usuários autenticados podem acessar essa ação
-        public async Task<IActionResult> Edit(int id)
+         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Endereco_Vagas == null)
             {
                 return NotFound();
-            }
-
-            // Obter a vaga existente
-            var existingVaga = await _context.Endereco_Vagas.FindAsync(id);
-            if (existingVaga != null)
-            {
-                // Obter o caminho da imagem existente associada à vaga
-                string existingImagePath = Path.Combine(_hostEnvironment.WebRootPath, "ImagemVaga", existingVaga.ImagemNome);
-
-                if (System.IO.File.Exists(existingImagePath))
-                {
-                    System.IO.File.Delete(existingImagePath);
-                }
             }
 
             var endereco_Vaga = await _context.Endereco_Vagas.FindAsync(id);
@@ -140,45 +127,7 @@ namespace projet_dev_backend.Controllers
 
             if (ModelState.IsValid)
             {
-                // Verifique se um novo arquivo de imagem foi fornecido no formulário de edição
-                if (endereco_Vaga.ImagemFile != null)
-                {
-                    string wwwRootPath = _hostEnvironment.WebRootPath;
 
-                    // Obtém o caminho completo da imagem existente associada à vaga
-                    string existingImagePath = Path.Combine(wwwRootPath, "ImagemVaga", endereco_Vaga.ImagemNome);
-
-                    if (System.IO.File.Exists(existingImagePath))
-                    {
-                        // Se a imagem existente existe, remova-a
-                        System.IO.File.Delete(existingImagePath);
-                    }
-
-                    // Salve a nova imagem
-                    string fileName = Path.GetFileNameWithoutExtension(endereco_Vaga.ImagemFile.FileName);
-                    string extension = Path.GetExtension(endereco_Vaga.ImagemFile.FileName);
-                    endereco_Vaga.ImagemNome = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-                    string newPath = Path.Combine(wwwRootPath, "ImagemVaga", endereco_Vaga.ImagemNome);
-
-                    using (var fileStream = new FileStream(newPath, FileMode.Create))
-                    {
-                        await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
-                    }
-                }
-                else
-                {
-                    // Se nenhuma nova imagem foi fornecida, mantenha o valor existente no campo ImagemNome
-                    // Certifique-se de que ImagemNome não seja definido como nulo ou vazio
-                    if (string.IsNullOrEmpty(endereco_Vaga.ImagemNome))
-                    {
-                        // Recupere o valor existente do banco de dados
-                        var existingVaga = await _context.Endereco_Vagas.AsNoTracking().FirstOrDefaultAsync(e => e.Id == endereco_Vaga.Id);
-                        if (existingVaga != null)
-                        {
-                            endereco_Vaga.ImagemNome = existingVaga.ImagemNome;
-                        }
-                    }
-                }
 
                 try
                 {
@@ -202,7 +151,6 @@ namespace projet_dev_backend.Controllers
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
         }
-
 
 
 

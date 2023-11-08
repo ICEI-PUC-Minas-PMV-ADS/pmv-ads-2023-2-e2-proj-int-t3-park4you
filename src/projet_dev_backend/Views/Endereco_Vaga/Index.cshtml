@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Index";
 }
-    
+
 <h1>Cadastre uma Vaga</h1>
 
 <p>
@@ -55,53 +55,56 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CEP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Logradouro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Numero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Complemento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Bairro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UF)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.QuantVagas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Valor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tipo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.usuario.CPF)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImagemFile)
-            </td>
-            <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Editar</a>|
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Excluir</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CEP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Logradouro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Numero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Complemento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bairro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UF)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuantVagas)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Valor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.usuario.CPF)
+                </td>
+                <td>
+                    <img src="@Url.Content("~/ImagemVaga/" + item.ImagemNome)" alt="Imagem da Vaga" width="250px" height="250px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12" class="btn-group">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Excluir</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

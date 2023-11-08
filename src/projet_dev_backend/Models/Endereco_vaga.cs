@@ -68,7 +68,7 @@ public class Endereco_Vaga
     public string ImagemNome { get; set; }
 
     [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados
-    [Display(Name ="Upload da Foto da Vaga")]
+    [Display(Name ="Imagem da Vaga")]
     public IFormFile ImagemFile { get; set; }
 
     
