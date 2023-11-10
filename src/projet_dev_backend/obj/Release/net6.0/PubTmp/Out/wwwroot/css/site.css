@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 /* Logo */
@@ -150,7 +150,7 @@ img {
     display: block;
     border-radius: 15px;
     object-fit: cover;
-    width: 100%; /* Assegura que a imagem ocupa todo o espaço disponível */
+    //width: 100%; /* Assegura que a imagem ocupa todo o espaço disponível */
 }
 
 .image-caption {

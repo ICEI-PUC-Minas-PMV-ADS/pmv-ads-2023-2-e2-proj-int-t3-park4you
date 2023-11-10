@@ -89,7 +89,7 @@
             @Html.DisplayFor(model => model.ImagemNome)
         </dd>
         <dt class="col-sm-2">
-            Imagem Salva
+            Foto da Vaga
         </dt>
         <dd class="col-sm-10">
             <img src="@("~/ImagemVaga/"+Model.ImagemNome)" asp-append-version="true" width="100px" height="100px" />
@@ -100,7 +100,10 @@
 </div>
 
 
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a> |
-    <a asp-action="Index" class="btn btn-primary">Voltar</a>
-</div>
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="btn-group">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-sm">Editar</a>
+        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger btn-sm">Excluir</a>
+    </div>
+}

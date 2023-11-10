@@ -31,7 +31,7 @@ namespace projet_dev_backend.Controllers
         }
 
         // GET: Endereco_Vaga/Details/5
-        [Authorize] // Somente usuários autenticados podem acessar essa ação
+        [AllowAnonymous] // Qualquer usuario pode acessar essa ação,independente se estiver logado ou não.
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Endereco_Vagas == null)
