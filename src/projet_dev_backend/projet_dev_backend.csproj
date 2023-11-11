@@ -28,6 +28,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\ImagemVaga\CarPArk233621263.jpg" />
+    <Content Remove="wwwroot\ImagemVaga\CarPArk233845967.jpg" />
+    <Content Remove="wwwroot\ImagemVaga\CarPArk234749165.jpg" />
+    <Content Remove="wwwroot\ImagemVaga\download233058117.jpg" />
+    <Content Remove="wwwroot\ImagemVaga\images230048243.jpg" />
+    <Content Remove="wwwroot\ImagemVaga\images232900993.jpg" />
+    <Content Remove="wwwroot\ImagemVaga\images233134391.jpg" />
+    <Content Remove="wwwroot\ImagemVaga\images234248645.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.23" />

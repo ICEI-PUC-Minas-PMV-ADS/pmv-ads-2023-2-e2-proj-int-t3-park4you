@@ -95,8 +95,9 @@ namespace projet_dev_backend.Controllers
 
         // Configurações do EDITAR do Endereco_Vaga
 
+        // GET: Endereco_Vaga/Edit/5
         [Authorize] // Somente usuários autenticados podem acessar essa ação
-         public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Endereco_Vagas == null)
             {
@@ -112,7 +113,6 @@ namespace projet_dev_backend.Controllers
             return View(endereco_Vaga);
         }
 
-
         // POST: Endereco_Vaga/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -127,13 +127,49 @@ namespace projet_dev_backend.Controllers
 
             if (ModelState.IsValid)
             {
-
-
                 try
                 {
-                    _context.Update(endereco_Vaga);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    var existingVaga = await _context.Endereco_Vagas.FindAsync(endereco_Vaga.Id);
+
+                    if (existingVaga != null)
+                    {
+                        // Exclua a imagem anterior do sistema de arquivos
+                        if (!string.IsNullOrEmpty(existingVaga.ImagemNome))
+                        {
+                            string oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, "ImagemVaga", existingVaga.ImagemNome);
+                            if (System.IO.File.Exists(oldImagePath))
+                            {
+                                System.IO.File.Delete(oldImagePath);
+                            }
+                        }
+
+                        if (endereco_Vaga.ImagemFile != null)
+                        {
+                            string wwwRootPath = _hostEnvironment.WebRootPath;
+                            string fileName = Path.GetFileNameWithoutExtension(endereco_Vaga.ImagemFile.FileName);
+                            string extention = Path.GetExtension(endereco_Vaga.ImagemFile.FileName);
+                            endereco_Vaga.ImagemNome = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
+                            string path = Path.Combine(wwwRootPath + "/ImagemVaga/", fileName);
+                            using (var fileStream = new FileStream(path, FileMode.Create))
+                            {
+                                await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
+                            }
+
+
+                            _context.Add(endereco_Vaga);
+                            await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
+
+                        }
+
+                        // Atualize os outros campos da vaga
+                        _context.Entry(existingVaga).CurrentValues.SetValues(endereco_Vaga);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        return NotFound();
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -151,6 +187,9 @@ namespace projet_dev_backend.Controllers
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
         }
+
+
+
 
 
 
@@ -177,23 +216,37 @@ namespace projet_dev_backend.Controllers
         }
 
         // POST: Endereco_Vaga/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+[HttpPost, ActionName("Delete")]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> DeleteConfirmed(int id)
+{
+    if (_context.Endereco_Vagas == null)
+    {
+        return Problem("Entity set 'AppDbContext.Endereco_Vagas' is null.");
+    }
+
+    var endereco_Vaga = await _context.Endereco_Vagas.FindAsync(id);
+
+    if (endereco_Vaga != null)
+    {
+        // Deletando a imagem associada à vaga do wwwRoot/ImagemVaga
+        if (!string.IsNullOrEmpty(endereco_Vaga.ImagemNome))
         {
-            if (_context.Endereco_Vagas == null)
+            string imagemPath = Path.Combine(_hostEnvironment.WebRootPath, "ImagemVaga", endereco_Vaga.ImagemNome);
+            if (System.IO.File.Exists(imagemPath))
             {
-                return Problem("Entity set 'AppDbContext.Endereco_Vagas'  is null.");
+                System.IO.File.Delete(imagemPath);
             }
-            var endereco_Vaga = await _context.Endereco_Vagas.FindAsync(id);
-            if (endereco_Vaga != null)
-            {
-                _context.Endereco_Vagas.Remove(endereco_Vaga);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
         }
+
+        // Exclua a vaga do banco de dados
+        _context.Endereco_Vagas.Remove(endereco_Vaga);
+        await _context.SaveChangesAsync();
+    }
+
+    return RedirectToAction(nameof(Index));
+}
+
 
         private bool Endereco_VagaExists(int id)
         {
@@ -202,28 +255,6 @@ namespace projet_dev_backend.Controllers
 
         // ...
 
-        public async Task<IActionResult> GetImagem(int id)
-        {
-            var enderecoVaga = await _context.Endereco_Vagas.FindAsync(id);
-
-            if (enderecoVaga != null && System.IO.File.Exists(enderecoVaga.ImagemNome))
-            {
-                // Obtém o caminho completo da imagem associada à vaga
-                string imagePath = Path.Combine(_hostEnvironment.WebRootPath, "/ImagemVaga/", enderecoVaga.ImagemNome);
-                
-
-                // Determine o tipo de conteúdo da imagem (no seu caso, image/jpeg)
-                string contentType = "image/jpg,png"; // Você pode ajustar isso com base no tipo de imagem que você está armazenando
-
-                return File(System.IO.File.ReadAllBytes(imagePath), contentType);
-            }
-            else
-            {
-                // Se a imagem não foi encontrada ou é nula, retorne uma imagem de espaço reservado ou outra resposta adequada.
-                // Por exemplo, você pode retornar uma imagem padrão ou uma mensagem de erro.
-                return File("~/path-to-placeholder-image.jpg", "image/jpg,png"); // Substitua pelo caminho da imagem de espaço reservado
-            }
-        }
 
 
     }
