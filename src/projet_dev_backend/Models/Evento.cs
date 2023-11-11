@@ -39,7 +39,7 @@ namespace projet_dev_backend.Models
         public Endereco_Vaga Endereco_Vaga { get; set; }
         public ICollection<Endereco_Vaga> Endereco_Vagas { get; set; }
 
-        [Display(Name = "Nome do Arquivo")]
+        [Display(Name = "Nome do Evento")]
         public string ImagemEvento { get; set; }
 
         [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados

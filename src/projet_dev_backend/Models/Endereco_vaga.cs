@@ -71,12 +71,10 @@ public class Endereco_Vaga
     [Display(Name ="Imagem da Vaga")]
     public IFormFile ImagemFile { get; set; }
 
-    
-
     }
 
 
-    }
+}
 
 
     public enum TamanhoVagas

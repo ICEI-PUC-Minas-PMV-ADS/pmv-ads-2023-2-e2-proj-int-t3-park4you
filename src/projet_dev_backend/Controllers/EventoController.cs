@@ -62,28 +62,28 @@ namespace projet_dev_backend.Controllers
         public async Task<IActionResult> Create([Bind("IdEvento,NomeEvento,Descricao,Local,Endereco,Data,Hora,GestorId,Endereco_VagaId,ImagemFileEvento")] Evento evento)
         {
             if (ModelState.IsValid)
-            {
-               // if (evento.ImagemFileEvento !=null)
+           
+
                 //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
-            {
-                string wwwRootPath = _hostEnvironment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(evento.ImagemFileEvento.FileName);
-                string extention = Path.GetExtension(evento.ImagemFileEvento.FileName);
-                evento.ImagemEvento = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
-                string path = Path.Combine(wwwRootPath + "/ImagemEventos/", fileName);
-                using (var fileStream = new FileStream(path,FileMode.Create))
                 {
-                    await evento.ImagemFileEvento.CopyToAsync(fileStream);
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(evento.ImagemFileEvento.FileName);
+                    string extention = Path.GetExtension(evento.ImagemFileEvento.FileName);
+                    evento.ImagemEvento = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
+                    string path = Path.Combine(wwwRootPath + "/ImagemEvento/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await evento.ImagemFileEvento.CopyToAsync(fileStream);
+                    }
+
+
+                    _context.Add(evento);
+                    await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
+
+                    return RedirectToAction(nameof(Index));
                 }
 
-
-                _context.Add(evento);
-                await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
-
-                return RedirectToAction(nameof(Index));
-                }
-               
-            }
+            
             ViewData["Endereco_VagaId"] = new SelectList(_context.Endereco_Vagas, "Id", "Bairro", evento.Endereco_VagaId);
             return View(evento);
         }

@@ -23,6 +23,24 @@ namespace projet_dev_backend.Controllers
             this._hostEnvironment = hostEnvironment;
         }
 
+        public class EventoController : Controller
+        {
+            private readonly AppDbContext _context;
+
+            private readonly IWebHostEnvironment _hostEnvironment;
+
+            public EventoController(AppDbContext context, IWebHostEnvironment hostEnvironment)
+            {
+                _context = context;
+                this._hostEnvironment = hostEnvironment;
+            }
+
+            // Restante do código do EventoController
+        }
+
+
+
+
         // GET: Endereco_Vaga
         public async Task<IActionResult> Index()
         {
