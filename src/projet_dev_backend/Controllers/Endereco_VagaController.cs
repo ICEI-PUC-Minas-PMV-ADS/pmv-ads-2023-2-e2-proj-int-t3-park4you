@@ -44,7 +44,7 @@ namespace projet_dev_backend.Controllers
         // GET: Endereco_Vaga
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Endereco_Vagas.Include(e => e.usuario);
+            var appDbContext = _context.Endereco_Vagas.Include(e => e.Usuario);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -58,7 +58,7 @@ namespace projet_dev_backend.Controllers
             }
 
             var endereco_Vaga = await _context.Endereco_Vagas
-                .Include(e => e.usuario)
+                .Include(e => e.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (endereco_Vaga == null)
             {
@@ -223,7 +223,7 @@ namespace projet_dev_backend.Controllers
             }
 
             var endereco_Vaga = await _context.Endereco_Vagas
-                .Include(e => e.usuario)
+                .Include(e => e.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (endereco_Vaga == null)
             {

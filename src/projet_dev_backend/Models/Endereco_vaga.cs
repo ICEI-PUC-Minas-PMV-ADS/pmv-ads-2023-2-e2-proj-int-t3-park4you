@@ -61,7 +61,7 @@ public class Endereco_Vaga
     public int UsuarioId { get; set; }
 
     [ForeignKey("UsuarioId")]
-    public Usuarios usuario { get; set; }
+    public Usuarios Usuario { get; set; }
 
        /*public int IdEvento { get; set; }
 
