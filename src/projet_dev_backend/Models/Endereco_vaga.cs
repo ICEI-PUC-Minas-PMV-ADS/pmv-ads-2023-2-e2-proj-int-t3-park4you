@@ -63,8 +63,15 @@ public class Endereco_Vaga
     [ForeignKey("UsuarioId")]
     public Usuarios usuario { get; set; }
 
+       /*public int IdEvento { get; set; }
+
+        [ForeignKey("IdEvento")]
+
+        public Evento Evento { get; set; }
+        public ICollection<Evento> Eventos { get; set; }*/
+
         // Classe para Imagem
-    [Display(Name = "Nome do Arquivo")]
+        [Display(Name = "Nome do Arquivo")]
     public string ImagemNome { get; set; }
 
     [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados

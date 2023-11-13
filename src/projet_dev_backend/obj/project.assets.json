@@ -11257,19 +11257,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ricky\\.nuget\\packages\\": {}
+    "C:\\Users\\nunes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\projet_dev_backend.csproj",
+      "projectUniqueName": "C:\\Users\\nunes\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\projet_dev_backend.csproj",
       "projectName": "projet_dev_backend",
-      "projectPath": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\projet_dev_backend.csproj",
-      "packagesPath": "C:\\Users\\ricky\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\obj\\",
+      "projectPath": "C:\\Users\\nunes\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\projet_dev_backend.csproj",
+      "packagesPath": "C:\\Users\\nunes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nunes\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ricky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nunes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11349,7 +11349,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
