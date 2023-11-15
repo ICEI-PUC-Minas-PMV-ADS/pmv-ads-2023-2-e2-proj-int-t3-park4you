@@ -34,7 +34,7 @@ namespace projet_dev_backend.Models
         //[Required(ErrorMessage = "Obrigatório informar o usuário")]
         
 
-        [Display(Name = "Nome do Evento")]
+        
         public string ImagemEvento { get; set; }
 
         [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados

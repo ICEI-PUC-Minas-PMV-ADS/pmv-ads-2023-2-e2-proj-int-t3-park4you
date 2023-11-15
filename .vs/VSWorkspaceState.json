@@ -3,8 +3,8 @@
     "",
     "\\src",
     "\\src\\projet_dev_backend",
-    "\\src\\projet_dev_backend\\Controllers"
+    "\\src\\projet_dev_backend\\Models"
   ],
-  "SelectedNode": "\\src\\projet_dev_backend\\Controllers\\Endereco_VagaController.cs",
+  "SelectedNode": "\\src\\projet_dev_backend\\bin",
   "PreviewInSolutionExplorer": false
 }

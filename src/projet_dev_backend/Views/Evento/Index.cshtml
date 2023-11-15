@@ -67,9 +67,9 @@
                 @Html.DisplayFor(modelItem => item.ImagemEvento)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdEvento">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.IdEvento">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdEvento">Apagar</a>
+                    <a asp-action="Edit" asp-route-id="@item.IdEvento" class="btn btn-warning btn-sm">Editar</a>|
+                    <a asp-action="Details" asp-route-id="@item.IdEvento" class="btn btn-primary btn-sm">Detalhes</a>|
+                    <a asp-action="Delete" asp-route-id="@item.IdEvento" class="btn btn-danger btn-sm">Excluir</a>
             </td>
         </tr>
 }
