@@ -63,12 +63,12 @@ public class Endereco_Vaga
     [ForeignKey("UsuarioId")]
     public Usuarios Usuario { get; set; }
 
-       /*public int IdEvento { get; set; }
+        /* public int IdEvento { get; set; }
 
-        [ForeignKey("IdEvento")]
+           [ForeignKey("IdEvento")]
 
-        public Evento Evento { get; set; }
-        public ICollection<Evento> Eventos { get; set; }*/
+           public Evento Evento { get; set; }
+           public ICollection<Evento> Eventos { get; set; }*/
 
         // Classe para Imagem
         [Display(Name = "Nome do Arquivo")]

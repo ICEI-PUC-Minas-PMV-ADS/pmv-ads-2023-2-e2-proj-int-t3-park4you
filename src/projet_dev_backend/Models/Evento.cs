@@ -32,12 +32,7 @@ namespace projet_dev_backend.Models
         public int GestorId { get; set; }
         //[Display(Name = "Usuário")]
         //[Required(ErrorMessage = "Obrigatório informar o usuário")]
-        public int Endereco_VagaId { get; set; }
-
-        [ForeignKey("Endereco_VagaId")]
-
-        public Endereco_Vaga Endereco_Vaga { get; set; }
-        public ICollection<Endereco_Vaga> Endereco_Vagas { get; set; }
+        
 
         [Display(Name = "Nome do Evento")]
         public string ImagemEvento { get; set; }
