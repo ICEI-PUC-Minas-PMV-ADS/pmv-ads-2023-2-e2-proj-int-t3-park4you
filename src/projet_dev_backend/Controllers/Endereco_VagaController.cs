@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using projet_dev_backend.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace projet_dev_backend.Controllers
 {
@@ -127,6 +128,15 @@ namespace projet_dev_backend.Controllers
             {
                 return NotFound();
             }
+
+            // Verificar se o usuário autenticado é o criador da vaga
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (endereco_Vaga.UsuarioId.ToString() != userId)
+            {
+                // Se não for o criador, redirecione para uma página de erro ou outra página apropriada.
+                return RedirectToAction("AccessDenied", "Account"); // Ou outra ação/página adequada.
+            }
+
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
         }
@@ -141,6 +151,14 @@ namespace projet_dev_backend.Controllers
             if (id != endereco_Vaga.Id)
             {
                 return NotFound();
+            }
+
+            // Verificar se o usuário autenticado é o criador da vaga
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (endereco_Vaga.UsuarioId.ToString() != userId)
+            {
+                // Se não for o criador, redirecione para uma página de erro ou outra página apropriada.
+                return RedirectToAction("AccessDenied", "Account"); // Ou outra ação/página adequada.
             }
 
             if (ModelState.IsValid)
@@ -173,10 +191,8 @@ namespace projet_dev_backend.Controllers
                                 await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
                             }
 
-
                             _context.Add(endereco_Vaga);
                             await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
-
                         }
 
                         // Atualize os outros campos da vaga
@@ -205,15 +221,6 @@ namespace projet_dev_backend.Controllers
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
         }
-
-
-
-
-
-
-
-
-        // GET: Endereco_Vaga/Delete/5
         [Authorize] // Somente usuários autenticados podem acessar essa ação
         public async Task<IActionResult> Delete(int? id)
         {
@@ -230,10 +237,19 @@ namespace projet_dev_backend.Controllers
                 return NotFound();
             }
 
+            // Verificar se o usuário autenticado é o criador da vaga
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (endereco_Vaga.UsuarioId.ToString() != userId)
+            {
+                // Se não for o criador, redirecione para uma página de erro ou outra página apropriada.
+                return RedirectToAction("AccessDenied", "Account"); // Ou outra ação/página adequada.
+            }
+
             return View(endereco_Vaga);
         }
 
-        // POST: Endereco_Vaga/Delete/5
+
+// POST: Endereco_Vaga/Delete/5
 [HttpPost, ActionName("Delete")]
 [ValidateAntiForgeryToken]
 public async Task<IActionResult> DeleteConfirmed(int id)
