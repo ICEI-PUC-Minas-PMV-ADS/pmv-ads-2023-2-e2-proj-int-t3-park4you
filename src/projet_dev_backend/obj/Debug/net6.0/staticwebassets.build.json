@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DigNqZb7LvPtYufpZU/Ja74AQI5pwQFG03E0JK29QZ4=",
+  "Hash": "5zsFG2ye9g0lZUO92GjL6lYenhuagZ+bPN4s30qjnhQ=",
   "Source": "projet_dev_backend",
   "BasePath": "_content/projet_dev_backend",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ImagemVaga\\download232637661.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\download235948124.jpg",
+      "SourceId": "projet_dev_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\",
+      "BasePath": "_content/projet_dev_backend",
+      "RelativePath": "ImagemVaga/download235948124.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagemVaga\\download235948124.jpg"
     },
     {
       "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\img\\logo\\logo-front.png",

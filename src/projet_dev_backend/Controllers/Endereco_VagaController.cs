@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using projet_dev_backend.Models;
 using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
 
 namespace projet_dev_backend.Controllers
 {
@@ -18,7 +17,7 @@ namespace projet_dev_backend.Controllers
 
         public IWebHostEnvironment _hostEnvironment { get; }
 
-        public Endereco_VagaController(AppDbContext context,IWebHostEnvironment hostEnvironment)
+        public Endereco_VagaController(AppDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
             this._hostEnvironment = hostEnvironment;
@@ -84,17 +83,17 @@ namespace projet_dev_backend.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,ImagemFile")] Endereco_Vaga endereco_Vaga)
         {
-          
+
             if (ModelState.IsValid)
 
-                //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
+            //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
             {
                 string wwwRootPath = _hostEnvironment.WebRootPath;
                 string fileName = Path.GetFileNameWithoutExtension(endereco_Vaga.ImagemFile.FileName);
                 string extention = Path.GetExtension(endereco_Vaga.ImagemFile.FileName);
                 endereco_Vaga.ImagemNome = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
-                string path = Path.Combine(wwwRootPath + "/ImagemVaga/", fileName); 
-                using (var fileStream = new FileStream(path,FileMode.Create))
+                string path = Path.Combine(wwwRootPath + "/ImagemVaga/", fileName);
+                using (var fileStream = new FileStream(path, FileMode.Create))
                 {
                     await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
                 }
@@ -128,15 +127,6 @@ namespace projet_dev_backend.Controllers
             {
                 return NotFound();
             }
-
-            // Verificar se o usuário autenticado é o criador da vaga
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (endereco_Vaga.UsuarioId.ToString() != userId)
-            {
-                // Se não for o criador, redirecione para uma página de erro ou outra página apropriada.
-                return RedirectToAction("AccessDenied", "Account"); // Ou outra ação/página adequada.
-            }
-
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
         }
@@ -151,14 +141,6 @@ namespace projet_dev_backend.Controllers
             if (id != endereco_Vaga.Id)
             {
                 return NotFound();
-            }
-
-            // Verificar se o usuário autenticado é o criador da vaga
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (endereco_Vaga.UsuarioId.ToString() != userId)
-            {
-                // Se não for o criador, redirecione para uma página de erro ou outra página apropriada.
-                return RedirectToAction("AccessDenied", "Account"); // Ou outra ação/página adequada.
             }
 
             if (ModelState.IsValid)
@@ -191,8 +173,10 @@ namespace projet_dev_backend.Controllers
                                 await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
                             }
 
+
                             _context.Add(endereco_Vaga);
                             await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
+
                         }
 
                         // Atualize os outros campos da vaga
@@ -221,6 +205,15 @@ namespace projet_dev_backend.Controllers
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             return View(endereco_Vaga);
         }
+
+
+
+
+
+
+
+
+        // GET: Endereco_Vaga/Delete/5
         [Authorize] // Somente usuários autenticados podem acessar essa ação
         public async Task<IActionResult> Delete(int? id)
         {
@@ -237,54 +230,45 @@ namespace projet_dev_backend.Controllers
                 return NotFound();
             }
 
-            // Verificar se o usuário autenticado é o criador da vaga
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (endereco_Vaga.UsuarioId.ToString() != userId)
-            {
-                // Se não for o criador, redirecione para uma página de erro ou outra página apropriada.
-                return RedirectToAction("AccessDenied", "Account"); // Ou outra ação/página adequada.
-            }
-
             return View(endereco_Vaga);
         }
 
-
-// POST: Endereco_Vaga/Delete/5
-[HttpPost, ActionName("Delete")]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> DeleteConfirmed(int id)
-{
-    if (_context.Endereco_Vagas == null)
-    {
-        return Problem("Entity set 'AppDbContext.Endereco_Vagas' is null.");
-    }
-
-    var endereco_Vaga = await _context.Endereco_Vagas.FindAsync(id);
-
-    if (endereco_Vaga != null)
-    {
-        // Deletando a imagem associada à vaga do wwwRoot/ImagemVaga
-        if (!string.IsNullOrEmpty(endereco_Vaga.ImagemNome))
+        // POST: Endereco_Vaga/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            string imagemPath = Path.Combine(_hostEnvironment.WebRootPath, "ImagemVaga", endereco_Vaga.ImagemNome);
-            if (System.IO.File.Exists(imagemPath))
+            if (_context.Endereco_Vagas == null)
             {
-                System.IO.File.Delete(imagemPath);
+                return Problem("Entity set 'AppDbContext.Endereco_Vagas' is null.");
             }
+
+            var endereco_Vaga = await _context.Endereco_Vagas.FindAsync(id);
+
+            if (endereco_Vaga != null)
+            {
+                // Deletando a imagem associada à vaga do wwwRoot/ImagemVaga
+                if (!string.IsNullOrEmpty(endereco_Vaga.ImagemNome))
+                {
+                    string imagemPath = Path.Combine(_hostEnvironment.WebRootPath, "ImagemVaga", endereco_Vaga.ImagemNome);
+                    if (System.IO.File.Exists(imagemPath))
+                    {
+                        System.IO.File.Delete(imagemPath);
+                    }
+                }
+
+                // Exclua a vaga do banco de dados
+                _context.Endereco_Vagas.Remove(endereco_Vaga);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index));
         }
-
-        // Exclua a vaga do banco de dados
-        _context.Endereco_Vagas.Remove(endereco_Vaga);
-        await _context.SaveChangesAsync();
-    }
-
-    return RedirectToAction(nameof(Index));
-}
 
 
         private bool Endereco_VagaExists(int id)
         {
-          return _context.Endereco_Vagas.Any(e => e.Id == id);
+            return _context.Endereco_Vagas.Any(e => e.Id == id);
         }
 
         // ...
