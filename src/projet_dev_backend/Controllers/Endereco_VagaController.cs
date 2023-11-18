@@ -44,7 +44,8 @@ namespace projet_dev_backend.Controllers
         // GET: Endereco_Vaga
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Endereco_Vagas.Include(e => e.Usuario);
+            var appDbContext = _context.Endereco_Vagas.Include(e => e.Usuario)
+                                                      .Include(e => e.Evento);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -59,6 +60,7 @@ namespace projet_dev_backend.Controllers
 
             var endereco_Vaga = await _context.Endereco_Vagas
                 .Include(e => e.Usuario)
+                .Include(e => e.Evento)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (endereco_Vaga == null)
             {
@@ -72,7 +74,8 @@ namespace projet_dev_backend.Controllers
         [Authorize] // Somente usuários autenticados podem acessar essa ação
         public IActionResult Create()
         {
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF");
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "CPF");
+            ViewData["IdEvento"] = new SelectList(_context.Evento, "IdEvento", "NomeEvento");
             return View();
         }
 
@@ -81,7 +84,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,ImagemFile")] Endereco_Vaga endereco_Vaga)
+        public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,NomeEvento,ImagemFile")] Endereco_Vaga endereco_Vaga)
         {
 
             if (ModelState.IsValid)
@@ -105,7 +108,8 @@ namespace projet_dev_backend.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["IdEvento"] = new SelectList(_context.Evento, "IdEvento", "NomeEvento", endereco_Vaga.IdEvento);
             return View(endereco_Vaga);
         }
 
@@ -127,7 +131,8 @@ namespace projet_dev_backend.Controllers
             {
                 return NotFound();
             }
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["IdEvento"] = new SelectList(_context.Evento, "IdEvento", "NomeEvento", endereco_Vaga.IdEvento);
             return View(endereco_Vaga);
         }
 
@@ -136,7 +141,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,ImagemFile")] Endereco_Vaga endereco_Vaga)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,NomeEvento,ImagemFile")] Endereco_Vaga endereco_Vaga)
         {
             if (id != endereco_Vaga.Id)
             {
@@ -202,7 +207,8 @@ namespace projet_dev_backend.Controllers
                 }
             }
 
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["IdEvento"] = new SelectList(_context.Evento, "IdEvento", "NomeEvento", endereco_Vaga.IdEvento);
             return View(endereco_Vaga);
         }
 
@@ -224,6 +230,7 @@ namespace projet_dev_backend.Controllers
 
             var endereco_Vaga = await _context.Endereco_Vagas
                 .Include(e => e.Usuario)
+                .Include(e => e.Evento)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (endereco_Vaga == null)
             {

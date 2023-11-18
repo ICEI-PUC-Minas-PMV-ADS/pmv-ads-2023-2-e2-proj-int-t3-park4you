@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\projet_dev_backend",
-    "\\src\\projet_dev_backend\\Models"
+    ""
   ],
-  "SelectedNode": "\\src\\projet_dev_backend\\bin",
+  "SelectedNode": "\\projet_dev_backend.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -32,9 +32,9 @@ namespace projet_dev_backend.Models
         public int GestorId { get; set; }
         //[Display(Name = "Usuário")]
         //[Required(ErrorMessage = "Obrigatório informar o usuário")]
-        
 
-        
+        public ICollection<Endereco_Vaga> Endereco_Vagas { get; set; }
+
         public string ImagemEvento { get; set; }
 
         [NotMapped] // Isso evita que o Entity Framework tente mapear a propriedade para o banco de dados

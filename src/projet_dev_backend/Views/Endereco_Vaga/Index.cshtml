@@ -49,6 +49,9 @@
                 @Html.DisplayNameFor(model => model.Usuario)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Evento)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.ImagemFile)
             </th>
             <th></th>
@@ -94,6 +97,9 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Usuario.CPF)
                 </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Evento.NomeEvento)
+                </th>
                 <td>
                     <img src="@Url.Content("~/ImagemVaga/" + item.ImagemNome)" alt="Imagem da Vaga" width="250px" height="250px" />
                 </td>

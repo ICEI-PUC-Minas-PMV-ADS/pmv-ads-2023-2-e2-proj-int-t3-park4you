@@ -81,6 +81,9 @@ namespace projet_dev_backend.Migrations
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("IdEvento")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImagemNome")
                         .HasColumnType("nvarchar(max)");
 
@@ -108,6 +111,8 @@ namespace projet_dev_backend.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IdEvento");
 
                     b.HasIndex("UsuarioId");
 
@@ -157,16 +162,29 @@ namespace projet_dev_backend.Migrations
 
             modelBuilder.Entity("projet_dev_backend.Models.Endereco_Vaga", b =>
                 {
+                    b.HasOne("projet_dev_backend.Models.Evento", "Evento")
+                        .WithMany("Endereco_Vagas")
+                        .HasForeignKey("IdEvento")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Park4You.Models.Usuarios", "Usuario")
                         .WithMany("Endereco_Vagas")
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Evento");
+
                     b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Park4You.Models.Usuarios", b =>
+                {
+                    b.Navigation("Endereco_Vagas");
+                });
+
+            modelBuilder.Entity("projet_dev_backend.Models.Evento", b =>
                 {
                     b.Navigation("Endereco_Vagas");
                 });
