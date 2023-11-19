@@ -30,9 +30,7 @@ namespace projet_dev_backend.Models
         [Required(ErrorMessage = "Informe o nome do Gestor ")]
         [Display(Name = "Gestor")]
         public int GestorId { get; set; }
-        //[Display(Name = "Usuário")]
-        //[Required(ErrorMessage = "Obrigatório informar o usuário")]
-
+       
         public ICollection<Endereco_Vaga> Endereco_Vagas { get; set; }
 
         public string ImagemEvento { get; set; }
