@@ -74,7 +74,7 @@ namespace projet_dev_backend.Controllers
         [Authorize] // Somente usuários autenticados podem acessar essa ação
         public IActionResult Create()
         {
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "CPF");
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF");
             ViewData["IdEvento"] = new SelectList(_context.Evento, "IdEvento", "NomeEvento");
             return View();
         }
@@ -108,7 +108,7 @@ namespace projet_dev_backend.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             ViewData["IdEvento"] = new SelectList(_context.Evento, "IdEvento", "NomeEvento", endereco_Vaga.IdEvento);
             return View(endereco_Vaga);
         }
@@ -131,7 +131,7 @@ namespace projet_dev_backend.Controllers
             {
                 return NotFound();
             }
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             ViewData["IdEvento"] = new SelectList(_context.Evento, "IdEvento", "NomeEvento", endereco_Vaga.IdEvento);
             return View(endereco_Vaga);
         }
@@ -207,7 +207,7 @@ namespace projet_dev_backend.Controllers
                 }
             }
 
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "CPF", endereco_Vaga.UsuarioId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "CPF", endereco_Vaga.UsuarioId);
             ViewData["IdEvento"] = new SelectList(_context.Evento, "IdEvento", "NomeEvento", endereco_Vaga.IdEvento);
             return View(endereco_Vaga);
         }
