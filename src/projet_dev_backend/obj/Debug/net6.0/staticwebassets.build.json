@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZI+FWcnHXM6+CVepJ7sKdNi7eSz5KCLtggcGGf/SwGM=",
+  "Hash": "MZzh4lP015O2g58A9gdFKhBCua3DCyA3hLKuYm1Os34=",
   "Source": "projet_dev_backend",
   "BasePath": "_content/projet_dev_backend",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ImagemEvento\\download232637661.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\nunes\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you1\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\Captura de tela 2023-11-03 224351233115049.png",
+      "SourceId": "projet_dev_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nunes\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you1\\src\\projet_dev_backend\\wwwroot\\",
+      "BasePath": "_content/projet_dev_backend",
+      "RelativePath": "ImagemVaga/Captura de tela 2023-11-03 224351233115049.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagemVaga\\Captura de tela 2023-11-03 224351233115049.png"
     },
     {
       "Identity": "C:\\Users\\nunes\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t3-park4you1\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\download232637661.jpg",

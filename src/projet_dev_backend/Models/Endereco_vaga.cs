@@ -46,8 +46,6 @@ public class Endereco_Vaga
     [Display(Name = "Quantidade de vagas")]
     public int QuantVagas { get; set; }
 
-        //[Required(ErrorMessage = "Obrigatório informar o tamanho da vaga!")]
-        //public float TamVagas { get; set; }
     [Required(ErrorMessage = "Obrigatório informar o valor da reserva!")]
     [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
     [Display(Name = "Valor da Reserva")]
@@ -63,6 +61,8 @@ public class Endereco_Vaga
     [ForeignKey("UsuarioId")]
     public Usuarios Usuario { get; set; }
 
+    [Display(Name = "Evento")]
+    [Required(ErrorMessage = "Obrigatório informar o evento")]
     public int IdEvento { get; set; }
 
     [ForeignKey("IdEvento")]

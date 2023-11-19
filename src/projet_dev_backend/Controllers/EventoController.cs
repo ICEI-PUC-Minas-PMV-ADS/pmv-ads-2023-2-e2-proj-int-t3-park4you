@@ -65,14 +65,14 @@ namespace projet_dev_backend.Controllers
                 //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
                 {
                     string wwwRootPath = _hostEnvironment.WebRootPath;
-                 /*   string fileName = Path.GetFileNameWithoutExtension(evento.ImagemFileEvento.FileName);
+                   string fileName = Path.GetFileNameWithoutExtension(evento.ImagemFileEvento.FileName);
                     string extention = Path.GetExtension(evento.ImagemFileEvento.FileName);
                     evento.ImagemEvento = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
                     string path = Path.Combine(wwwRootPath + "/ImagemEvento/", fileName);
                     using (var fileStream = new FileStream(path, FileMode.Create))
                     {
                         await evento.ImagemFileEvento.CopyToAsync(fileStream);
-                    }*/
+                    }
                   
 
                     _context.Add(evento);

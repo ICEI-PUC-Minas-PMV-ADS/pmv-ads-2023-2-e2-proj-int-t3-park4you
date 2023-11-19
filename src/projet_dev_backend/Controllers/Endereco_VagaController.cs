@@ -23,24 +23,6 @@ namespace projet_dev_backend.Controllers
             this._hostEnvironment = hostEnvironment;
         }
 
-        public class EventoController : Controller
-        {
-            private readonly AppDbContext _context;
-
-            private readonly IWebHostEnvironment _hostEnvironment;
-
-            public EventoController(AppDbContext context, IWebHostEnvironment hostEnvironment)
-            {
-                _context = context;
-                this._hostEnvironment = hostEnvironment;
-            }
-
-            // Restante do código do EventoController
-        }
-
-
-
-
         // GET: Endereco_Vaga
         public async Task<IActionResult> Index()
         {
@@ -84,23 +66,25 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,NomeEvento,ImagemFile")] Endereco_Vaga endereco_Vaga)
+        public async Task<IActionResult> Create([Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,IdEvento,ImagemFile")] Endereco_Vaga endereco_Vaga)
         {
 
             if (ModelState.IsValid)
 
             //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
             {
-                string wwwRootPath = _hostEnvironment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(endereco_Vaga.ImagemFile.FileName);
-                string extention = Path.GetExtension(endereco_Vaga.ImagemFile.FileName);
-                endereco_Vaga.ImagemNome = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
-                string path = Path.Combine(wwwRootPath + "/ImagemVaga/", fileName);
-                using (var fileStream = new FileStream(path, FileMode.Create))
+                if(endereco_Vaga.ImagemFile != null)
                 {
-                    await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(endereco_Vaga.ImagemFile.FileName);
+                    string extention = Path.GetExtension(endereco_Vaga.ImagemFile.FileName);
+                    endereco_Vaga.ImagemNome = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
+                    string path = Path.Combine(wwwRootPath + "/ImagemVaga/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await endereco_Vaga.ImagemFile.CopyToAsync(fileStream);
+                    }
                 }
-
 
                 _context.Add(endereco_Vaga);
                 await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
@@ -141,7 +125,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,NomeEvento,ImagemFile")] Endereco_Vaga endereco_Vaga)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CEP,Logradouro,Numero,Complemento,Bairro,Cidade,UF,Data,QuantVagas,Valor,Tipo,UsuarioId,IdEvento,ImagemFile")] Endereco_Vaga endereco_Vaga)
         {
             if (id != endereco_Vaga.Id)
             {
