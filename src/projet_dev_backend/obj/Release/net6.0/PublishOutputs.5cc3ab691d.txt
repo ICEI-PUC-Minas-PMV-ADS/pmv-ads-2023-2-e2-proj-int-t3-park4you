@@ -301,6 +301,7 @@ C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Humanizer.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\MessagePack.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\MessagePack.Annotations.dll
+C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
@@ -345,6 +346,7 @@ C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\NuGet.Common.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\NuGet.Configuration.dll
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\PubTmp\Out\NuGet.DependencyResolver.Core.dll

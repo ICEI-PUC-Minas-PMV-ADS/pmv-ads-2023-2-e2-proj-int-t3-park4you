@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PlWJp+pTDyz46aH673TC6a+Qr2MXGTIzT+t00TS2Hh0=",
+  "Hash": "Me/5zfh/cUzuvvckyWFOnmxRKyn/j5i5ahccMfkMLlI=",
   "Source": "projet_dev_backend",
   "BasePath": "_content/projet_dev_backend",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\ImagemEvento\\download232637661.jpg"
     },
     {
+      "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\Captura de tela 2023-11-03 224351233115049.png",
+      "SourceId": "projet_dev_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\",
+      "BasePath": "_content/projet_dev_backend",
+      "RelativePath": "ImagemVaga/Captura de tela 2023-11-03 224351233115049.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagemVaga\\Captura de tela 2023-11-03 224351233115049.png"
+    },
+    {
       "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\download232637661.jpg",
       "SourceId": "projet_dev_backend",
       "SourceType": "Discovered",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ImagemVaga\\download235948124.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\ImagemVaga\\images233156349.jpg",
+      "SourceId": "projet_dev_backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\",
+      "BasePath": "_content/projet_dev_backend",
+      "RelativePath": "ImagemVaga/images233156349.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagemVaga\\images233156349.jpg"
     },
     {
       "Identity": "C:\\Users\\ricky\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t3-park4you\\src\\projet_dev_backend\\wwwroot\\img\\logo\\logo-front.png",

@@ -1136,3 +1136,5 @@ C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\projet_dev_backend.pdb
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\projet_dev_backend.genruntimeconfig.cache
 C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\obj\Release\net6.0\ref\projet_dev_backend.dll
+C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\bin\Release\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\bin\Release\net6.0\Newtonsoft.Json.Bson.dll

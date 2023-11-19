@@ -6824,3 +6824,5 @@ C:\Users\nunes\Source\Repos\pmv-ads-2023-2-e2-proj-int-t3-park4you1\src\projet_d
 C:\Users\nunes\Source\Repos\pmv-ads-2023-2-e2-proj-int-t3-park4you1\src\projet_dev_backend\obj\Debug\net6.0\ref\projet_dev_backend.dll
 C:\Users\nunes\source\Repos\pmv-ads-2023-2-e2-proj-int-t3-park4you1\src\projet_dev_backend\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\nunes\source\Repos\pmv-ads-2023-2-e2-proj-int-t3-park4you1\src\projet_dev_backend\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ricky\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t3-park4you\src\projet_dev_backend\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
