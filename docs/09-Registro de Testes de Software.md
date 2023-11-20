@@ -15,7 +15,7 @@ CT-01
 Durante os testes a página principal apresentou alguns erros no carregamento das imagens.
 
 No local onde ela está hospedada, são carregadas mais imagens mas ainda apresentou erros de carregamento em algumas delas.
-inserir imagem da página principal hospedada
+![Alt text](<img/teste aplic hospedada.JPG>)
 - Acessar página de Login> acessos não apresentaram erro
 CT-01
 ![Alt text](<img/teste 01.JPG>)
@@ -24,9 +24,11 @@ CT-01
 ![Alt text](<img/teste 02.JPG>)
 
 CT-01
-![Alt text](<img/teste 03.JPG>)
+![Alt text](<img/Usuários cadastrados.JPG>)
 
 CT-01 Teste realizado com êxito, cadastro realizada com sucesso, cadastros devidamente realizados.
+
+Erro apresentado> usuário está visualizando todos os cadastros.
 
 CT-02 – Efetuar login
 RF-12 - A aplicação permitirá o login do usuário Locador/Locatário após o seu cadastro.
@@ -34,6 +36,7 @@ RF-12 - A aplicação permitirá o login do usuário Locador/Locatário após o 
 - Informar o endereço do Site
   http://park4you-001-site1.anytempurl.com/
 - Visualizar a página principal 
+![Alt text](<img/pagina inicial.JPG>)
 CT-02
 ![Alt text](<img/teste 05.JPG>)
 
@@ -45,16 +48,18 @@ CT-02
 CT-02
 ![Alt text](<img/teste 06.JPG>)
 
+
 CT-02
 -Acesso devidamente testados, login realizado com sucesso.
--E-mails e senhas inválidos- apresentou mensagem de erro
+-E-mails e senhas inválidos- apresentou mensagem de erro conforme previsto
 
 CT-03 – Cadastrar Vagas
 RF-10 -A aplicação deve permitir que o usuário (prestador)(Locador)possa disponibilizar(cadastrar) suas vagas a partir de seu cadastro e login
 - Acessar o navegador
 - Informar o endereço do site
+ http://park4you-001-site1.anytempurl.com/
 - Visualizar a página principal
-
+![Alt text](<img/pagina inicial.JPG>)
   
 CT-03
 ![Alt text](<img/teste 00.JPG>)
