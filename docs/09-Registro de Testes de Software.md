@@ -1,4 +1,4 @@
-# Registro de Testes de Software
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/assets/128103582/9d85107e-20f0-4dc6-aff5-5a28e3116466)# Registro de Testes de Software
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
@@ -7,15 +7,18 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 CT-01 – Cadastrar Usuário
 RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e prestador da vaga.
 - Acessar o navegador
-- Informar o endereço do site
+- Informar o endereço do site:
+  http://park4you-001-site1.anytempurl.com/
 - Visualizar a página principal
 CT-01
- ![Alt text](<img/teste 00.JPG>)
+Durante os testes a página principal apresentou alguns erros no carregamento das imagens.
 
-- Acessar página de Login
+No local onde ela está hospedada, são carregadas mais imagens mas ainda apresentou erros de carregamento em algumas delas.
+
+- Acessar página de Login> acessos não apresentaram erro
 CT-01
 ![Alt text](<img/teste 01.JPG>)
-- Cadastrar usuário
+- Cadastrar usuário> cadastro realizado com sucesso
 CT-01
 ![Alt text](<img/teste 02.JPG>)
 
@@ -28,6 +31,7 @@ CT-02 – Efetuar login
 RF-12 - A aplicação permitirá o login do usuário Locador/Locatário após o seu cadastro.
 - Acessar o navegador
 - Informar o endereço do Site
+  http://park4you-001-site1.anytempurl.com/
 - Visualizar a página principal 
 CT-02
 ![Alt text](<img/teste 05.JPG>)
