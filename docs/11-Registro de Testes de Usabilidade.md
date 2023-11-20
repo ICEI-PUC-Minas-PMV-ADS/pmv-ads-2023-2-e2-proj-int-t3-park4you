@@ -6,8 +6,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Registro de
 
 Para o cenário de um locatário, os participantes serão solicitados a realizar as seguintes tarefas:
 
-Abrir a aplicação 
-![Alt text](<img/teste 00.JPG>)
+Abrir a aplicação
+![Alt text](<img/pagina inicial.JPG>)
 Criar uma conta
 ![Alt text](<img/teste 01.JPG>)
 Fazer login

@@ -1,4 +1,4 @@
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-park4you/assets/128103582/9d85107e-20f0-4dc6-aff5-5a28e3116466)# Registro de Testes de Software
+# Registro de Testes de Software
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
@@ -11,10 +11,11 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
   http://park4you-001-site1.anytempurl.com/
 - Visualizar a página principal
 CT-01
+![Alt text](<img/pagina inicial.JPG>)
 Durante os testes a página principal apresentou alguns erros no carregamento das imagens.
 
 No local onde ela está hospedada, são carregadas mais imagens mas ainda apresentou erros de carregamento em algumas delas.
-
+inserir imagem da página principal hospedada
 - Acessar página de Login> acessos não apresentaram erro
 CT-01
 ![Alt text](<img/teste 01.JPG>)
