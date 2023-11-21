@@ -7,7 +7,7 @@
 <body>
     <header>
         <div class="search-bar">
-            <form method="get" action="@Url.Action("Index", "Endereco_Vaga")">
+            <form method="get" action="@Url.Action("Pesquisar", "Endereco_Vaga")">
                 <div class="input-container">
                     <label for="searchTerm">Pesquisar vagas</label>
                     <input type="text" name="searchTerm" id="searchTerm" placeholder="Pesquisar vagas" />
@@ -26,26 +26,27 @@
     </header>
 
     <div class="image-grid">
-        @foreach (var vaga in Model)
+        @if (!string.IsNullOrEmpty(TempData["SearchMessage"] as string))
         {
-            <div class="image-item">
-                <a href="@Url.Action("Details", "Endereco_Vaga", new { id = vaga.Id })">
-                    <img src="~/ImagemVaga/@vaga.ImagemNome" alt="Imagem da vaga" />
-                </a>
-                <div class="image-caption">
-                    <p><span class="adress">@vaga.Cidade, @vaga.UF</span></p>
-                    <p>@vaga.Data.ToString("dd-MM-yyyy")</p>
-                    <p><span class="price">R$@vaga.Valor diária</span></p>
-                </div>
+            <div class="search-message">
+                @TempData["SearchMessage"]
             </div>
         }
+        else
+        {
+            @foreach (var vaga in Model)
+            {
+                <div class="image-item">
+                    <a href="@Url.Action("Details", "Endereco_Vaga", new { id = vaga.Id })">
+                        <img src="~/ImagemVaga/@vaga.ImagemNome" alt="Imagem da vaga" />
+                    </a>
+                    <div class="image-caption">
+                        <p><span class="adress">@vaga.Cidade, @vaga.UF</span></p>
+                        <p>@vaga.Data.ToString("dd-MM-yyyy")</p>
+                        <p><span class="price">R$@vaga.Valor diária</span></p>
+                    </div>
+                </div>
+            }
+        }
     </div>
-
-    @if (!string.IsNullOrEmpty(TempData["SearchMessage"] as string))
-    {
-        <div class="search-message">
-            @TempData["SearchMessage"]
-        </div>
-    }
-
 </body>

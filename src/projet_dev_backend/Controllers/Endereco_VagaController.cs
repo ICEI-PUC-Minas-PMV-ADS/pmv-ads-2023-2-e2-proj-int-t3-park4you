@@ -197,12 +197,6 @@ namespace projet_dev_backend.Controllers
         }
 
 
-
-
-
-
-
-
         // GET: Endereco_Vaga/Delete/5
         [Authorize] // Somente usuários autenticados podem acessar essa ação
         public async Task<IActionResult> Delete(int? id)
@@ -262,9 +256,37 @@ namespace projet_dev_backend.Controllers
             return _context.Endereco_Vagas.Any(e => e.Id == id);
         }
 
-        // ...
+        // Ação para lidar com a pesquisa
+        [HttpGet]
+        public async Task<IActionResult> Pesquisar(string searchTerm, DateTime? checkIn, int? quantity)
+        {
+            var query = _context.Endereco_Vagas
+                .Include(e => e.Usuario)
+                .Include(e => e.Evento)
+                .AsQueryable();
 
+            // Adicione condições à consulta conforme necessário
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                searchTerm = searchTerm.ToLower(); // Garante que o termo de pesquisa esteja em minúsculas
+                query = query.Where(v => v.Cidade.ToLower().Contains(searchTerm) || v.Evento.NomeEvento.ToLower().Contains(searchTerm));
+            }
 
+            if (checkIn.HasValue)
+            {
+                query = query.Where(v => v.Data.Date == checkIn.Value.Date);
+            }
+
+            if (quantity.HasValue)
+            {
+                query = query.Where(v => v.QuantVagas >= quantity.Value);
+            }
+
+            var resultados = await query.ToListAsync();
+
+            // Retorne os resultados para a view
+            return View("Index", resultados);
+        }
 
     }
 }
