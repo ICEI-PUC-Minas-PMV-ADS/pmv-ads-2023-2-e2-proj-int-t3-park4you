@@ -115,11 +115,12 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CPF,Nome,Email,Senha,Telefone")] Usuarios Usuarios)
+        public async Task<IActionResult> Create([Bind("Id,CPF,Nome,Email,Senha,Telefone, Perfil")] Usuarios Usuarios)
         {
             if (ModelState.IsValid)
             {
                 Usuarios.Senha = BCrypt.Net.BCrypt.HashPassword(Usuarios.Senha);
+                Usuarios.Perfil = Perfil.Usuário;
                 _context.Add(Usuarios);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -148,7 +149,7 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CPF,Nome,Email,Senha,Telefone")] Usuarios Usuarios)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CPF,Nome,Email,Senha,Telefone, Perfil")] Usuarios Usuarios)
         {
             if (id != Usuarios.Id)
             {
@@ -160,6 +161,7 @@ namespace projet_dev_backend.Controllers
                 try
                 {
                     Usuarios.Senha = BCrypt.Net.BCrypt.HashPassword(Usuarios.Senha);
+                    Usuarios.Perfil = Perfil.Usuário;
                     _context.Update(Usuarios);
                     await _context.SaveChangesAsync();
                 }

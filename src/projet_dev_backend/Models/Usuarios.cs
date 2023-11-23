@@ -26,10 +26,20 @@ namespace Park4You.Models
 
         [Required(ErrorMessage = "Obrigatório informar o Telefone!")]
         public string Telefone { get; set; }
-       
+        
+        [Required(ErrorMessage = "Obrigatório informar o Perfil!")]
+        public Perfil Perfil { get; set; }
+
+
 
         public ICollection<Endereco_Vaga> Endereco_Vagas { get; set; }
 
     }
+    
+        public enum Perfil
+        {
+            Usuário,
+            Gestor
+        }
     }
     
