@@ -40,7 +40,8 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model) 
+{
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.NomeEvento)
@@ -61,7 +62,7 @@
                 @Html.DisplayFor(modelItem => item.Hora)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.GestorId)
+                @Html.DisplayFor(modelItem => item.Gestor.Nome)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ImagemEvento)

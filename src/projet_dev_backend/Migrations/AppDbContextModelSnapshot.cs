@@ -160,6 +160,31 @@ namespace projet_dev_backend.Migrations
                     b.ToTable("Eventos");
                 });
 
+            modelBuilder.Entity("projet_dev_backend.Models.Gestor", b =>
+                {
+                    b.Property<int>("GestorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GestorId"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("GestorId");
+
+                    b.ToTable("Gestor");
+                });
+
             modelBuilder.Entity("projet_dev_backend.Models.Endereco_Vaga", b =>
                 {
                     b.HasOne("projet_dev_backend.Models.Evento", "Evento")

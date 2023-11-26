@@ -30,6 +30,8 @@ namespace projet_dev_backend.Models
         [Required(ErrorMessage = "Informe o nome do Gestor ")]
         [Display(Name = "Gestor")]
         public int GestorId { get; set; }
+        [ForeignKey("GestorId")]
+        public Gestor Gestor { get; set; }
        
         public ICollection<Endereco_Vaga> Endereco_Vagas { get; set; }
 

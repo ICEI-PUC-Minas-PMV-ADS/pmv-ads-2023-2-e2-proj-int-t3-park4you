@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\projet_dev_backend"
   ],
-  "SelectedNode": "\\projet_dev_backend.sln",
+  "SelectedNode": "\\src\\projet_dev_backend\\Controllers",
   "PreviewInSolutionExplorer": false
 }
