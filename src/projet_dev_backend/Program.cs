@@ -4,7 +4,8 @@ using projet_dev_backend.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Codigo Banco de Dados Local.
+// Add services to the container. 
 /*builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -31,6 +32,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     .AddCookie(options => {
         options.AccessDeniedPath = "/Usuarios/AcessDenied/";
         options.LoginPath = "/Usuarios/Login/";
+        options.AccessDeniedPath = "/Gestor/AcessDenied/";
+        options.LoginPath = "/Gestor/Login/";
     });
 
 var app = builder.Build();
