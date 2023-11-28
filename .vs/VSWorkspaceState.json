@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\Codigos\\Park4You",
-    "\\src\\projet_dev_backend",
-    "\\src\\projet_dev_backend\\Controllers"
+    ""
   ],
-  "SelectedNode": "\\src\\projet_dev_backend\\Controllers\\Endereco_VagaController.cs",
+  "SelectedNode": "\\projet_dev_backend.sln",
   "PreviewInSolutionExplorer": false
 }
