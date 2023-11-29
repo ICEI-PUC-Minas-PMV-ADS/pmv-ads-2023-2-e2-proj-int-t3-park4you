@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using projet_dev_backend.Models;
 
 namespace Park4You.Models
+
 {
     [Table("Usuario")]
     public class Usuarios
@@ -38,8 +39,11 @@ namespace Park4You.Models
     
         public enum Perfil
         {
-            Usuário,
+            [Display(Name = "Usuário")]
+            Usuario,
+
+            [Display(Name = "Gestor")]
             Gestor
         }
-    }
+}
     

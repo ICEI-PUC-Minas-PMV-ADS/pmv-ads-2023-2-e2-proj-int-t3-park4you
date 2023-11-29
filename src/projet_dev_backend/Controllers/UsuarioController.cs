@@ -22,6 +22,10 @@ namespace projet_dev_backend.Controllers
         {
             _context = context;
         }
+        private bool CPFJaCadastrado(string cpf)
+        {
+            return _context.Usuarios.Any(u => u.CPF == cpf);
+        }
 
         // GET: Usuario
         public async Task<IActionResult> Index()
@@ -119,8 +123,13 @@ namespace projet_dev_backend.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (CPFJaCadastrado(Usuarios.CPF))
+                {
+                    ModelState.AddModelError("CPF", "CPF já cadastrado.");
+                    return View(Usuarios);
+                }
+
                 Usuarios.Senha = BCrypt.Net.BCrypt.HashPassword(Usuarios.Senha);
-                Usuarios.Perfil = Perfil.Usuário;
                 _context.Add(Usuarios);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -161,7 +170,6 @@ namespace projet_dev_backend.Controllers
                 try
                 {
                     Usuarios.Senha = BCrypt.Net.BCrypt.HashPassword(Usuarios.Senha);
-                    Usuarios.Perfil = Perfil.Usuário;
                     _context.Update(Usuarios);
                     await _context.SaveChangesAsync();
                 }

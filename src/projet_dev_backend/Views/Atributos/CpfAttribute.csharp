@@ -1,0 +1,6 @@
+﻿namespace projet_dev_backend.Views.Atributos
+{
+    public class CpfAttribute
+    {
+    }
+}
