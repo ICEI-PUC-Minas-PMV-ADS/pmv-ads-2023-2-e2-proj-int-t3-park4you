@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,26 +9,23 @@ using projet_dev_backend.Models;
 
 namespace projet_dev_backend.Controllers
 {
-    public class EventoController : Controller
+    public class EventosController : Controller
     {
         private readonly AppDbContext _context;
-        public IWebHostEnvironment _hostEnvironment { get; }
 
-    public EventoController(AppDbContext context, IWebHostEnvironment hostEnvironment)
+        public EventosController(AppDbContext context)
         {
             _context = context;
-            this._hostEnvironment = hostEnvironment;
         }
 
-
-        // GET: Evento
+        // GET: Eventos
         public async Task<IActionResult> Index()
         {
             var appDbContext = _context.Evento.Include(e => e.Gestor);
             return View(await appDbContext.ToListAsync());
         }
 
-        // GET: Evento/Details/5
+        // GET: Eventos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Evento == null)
@@ -48,48 +44,31 @@ namespace projet_dev_backend.Controllers
             return View(evento);
         }
 
-        // GET: Evento/Create
-        [Authorize]
+        // GET: Eventos/Create
         public IActionResult Create()
         {
-            ViewData["GestorId"] = new SelectList(_context.Evento, "GestorId", "Nome");
+            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Nome");
             return View();
         }
 
-        // POST: Evento/Create
+        // POST: Eventos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdEvento,NomeEvento,Descricao,Local,Endereco,Data,Hora,GestorId,ImagemFileEvento")] Evento evento)
+        public async Task<IActionResult> Create([Bind("IdEvento,NomeEvento,Descricao,Local,Endereco,Data,Hora,GestorId,ImagemEvento")] Evento evento)
         {
             if (ModelState.IsValid)
-
-
-            //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
             {
-                string wwwRootPath = _hostEnvironment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(evento.ImagemFileEvento.FileName);
-                string extention = Path.GetExtension(evento.ImagemFileEvento.FileName);
-                evento.ImagemEvento = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
-                string path = Path.Combine(wwwRootPath + "/ImagemEvento/", fileName);
-                using (var fileStream = new FileStream(path, FileMode.Create))
-                {
-                    await evento.ImagemFileEvento.CopyToAsync(fileStream);
-                }
-
-
                 _context.Add(evento);
-                await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
-
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-
             ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Nome", evento.GestorId);
             return View(evento);
         }
 
-        // GET: Evento/Edit/5
+        // GET: Eventos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Evento == null)
@@ -106,7 +85,7 @@ namespace projet_dev_backend.Controllers
             return View(evento);
         }
 
-        // POST: Evento/Edit/5
+        // POST: Eventos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -142,7 +121,7 @@ namespace projet_dev_backend.Controllers
             return View(evento);
         }
 
-        // GET: Evento/Delete/5
+        // GET: Eventos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Evento == null)
@@ -161,7 +140,7 @@ namespace projet_dev_backend.Controllers
             return View(evento);
         }
 
-        // POST: Evento/Delete/5
+        // POST: Eventos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -175,14 +154,14 @@ namespace projet_dev_backend.Controllers
             {
                 _context.Evento.Remove(evento);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool EventoExists(int id)
         {
-            return _context.Evento.Any(e => e.IdEvento == id);
+          return _context.Evento.Any(e => e.IdEvento == id);
         }
     }
 }
