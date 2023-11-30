@@ -14,6 +14,7 @@ using projet_dev_backend.Models;
 
 namespace projet_dev_backend.Controllers
 {
+    [Authorize]
     public class UsuarioController : Controller
     {
         private readonly AppDbContext _context;
@@ -28,13 +29,14 @@ namespace projet_dev_backend.Controllers
         {
               return View(await _context.Usuarios.ToListAsync());
         }
-
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(Usuarios Usuarios)
         {
             var dados = await _context.Usuarios
@@ -77,7 +79,7 @@ namespace projet_dev_backend.Controllers
             }
             return View();
         }
-
+        [AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
@@ -105,6 +107,7 @@ namespace projet_dev_backend.Controllers
         }
 
         // GET: Usuario/Create
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();

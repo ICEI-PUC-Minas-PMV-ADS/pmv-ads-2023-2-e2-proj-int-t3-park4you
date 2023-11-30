@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ using projet_dev_backend.Models;
 
 namespace projet_dev_backend.Controllers
 {
+    [Authorize]
     public class GestoresController : Controller
     {
         private readonly AppDbContext _context;
@@ -25,13 +27,14 @@ namespace projet_dev_backend.Controllers
         {
             return View(await _context.Gestor.ToListAsync());
         }
-
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(Gestor Gestor)
         {
             var dados = await _context.Gestor
@@ -76,6 +79,7 @@ namespace projet_dev_backend.Controllers
             }
             return View();
         }
+        [AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
@@ -102,6 +106,7 @@ namespace projet_dev_backend.Controllers
         }
 
         // GET: Gestores/Create
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using projet_dev_backend.Models;
 
 namespace projet_dev_backend.Controllers
 {
+    [Authorize]
     public class EventosController : Controller
     {
         private readonly AppDbContext _context;

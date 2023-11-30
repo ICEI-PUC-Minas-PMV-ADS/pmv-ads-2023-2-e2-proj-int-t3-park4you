@@ -15,8 +15,8 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="CPF" class="control-label"></label>
-                <input asp-for="CPF" class="form-control" />
-                <span asp-validation-for="CPF" class="text-danger"></span>
+                <input asp-for="CPF" maxlength="11" class="form-control" />
+                <span asp-validation-for="CPF" class="text-danger"> </span>
             </div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
@@ -35,7 +35,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Telefone" class="control-label"></label>
-                <input asp-for="Telefone" class="form-control" />
+                <input asp-for="Telefone" maxlength="11" class="form-control" />
                 <span asp-validation-for="Telefone" class="text-danger"></span>
             </div>
             <div class="form-group">
