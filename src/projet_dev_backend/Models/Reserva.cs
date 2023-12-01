@@ -21,5 +21,9 @@ namespace projet_dev_backend.Models
 
         [ForeignKey("UsuarioId")]
         public Usuarios Usuario { get; set; }
+
+        public decimal Valor { get; set; }
+
+        public DateTime? DataCancelamento { get; set; }
     }
 }
