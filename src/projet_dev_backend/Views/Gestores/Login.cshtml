@@ -1,0 +1,43 @@
+﻿@model Park4You.Models.Usuarios
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-box">
+    <h1 class="login-opcao">Seja Bem-vindo caro Gestor</h1>
+
+    <h4 class="login-bemvindo">Entrar ou Cadastrar-se</h4>
+    <div class="container">
+        <!-- Isso garante que todo o conteúdo esteja centralizado na página -->
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <hr />
+                <form asp-action="Login">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group" style="margin-top: 30px;">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="margin-top: 30px;">
+                        <label asp-for="Senha" class="control-label"></label>
+                        <input asp-for="Senha" class="form-control" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                    </div>
+                    <div class="form-group text-center" style="margin-top: 20px;">
+                        <button type="submit" class="btn btn-acess">Acessar</button> <a asp-action="Create" class="btn btn-cadast">Cadastre-se</a>
+                    </div>
+                </form>
+                <h3 class="text-center">@ViewBag.Message</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
