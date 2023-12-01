@@ -119,22 +119,41 @@ namespace projet_dev_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CPF,Nome,Email,Senha,Telefone, Perfil")] Usuarios Usuarios)
+        public async Task<IActionResult> Create([Bind("Id,CPF,Nome,Email,Senha,Telefone,Perfil")] Usuarios usuario)
         {
+            if (!ValidarCPF(usuario.CPF))
+            {
+                ModelState.AddModelError("CPF", "CPF inválido. Deve conter apenas números.");
+            }
+
+            if (!ValidarEmail(usuario.Email))
+            {
+                ModelState.AddModelError("Email", "E-mail inválido.");
+            }
+
+            if (!ValidarSenha(usuario.Senha))
+            {
+                ModelState.AddModelError("Senha", "A senha deve ter no mín. 8 caracteres, com uma letra maiúscula e uma minúscula.");
+            }
+
+            if (CPFJaCadastrado(usuario.CPF))
+            {
+                ModelState.AddModelError("CPF", "CPF já cadastrado.");
+            }
+
+            if (!ValidarTelefone(usuario.Telefone))
+            {
+                ModelState.AddModelError("Telefone", "Telefone inválido. Deverá inserir o DDD antes do número.");
+            }
             if (ModelState.IsValid)
             {
-                if (CPFJaCadastrado(Usuarios.CPF))
-                {
-                    ModelState.AddModelError("CPF", "CPF já cadastrado.");
-                    return View(Usuarios);
-                }
-
-                Usuarios.Senha = BCrypt.Net.BCrypt.HashPassword(Usuarios.Senha);
-                _context.Add(Usuarios);
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+                _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(Usuarios);
+
+            return View(usuario);
         }
 
         // GET: Usuario/Edit/5
@@ -230,5 +249,34 @@ namespace projet_dev_backend.Controllers
         {
           return _context.Usuarios.Any(e => e.Id == id);
         }
+        private bool ValidarCPF(string cpf)
+        {
+            return System.Text.RegularExpressions.Regex.IsMatch(cpf, @"^\d{11}$");
+        }
+
+        private bool ValidarEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private bool ValidarSenha(string senha)
+        {
+            return senha.Length >= 6 && senha.Any(char.IsUpper) && senha.Any(char.IsLower);
+        }
+
+        private bool ValidarTelefone(string telefone)
+        {
+            string numeros = new string(telefone.Where(char.IsDigit).ToArray());
+            return numeros.Length >= 10;
+        }
+
     }
 }
