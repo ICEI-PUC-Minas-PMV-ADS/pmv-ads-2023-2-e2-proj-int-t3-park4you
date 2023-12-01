@@ -160,7 +160,34 @@ namespace projet_dev_backend.Migrations
 
                     b.HasKey("IdEvento");
 
+                    b.HasIndex("GestorId");
+
                     b.ToTable("Eventos");
+                });
+
+            modelBuilder.Entity("projet_dev_backend.Models.Gestor", b =>
+                {
+                    b.Property<int>("GestorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GestorId"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("GestorId");
+
+                    b.ToTable("Gestor");
                 });
 
             modelBuilder.Entity("projet_dev_backend.Models.Endereco_Vaga", b =>
@@ -182,6 +209,17 @@ namespace projet_dev_backend.Migrations
                     b.Navigation("Usuario");
                 });
 
+            modelBuilder.Entity("projet_dev_backend.Models.Evento", b =>
+                {
+                    b.HasOne("projet_dev_backend.Models.Gestor", "Gestor")
+                        .WithMany("eventos")
+                        .HasForeignKey("GestorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Gestor");
+                });
+
             modelBuilder.Entity("Park4You.Models.Usuarios", b =>
                 {
                     b.Navigation("Endereco_Vagas");
@@ -190,6 +228,11 @@ namespace projet_dev_backend.Migrations
             modelBuilder.Entity("projet_dev_backend.Models.Evento", b =>
                 {
                     b.Navigation("Endereco_Vagas");
+                });
+
+            modelBuilder.Entity("projet_dev_backend.Models.Gestor", b =>
+                {
+                    b.Navigation("eventos");
                 });
 #pragma warning restore 612, 618
         }

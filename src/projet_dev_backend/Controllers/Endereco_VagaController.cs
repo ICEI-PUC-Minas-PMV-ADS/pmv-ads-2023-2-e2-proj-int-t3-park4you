@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace projet_dev_backend.Controllers
 {
+    [Authorize]
     public class Endereco_VagaController : Controller
     {
         private readonly AppDbContext _context;
