@@ -55,7 +55,7 @@ namespace projet_dev_backend.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuario");
+                    b.ToTable("Usuario", (string)null);
                 });
 
             modelBuilder.Entity("projet_dev_backend.Models.Endereco_Vaga", b =>
@@ -119,7 +119,7 @@ namespace projet_dev_backend.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Endereco_Vaga");
+                    b.ToTable("Endereco_Vaga", (string)null);
                 });
 
             modelBuilder.Entity("projet_dev_backend.Models.Evento", b =>
@@ -160,7 +160,7 @@ namespace projet_dev_backend.Migrations
 
                     b.HasKey("IdEvento");
 
-                    b.ToTable("Eventos");
+                    b.ToTable("Eventos", (string)null);
                 });
 
             modelBuilder.Entity("projet_dev_backend.Models.Endereco_Vaga", b =>

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using projet_dev_backend.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace projet_dev_backend.Controllers
 {
@@ -73,7 +74,7 @@ namespace projet_dev_backend.Controllers
 
             //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
             {
-                if(endereco_Vaga.ImagemFile != null)
+                if (endereco_Vaga.ImagemFile != null)
                 {
                     string wwwRootPath = _hostEnvironment.WebRootPath;
                     string fileName = Path.GetFileNameWithoutExtension(endereco_Vaga.ImagemFile.FileName);
@@ -287,6 +288,53 @@ namespace projet_dev_backend.Controllers
             // Retorne os resultados para a view
             return View("Index", resultados);
         }
+        // Acao para lidar com a reserva
+        [Authorize]
+        public async Task<IActionResult> Reservar(int id)
+        {
+            var vaga = await _context.Endereco_Vagas.FindAsync(id);
 
+            if (vaga == null)
+            {
+                return NotFound();
+            }
+
+            if (vaga.VagasDisponiveis > 0)
+            {
+                var reserva = new Reserva
+                {
+                    EnderecoVagaId = vaga.Id,
+                    UsuarioId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)),
+                    DataReserva = DateTime.Now
+                };
+
+                _context.Reservas.Add(reserva);
+                vaga.VagasReservadas++;
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            ModelState.AddModelError(string.Empty, "Desculpe, não há vagas disponíveis para reserva.");
+            return View("Index", await _context.Endereco_Vagas.Include(e => e.Usuario).Include(e => e.Evento).ToListAsync());
+        }
+
+        [Authorize]
+        public async Task<IActionResult> ReservasVaga(int id)
+        {
+            var vaga = await _context.Endereco_Vagas.FindAsync(id);
+
+            if (vaga == null)
+            {
+                return NotFound();
+            }
+
+            var reservas = await _context.Reservas
+                .Where(r => r.EnderecoVagaId == vaga.Id)
+                .Include(r => r.Usuario)
+                .ToListAsync();
+
+            return View(reservas);
+        }
     }
 }
