@@ -1,0 +1,79 @@
+﻿@model IEnumerable<projet_dev_backend.Models.Evento>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Cadastrar Novo Evento</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Adicionar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeEvento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Local)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gestor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagemEvento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeEvento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Local)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Hora)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gestor.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImagemEvento)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdEvento" class="btn btn-warning btn-sm">Editar</a>|
+                    <a asp-action="Details" asp-route-id="@item.IdEvento" class="btn btn-primary btn-sm">Detalhes</a>|
+                    <a asp-action="Delete" asp-route-id="@item.IdEvento" class="btn btn-danger btn-sm">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

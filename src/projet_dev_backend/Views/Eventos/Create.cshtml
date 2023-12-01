@@ -1,0 +1,87 @@
+﻿@model projet_dev_backend.Models.Evento
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Adicionar Evento</h1>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomeEvento" class="control-label"></label>
+                <input asp-for="NomeEvento" class="form-control" />
+                <span asp-validation-for="NomeEvento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <input asp-for="Descricao" class="form-control" />
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Local" class="control-label"></label>
+                <input asp-for="Local" class="form-control" />
+                <span asp-validation-for="Local" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco" class="control-label"></label>
+                <input asp-for="Endereco" class="form-control" />
+                <span asp-validation-for="Endereco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" class="form-control" />
+                <span asp-validation-for="Data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hora" class="control-label"></label>
+                <input asp-for="Hora" class="form-control" />
+                <span asp-validation-for="Hora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GestorId" class="control-label"></label>
+                <select asp-for="GestorId" class="form-control" asp-items="ViewBag.GestorId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImagemFileEvento"></label>
+                <input asp-for="ImagemFileEvento" accept="image/*" type="file" onchange="mostrarImagem(this)" />
+                <span asp-validation-for="ImagemFileEvento" class="text-danger"></span>
+            </div>
+            <img id="previewImagem" src="" alt="Imagem de visualização" style="max-width: 100%;" />
+
+
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-info">Voltar</a>
+                <input type="submit" value="Criar" class="btn btn-cadast" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+<script>
+    function mostrarImagem(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                var previewImagem = document.getElementById('previewImagem');
+                previewImagem.src = e.target.result;
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
+

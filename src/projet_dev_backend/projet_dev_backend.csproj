@@ -9,38 +9,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\NovaPasta\**" />
     <Compile Remove="Image\**" />
-    <Compile Remove="Views\Atributos\**" />
-    <Compile Remove="Views\NovaPasta1\**" />
-    <Compile Remove="Views\NovaPasta\**" />
+    <Compile Remove="Views\Evento\**" />
     <Compile Remove="wwwroot\NovaPasta1\**" />
     <Compile Remove="wwwroot\NovaPasta2\**" />
-    <Content Remove="Controllers\NovaPasta\**" />
     <Content Remove="Image\**" />
-    <Content Remove="Views\Atributos\**" />
-    <Content Remove="Views\NovaPasta1\**" />
-    <Content Remove="Views\NovaPasta\**" />
+    <Content Remove="Views\Evento\**" />
     <Content Remove="wwwroot\NovaPasta1\**" />
     <Content Remove="wwwroot\NovaPasta2\**" />
-    <EmbeddedResource Remove="Controllers\NovaPasta\**" />
     <EmbeddedResource Remove="Image\**" />
-    <EmbeddedResource Remove="Views\Atributos\**" />
-    <EmbeddedResource Remove="Views\NovaPasta1\**" />
-    <EmbeddedResource Remove="Views\NovaPasta\**" />
+    <EmbeddedResource Remove="Views\Evento\**" />
     <EmbeddedResource Remove="wwwroot\NovaPasta1\**" />
     <EmbeddedResource Remove="wwwroot\NovaPasta2\**" />
-    <None Remove="Controllers\NovaPasta\**" />
     <None Remove="Image\**" />
-    <None Remove="Views\Atributos\**" />
-    <None Remove="Views\NovaPasta1\**" />
-    <None Remove="Views\NovaPasta\**" />
+    <None Remove="Views\Evento\**" />
     <None Remove="wwwroot\NovaPasta1\**" />
     <None Remove="wwwroot\NovaPasta2\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\Endereco_VagasController.cs" />
+    <Compile Remove="Controllers\EventoController.cs" />
   </ItemGroup>
 
   <ItemGroup>
