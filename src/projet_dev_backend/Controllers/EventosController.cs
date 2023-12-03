@@ -23,8 +23,8 @@ namespace projet_dev_backend.Controllers
         // GET: Eventos
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Evento.Include(e => e.Gestor);
-            return View(await appDbContext.ToListAsync());
+
+            return View(await _context.Evento.ToListAsync());
         }
 
         // GET: Eventos/Details/5
@@ -36,7 +36,6 @@ namespace projet_dev_backend.Controllers
             }
 
             var evento = await _context.Evento
-                .Include(e => e.Gestor)
                 .FirstOrDefaultAsync(m => m.IdEvento == id);
             if (evento == null)
             {
@@ -49,7 +48,6 @@ namespace projet_dev_backend.Controllers
         // GET: Eventos/Create
         public IActionResult Create()
         {
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Nome");
             return View();
         }
 
@@ -66,7 +64,7 @@ namespace projet_dev_backend.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Nome", evento.GestorId);
+            
             return View(evento);
         }
 
@@ -83,7 +81,6 @@ namespace projet_dev_backend.Controllers
             {
                 return NotFound();
             }
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Nome", evento.GestorId);
             return View(evento);
         }
 
@@ -119,7 +116,7 @@ namespace projet_dev_backend.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Nome", evento.GestorId);
+           
             return View(evento);
         }
 
@@ -132,7 +129,6 @@ namespace projet_dev_backend.Controllers
             }
 
             var evento = await _context.Evento
-                .Include(e => e.Gestor)
                 .FirstOrDefaultAsync(m => m.IdEvento == id);
             if (evento == null)
             {

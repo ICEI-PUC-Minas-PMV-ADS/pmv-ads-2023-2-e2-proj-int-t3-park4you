@@ -14,7 +14,7 @@ namespace projet_dev_backend.Models
         public DbSet<Endereco_Vaga> Endereco_Vagas { get; set; }
 
         public DbSet<Evento> Evento { get; set; }
-        public DbSet<Gestor> Gestor { get; set; }
+       
     }
 
     

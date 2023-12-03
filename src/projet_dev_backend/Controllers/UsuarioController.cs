@@ -27,13 +27,13 @@ namespace projet_dev_backend.Controllers
         {
             return _context.Usuarios.Any(u => u.CPF == cpf);
         }
-
+       
         // GET: Usuario
         public async Task<IActionResult> Index()
         {
               return View(await _context.Usuarios.ToListAsync());
         }
-        [AllowAnonymous]
+        
         public IActionResult Login()
         {
             return View();
