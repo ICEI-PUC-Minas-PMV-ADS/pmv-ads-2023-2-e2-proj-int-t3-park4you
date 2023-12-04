@@ -111,5 +111,7 @@
     <div class="btn-group">
         <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-sm">Editar</a>
         <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger btn-sm">Excluir</a>
+        <!-- Botão de Reservar -->
+        <a asp-controller="Reserva" asp-action="Criar" asp-route-id="@Model.Id" class="btn btn-success btn-sm">Reservar</a>
     </div>
 }
