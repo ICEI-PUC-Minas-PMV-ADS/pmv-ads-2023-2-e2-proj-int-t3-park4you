@@ -64,6 +64,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/carol/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Reserva/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/carol/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Reserva/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/carol/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Reserva/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/carol/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Reserva/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/carol/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Reserva/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/carol/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Reserva/Reservar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxSZXNlcnZhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/carol/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t3-park4you/src/projet_dev_backend/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

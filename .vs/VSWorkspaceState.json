@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Codigos\\Park4You",
     "\\src\\projet_dev_backend",
-    "\\src\\projet_dev_backend\\Controllers"
+    "\\src\\projet_dev_backend\\Controllers",
+    "\\src\\projet_dev_backend\\Migrations",
+    "\\src\\projet_dev_backend\\Views",
+    "\\src\\projet_dev_backend\\Views\\Usuario"
   ],
-  "SelectedNode": "\\src\\projet_dev_backend\\Controllers\\Endereco_VagaController.cs",
+  "SelectedNode": "\\src\\projet_dev_backend\\Migrations\\AppDbContextModelSnapshot.cs",
   "PreviewInSolutionExplorer": false
 }

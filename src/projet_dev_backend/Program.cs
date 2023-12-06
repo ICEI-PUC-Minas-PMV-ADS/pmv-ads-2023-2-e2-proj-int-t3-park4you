@@ -5,27 +5,28 @@ using projet_dev_backend.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+/*builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
     options.CheckConsentNeeded = context => true;
     options.MinimumSameSitePolicy = SameSiteMode.None;
-});
-/*builder.Services.AddControllersWithViews();
+});*/
+
+builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(@"Data Source=SQL5110.site4now.net;Initial Catalog=db_aa1126_park4you;User Id=db_aa1126_park4you_admin;Password=PucMinas2023;"));
+    options.UseSqlServer(@"Data Source=SQL5111.site4now.net;Initial Catalog=db_aa1126_park4you;User Id=db_aa1126_park4you_admin;Password=PucMinas2023;"));
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
     options.CheckConsentNeeded = ContextBoundObject => true;
     options.MinimumSameSitePolicy = SameSiteMode.None;
 
-});*/
+});
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options => {
