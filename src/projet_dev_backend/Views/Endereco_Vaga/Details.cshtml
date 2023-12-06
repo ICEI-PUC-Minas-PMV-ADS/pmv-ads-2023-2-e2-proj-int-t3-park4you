@@ -104,11 +104,16 @@
  
 
 </div>
+<div class="btn-group">
 
+    <a asp-controller="Reserva" asp-action="Reservar" asp-route-id="@Model.Id" class="btn btn-success btn-sm">Reservar</a>
+</div>
 
 @if (User.Identity.IsAuthenticated)
 {
     <div class="btn-group">
+        
+     
         <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-sm">Editar</a>
         <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger btn-sm">Excluir</a>
     </div>

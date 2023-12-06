@@ -34,6 +34,7 @@ namespace Park4You.Models
 
 
         public ICollection<Endereco_Vaga> Endereco_Vagas { get; set; }
+        public ICollection<Reserva> Reservas { get; set; }
 
     }
     

@@ -110,6 +110,9 @@ namespace projet_dev_backend.Migrations
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
+                    b.Property<int>("VagasReservadas")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Valor")
                         .HasColumnType("decimal(18,2)");
 
@@ -163,6 +166,38 @@ namespace projet_dev_backend.Migrations
                     b.ToTable("Eventos");
                 });
 
+            modelBuilder.Entity("projet_dev_backend.Models.Reserva", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime?>("DataCancelamento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataReserva")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("EnderecoVagaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Valor")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EnderecoVagaId");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Reservas");
+                });
+
             modelBuilder.Entity("projet_dev_backend.Models.Endereco_Vaga", b =>
                 {
                     b.HasOne("projet_dev_backend.Models.Evento", "Evento")
@@ -182,9 +217,35 @@ namespace projet_dev_backend.Migrations
                     b.Navigation("Usuario");
                 });
 
+            modelBuilder.Entity("projet_dev_backend.Models.Reserva", b =>
+                {
+                    b.HasOne("projet_dev_backend.Models.Endereco_Vaga", "EnderecoVaga")
+                        .WithMany("Reservas")
+                        .HasForeignKey("EnderecoVagaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Park4You.Models.Usuarios", "Usuario")
+                        .WithMany("Reservas")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("EnderecoVaga");
+
+                    b.Navigation("Usuario");
+                });
+
             modelBuilder.Entity("Park4You.Models.Usuarios", b =>
                 {
                     b.Navigation("Endereco_Vagas");
+
+                    b.Navigation("Reservas");
+                });
+
+            modelBuilder.Entity("projet_dev_backend.Models.Endereco_Vaga", b =>
+                {
+                    b.Navigation("Reservas");
                 });
 
             modelBuilder.Entity("projet_dev_backend.Models.Evento", b =>

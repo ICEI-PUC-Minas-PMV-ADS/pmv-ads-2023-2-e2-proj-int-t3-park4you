@@ -41,9 +41,13 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\Endereco_VagasController.cs" />
+    <Compile Remove="Views\Reserva\Component.cshtml.cs" />
+    <Compile Remove="Views\Reserva\Index1.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Reserva\Component.cshtml" />
+    <Content Remove="Views\Reserva\Index1.cshtml" />
     <Content Remove="wwwroot\ImagemVaga\CarPArk233621263.jpg" />
     <Content Remove="wwwroot\ImagemVaga\CarPArk233845967.jpg" />
     <Content Remove="wwwroot\ImagemVaga\CarPArk234749165.jpg" />

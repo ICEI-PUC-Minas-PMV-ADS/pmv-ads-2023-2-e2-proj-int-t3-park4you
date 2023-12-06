@@ -62,10 +62,11 @@ namespace projet_dev_backend.Controllers
             if (ModelState.IsValid)
            
 
-                //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
+              
+                 //Salvando as imagens da vaga na parta wwwroot/ImagemVaga
                 {
                     string wwwRootPath = _hostEnvironment.WebRootPath;
-                   string fileName = Path.GetFileNameWithoutExtension(evento.ImagemFileEvento.FileName);
+                   /*string fileName = Path.GetFileNameWithoutExtension(evento.ImagemFileEvento.FileName);
                     string extention = Path.GetExtension(evento.ImagemFileEvento.FileName);
                     evento.ImagemEvento = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extention;
                     string path = Path.Combine(wwwRootPath + "/ImagemEvento/", fileName);
@@ -73,8 +74,8 @@ namespace projet_dev_backend.Controllers
                     {
                         await evento.ImagemFileEvento.CopyToAsync(fileStream);
                     }
-                  
-
+                  */
+                
                     _context.Add(evento);
                     await _context.SaveChangesAsync(); // Aguarde a operação de salvamento no banco de dados
 

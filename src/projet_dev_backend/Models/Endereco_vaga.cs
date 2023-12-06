@@ -76,6 +76,11 @@ public class Endereco_Vaga
     [Display(Name ="Imagem da Vaga")]
     public IFormFile ImagemFile { get; set; }
 
+     public List<Reserva> Reservas { get; set; }
+
+        [Display(Name = "Vagas Reservadas")]
+        public int VagasReservadas { get; set; }
+
     }
 
 

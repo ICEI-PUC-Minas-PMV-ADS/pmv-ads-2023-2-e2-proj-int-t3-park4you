@@ -1,0 +1,44 @@
+﻿@model projet_dev_backend.Models.Reserva
+
+@{
+    ViewData["Title"] = "Reserva Details";
+}
+
+<h1>Reserva Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DataReserva)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DataReserva)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EnderecoVaga.CEP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EnderecoVaga.CEP)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Usuario.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Usuario.Nome)
+        </dd>
+    </dl>
+
+    <!-- Formulário para confirmar a reserva -->
+    <form asp-action="ConfirmarReserva" method="post">
+        <input type="hidden" asp-for="UsuarioId" />
+        <!-- Adicione mais campos ocultos conforme necessário -->
+        <!-- Adicione mais campos do formulário, se necessário -->
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+        </div>
+    </form>
+</div>

@@ -21,10 +21,12 @@ namespace projet_dev_backend.Models
         [Display(Name = "Endereço do Evento")]
         public string Endereco { get; set; }
         [Required(ErrorMessage = "Obrigatório informar a data do evento")]
+        [DataType(DataType.Date)]
         [Display(Name = "Data do Evento")]
 
         public DateTime Data { get; set; }
         [Required(ErrorMessage = "Obrigatório informar o horário do evento")]
+        [DataType(DataType.Time)]
         [Display(Name = "Horário do Evento")]
         public DateTime Hora { get; set; }
         [Required(ErrorMessage = "Informe o nome do Gestor ")]
