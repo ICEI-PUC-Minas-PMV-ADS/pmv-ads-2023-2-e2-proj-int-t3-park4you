@@ -7,11 +7,10 @@
 
 <h1>Cadastro de Usuários</h1>
 
-
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" id="cadastroForm">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="CPF" class="control-label"></label>
@@ -40,12 +39,19 @@
             </div>
             <div class="form-group">
                 <label asp-for="Perfil" class="control-label"></label>
-                <select asp-for="Perfil" class="form-control">
+                <select asp-for="Perfil" class="form-control" id="Perfil">
                     <option value="Usuario">Usuário</option>
                     <option value="Gestor">Gestor</option>
                 </select>
                 <span asp-validation-for="Perfil" class="text-danger"></span>
             </div>
+
+            <!-- Campo para a senha de confirmação adicional -->
+            <div class="form-group" id="senhaConfirmacaoDiv" style="display:none;">
+                <label for="senhaConfirmacao">Senha de Confirmação (Gestor)</label>
+                <input type="password" id="senhaConfirmacao" name="SenhaConfirmacao" class="form-control" />
+            </div>
+
             <div class="form-group">
                 <input type="submit" value="Criar" class="btn btn-acess" />
                 <a asp-action="Login" class="btn btn-cadast">Voltar</a>
@@ -55,5 +61,57 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#Perfil').change(function () {
+                if ($(this).val() === 'Gestor') {
+                    $.confirm({
+                        title: 'Senha de Confirmação (Gestor)',
+                        content: '' +
+                            '<form action="" class="formName">' +
+                            '<div class="form-group">' +
+                            '<label>Digite a senha de confirmação:</label>' +
+                            '<input type="password" placeholder="Senha de Confirmação" class="senha-confirmacao form-control" required />' +
+                            '</div>' +
+                            '</form>',
+                        buttons: {
+                            formSubmit: {
+                                text: 'Confirmar',
+                                btnClass: 'btn-blue',
+                                action: function () {
+                                    var senhaConfirmacao = this.$content.find('.senha-confirmacao').val();
+
+
+                                    if (senhaConfirmacao === 'SenhaGestores13') {
+                                        $('#senhaConfirmacao').val(senhaConfirmacao);
+                                    } else {
+                                        $.alert('Senha de confirmação incorreta. Tente novamente.');
+                                        return false;
+                                    }
+                                }
+                            },
+                            cancel: function () {
+                                $('#Perfil').val('Usuario');
+                            },
+                        },
+                        onContentReady: function () {
+                            var jc = this;
+                            this.$content.find('form').on('submit', function (e) {
+                                e.preventDefault();
+                                jc.$$formSubmit.trigger('click');
+                            });
+                        }
+                    });
+                } else {
+                    $('#senhaConfirmacao').val('');
+                }
+            });
+        });
+    </script>
 }
