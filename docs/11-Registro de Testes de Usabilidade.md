@@ -1,40 +1,29 @@
-# Registro de Testes de Usabilidade
+## Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+O Registro de Testes de Usabilidade seguiu o Plano de Testes elaborado pela equipe. Neste teste foi avaliado a eficácia, usabilidade e a satisfação do usuário, além de uma pesquisa para identificar problemas e melhorias.
+Os participantes do teste foram 2 potenciais usuários locátarios da aplicação e um membro da equipe como possível locador. 
+As tarefas a serem desempenhadas nos Teste seguem o roteiro já planejado anteriormente, que consiste no locatário fazer login ou criar conta, visualizar vagas, selecionar vagas, tentar um opção inválida e por parte do locador se cadastrar, disponibilizar uma vaga e confirmar uma reserva. Após a conclusão do teste os 3 participantes responderam o questionário disponibilizado pela equipe que forneceram um feedback aos desenvolvedores.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+Segue abaixo o registro de Testes de Usabilidade do primeiro usuário locátario:
 
-Para o cenário de um locatário, os participantes serão solicitados a realizar as seguintes tarefas:
-
-Abrir a aplicação
-![Alt text](<img/pagina inicial.JPG>)
-Criar uma conta
-![Alt text](<img/teste 01.JPG>)
-Fazer login
-![Alt text](<img/teste 02.JPG>)
-Visualizar as opções disponíveis de vagas próximas ou práticas para o seu destino.
-![Alt text](<img/teste 05.JPG>)
-Visualizar detalhes da vaga. (Em desenvolvimento)
-Selecionar uma opção e reservar sua vaga.(Em desenvolvimento)
-Realizar o processo de pagamento.(Em desenvolvimento)
-Avaliar a vaga utilizada.(Em desenvolvimento)
-Tentar completar uma ação inválida.(Em desenvolvimento)
+Abrir a aplicação e cadastrar-se:
+![Alt text](<img/abrir.png>) ![Alt text](<img/cadastroo.png>)
+Fazer login:
+![Alt text](<img/loginn.png>) ![Alt text](<img/loginnn.png>)
+Visualizar e selecionar vagas:
+![Alt text](<img/visuu.png>) ![Alt text](<img/visuuu.png>) ![Alt text](<img/visuuuu.png>)
+Tentativa de opção inválida:
+![Alt text](<img/inv.png>) ![Alt text](img/invv.png>)
 Verificar se há uma seção de ajuda.(Em desenvolvimento)
 
 Já para o cenário de um locador, os participantes serão solicitados a realizar as seguintes tarefas:
 
-Abrir a aplicação 
-![Alt text](<img/teste 00.JPG>)
-fazer login ou criar uma conta.
-![Alt text](<img/teste 07.JPG>)
-Cadastrar sua vaga e fornecer as informações necessárias.
-![Alt text](<img/teste 08.JPG>)
-Determinar a disponibilidade da vaga. (Em desenvolvimento)
-Realizar a confirmação de uma reserva (Em desenvolvimento)
-Confirmar o pagamento de uma reserva (Em desenvolvimento)
-Avaliar o locatário.(Em desenvolvimento)
+Abrir a aplicação e cadastrar-se:
+![Alt text](<img/abrir.png>) ![Alt text](<img/locadorr.png>) 
+Disponibilizar uma vaga:
+![Alt text](<img/vagacas.png>)
 
-**AVALIAÇÃO E RELATÓRIO** (Em andamento)
+**AVALIAÇÃO E RELATÓRIO** 
 
 Os testes parciais realizados apresentaram êxito.
 
