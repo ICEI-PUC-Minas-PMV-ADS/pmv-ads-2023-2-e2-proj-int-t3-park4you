@@ -11,17 +11,15 @@ RF-04 - A aplicação deve oferecer um cadastro divido entre locatário e presta
   http://park4you-001-site1.anytempurl.com/
 - Visualizar a página principal
 CT-01
-![Alt text](<img/pagina inicial.JPG>)
-Durante os testes a página principal apresentou alguns erros no carregamento das imagens.
+![Alt text](<img/página logada.JPG>)
+Durante os testes a página principal apresentou alguns erros na formatação das imagens, pa´gina carregou sem erros.
 
-No local onde ela está hospedada, são carregadas mais imagens mas ainda apresentou erros de carregamento em algumas delas.
-![Alt text](<img/teste aplic hospedada.JPG>)
 - Acessar página de Login> acessos não apresentaram erro
 CT-01
-![Alt text](<img/teste 01.JPG>)
-- Cadastrar usuário> cadastro realizado com sucesso
+![Alt text](<img/página login e cadastro.JPG>)
+- Cadastrar usuário> cadastro realizado com sucesso, não apresentou erro.
 CT-01
-![Alt text](<img/teste 02.JPG>)
+![Alt text](<img/Pagina cadastro usuário.JPG>)
 
 CT-01
 ![Alt text](<img/Usuários cadastrados.JPG>)
@@ -30,28 +28,41 @@ CT-01 Teste realizado com êxito, cadastro realizada com sucesso, cadastros devi
 
 Erro apresentado> usuário está visualizando todos os cadastros.
 
+Cadastro do perfil de Administrador
+
+Cadastro do Gestor da aplicação:
+![Alt text](<img/Cadastro gestor 1.JPG>)
+
+Confirmação de senha de segurança para permissão do cadastro, demonstrandoo assim segurança do cadastro.
+
+![Alt text](<img/login gestor confirmação.JPG>)
+
+Edição de cadastro, apresenta todas as opções funcionais:
+
+![Alt text](<img/Confirmação de cadastro de usuários.JPG>)
+
+Erro apresentado, o usuário visualiza o cadastro dos outros usuários.
+
 CT-02 – Efetuar login
 RF-12 - A aplicação permitirá o login do usuário Locador/Locatário após o seu cadastro.
 - Acessar o navegador
-- Informar o endereço do Site
+- Informar o endereço do Site:
+
   http://park4you-001-site1.anytempurl.com/
+
 - Visualizar a página principal 
-![Alt text](<img/pagina inicial.JPG>)
-CT-02
-![Alt text](<img/teste 05.JPG>)
+
+![Alt text](<img/página logada.JPG>)
 
 - Acessar página de Login
 CT-02
-![Alt text](<img/teste 04.JPG>)
-
-- Informar Email e Senha
-CT-02
-![Alt text](<img/teste 06.JPG>)
-
+![Alt text](<img/página login e cadastro.JPG>)
 
 CT-02
 -Acesso devidamente testados, login realizado com sucesso.
 -E-mails e senhas inválidos- apresentou mensagem de erro conforme previsto
+
+COLOCAR ERRO DE LOGIN AQUIII
 
 CT-03 – Cadastrar Vagas
 RF-10 -A aplicação deve permitir que o usuário (prestador)(Locador)possa disponibilizar(cadastrar) suas vagas a partir de seu cadastro e login
@@ -59,21 +70,30 @@ RF-10 -A aplicação deve permitir que o usuário (prestador)(Locador)possa disp
 - Informar o endereço do site
  http://park4you-001-site1.anytempurl.com/
 - Visualizar a página principal
-![Alt text](<img/pagina inicial.JPG>)
+![Alt text](<img/página logada.JPG>)
   
 CT-03
-![Alt text](<img/teste 00.JPG>)
 Acessar página de Login
+![Alt text](<img/página login e cadastro.JPG>)
 CT-03
 ![Alt text](<img/teste 07.JPG>)
 - Informar Email e Senha
+
 - Acessar o ícone "Cadastrar Vagas"
 CT-03
-![Alt text](<img/teste 08.JPG>)
+![Alt text](<img/página de cadastro de vaga.JPG>)
 CT-03
-![Alt text](<img/teste 09.JPG>)
+![Alt text](<img/cadastro de vaga.JPG>)
 CT-03
 Cadastro realizado com sucesso, vaga cadastrada.
+
+Opçoes disponíveis:
+
+Editar cadastro, caso seja necessário realizar alguma alteração no cadastro do usuário:
+![Alt text](<img/editar cadastro de vaga 1.JPG>)
+
+Detalhes da vaga
+![Alt text](<img/detalhes da vaga 2.JPG
 
 CT-04 – Pesquisar Vagas (Em desenvolvimento)
 RF-02 - A aplicação deve apresentar, para cada localidade cadastrada de evento, imagens e descrição da vaga disponível.
