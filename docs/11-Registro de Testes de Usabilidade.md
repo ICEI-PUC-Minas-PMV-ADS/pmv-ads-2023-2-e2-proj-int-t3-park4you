@@ -8,30 +8,28 @@ Segue abaixo o registro de Testes de Usabilidade do primeiro usuário locátario
 
 Abrir a aplicação e cadastrar-se:
 ![Alt text](<img/abrir.png>) ![Alt text](<img/cadastroo.png>)
+
 Fazer login:
 ![Alt text](<img/loginn.png>) ![Alt text](<img/loginnn.png>)
+
 Visualizar e selecionar vagas:
 ![Alt text](<img/visuu.png>) ![Alt text](<img/visuuu.png>) ![Alt text](<img/visuuuu.png>)
+
 Tentativa de opção inválida:
 ![Alt text](<img/inv.png>) ![Alt text](img/invv.png>)
-Verificar se há uma seção de ajuda.(Em desenvolvimento)
 
 Já para o cenário de um locador, os participantes serão solicitados a realizar as seguintes tarefas:
 
 Abrir a aplicação e cadastrar-se:
 ![Alt text](<img/abrir.png>) ![Alt text](<img/locadorr.png>) 
+
 Disponibilizar uma vaga:
 ![Alt text](<img/vagacas.png>)
 
 **AVALIAÇÃO E RELATÓRIO** 
 
-Os testes parciais realizados apresentaram êxito.
+Após a execução do teste os usuários responderam o questionário e os dados coletados foram analisados para adequações de melhoria na aplicação.
 
-Relatório será inserido após a finalização da aplicação.
+**RESULTADO DOS QUESTIONÁRIOS**
 
-**RESULTADO DOS QUESTIONÁRIOS** (Em andamento)
-
-Resultados dos questionários serão inseridos após a finalização da aplicação.
-
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+![Alt text](<img/form1.png>) ![Alt text](<img/form2.png>) ![Alt text](<img/form3.png>) ![Alt text](<img/form4.png>) 
