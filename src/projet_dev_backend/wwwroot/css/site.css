@@ -2,6 +2,13 @@ html {
   font-size: 14px;
 }
 
+/* Definindo a paleta de cores */
+:root {
+    --main-red: #8e0b0b;
+    --main-black: #000000;
+    --main-white: #ffffff;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -15,11 +22,31 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-color: var(--main-white); /* Adicione uma cor de fundo principal */
+    color: var(--main-black); /* Cor padrão do texto */
 }
+
+/* Ícones nas caixas de login */
+.user-icon::before {
+    content: "\1F464"; /* Código Unicode para um ícone de usuário, substitua conforme necessário */
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* Sombra sutil na grade de imagens */
+.image-grid {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.anuncie-vaga {
+    background-color: transparent;
+    border: 2px solid var(--main-red);
+}
+
 
 /* Logo */
 .custom-logo {
-    width: 100px; /* Defina o tamanho desejado para a logo */
+    width: 115px; /* Defina o tamanho desejado para a logo */
     height: auto; /* Isso manterá a proporção original da imagem */
     margin-top: 10px; /* Ajuste a margem superior conforme necessário para posicionar a logo */
     overflow: hidden;
@@ -92,6 +119,10 @@ body {
 /* Barra de pesquisa */
 .search-bar {
     text-align: center;
+    border: 2px solid var(--main-red);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .input-container {
