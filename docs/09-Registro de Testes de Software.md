@@ -93,38 +93,24 @@ Editar cadastro, caso seja necessário realizar alguma alteração no cadastro d
 ![Alt text](<img/editar cadastro de vaga 1.JPG>)
 
 Detalhes da vaga
-![Alt text](<img/detalhes da vaga 2.JPG
+![Alt text](<img/detalhes da vaga 2.JPG>)
 
-CT-04 – Pesquisar Vagas (Em desenvolvimento)
+CT-04 – Pesquisar Vagas 
 RF-02 - A aplicação deve apresentar, para cada localidade cadastrada de evento, imagens e descrição da vaga disponível.
 RF-05 A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar vagas de acordo com seu interesse
 RF-07 A aplicação deve permitir o compartilhamento de vagas disponíveis para locatários, através de um botão.
 
-- Acessar o navegador
-- Informar o endereço do site
-- Visualizar a página principal
-Acessar página de Login
-- Informar Email e Senha
-- Acessar o ícone "Vagas"
-Critério de Êxito	Ao clicar na vaga as imagens são carregadas de maneira ágil;
+Durante os testes foi possível pesquisar a vaga,considerando o evento, os outros filtros precisam ser ajustados, como o de pesquisa por data e/ou quantidade de veículos:
 
 CT-05 – Apresentar Vagas na região desejada (Em desenvolvimento)
 
 RF-01 - A aplicação deve apresentar na página principal o serviço de vagas disponíveis próximo a localidade de interesse do cliente, que será baseado no google maps.
 
-- Acessar o navegador
-- Informar o endereço do site
-- Visualizar a página principal
-Acessar página de Login
-- Informar Email e Senha
-- Acessar o ícone "Vagas"
-- Informar o CEP da região
 
-Critério de Êxito	Informando o CEP as vagas da região são imediatamente carregadas.
-
-CT-06 – Trajeto a pé até o evento (Em desenvolvimento)
 
 RF-03 - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail.
+
+
 
 - Acessar o navegador
 - Informar o endereço do site
@@ -135,52 +121,8 @@ Acessar página de Login
 - Informar o CEP da região
 - Visualizar trajeto até o evento.
 
-Critério de Êxito	O sistema com o auxílio do GPS carrega a distância e o melhor trajeto a pé da vaga ao evento.
 
-CT-07 – Pagamento (Em desenvolvimento)
-RF-08 A aplicação deve permitir reservar e efetuar o pagamento com antecedência.
-RF-11 A aplicação deverá suportar o pagamento das taxas vinculadas a locação da vaga através do PIX.
-
-- Acessar o navegador
-- Informar o endereço do site
-- Visualizar a página principal
-Acessar página de Login
-- Informar Email e Senha
-- Acessar o ícone "Vagas"
-- Informar o CEP da região
-- Selecionar Vaga
-Realizar pagamento.
-Critério de Êxito	Efetuado o pagamento a vaga é reservada automaticamente e ficará indisponível para os outros usuários.
 	
-
-CT-08 – Comentários (Em desenvolvimento)
-RF-09 - A aplicação deve permitir que usuários x prestador possam efetuar comentários.
-
-- Acessar o navegador
-- Informar o endereço do site
-- Visualizar a página principal
-Acessar página de Login
-- Informar Email e Senha
-- Acessar o ícone "Vagas"
-- Selecionar vaga
-- Realizar Comentários.
-
-Critério de Êxito	Campo “comentários” disponibilizado;
-
-CT-09 – Serviço de Atendimento ao Usuário (Em desenvolvimento)
-RF-06 - A aplicação deve permitir visualizar as informações de contatos do mantenedor da aplicação.
-- Acessar o navegador
-- Informar o endereço do site
-- Visualizar a página principal
-Acessar página de Login
-- Informar Email e Senha
-- clicar no botão SAC.
-
-Critério de Êxito	Ao clicar no SAC o usuário é direcionando para as opções chat, email, telefone.
-
-
-
-
 ## Avaliação
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
