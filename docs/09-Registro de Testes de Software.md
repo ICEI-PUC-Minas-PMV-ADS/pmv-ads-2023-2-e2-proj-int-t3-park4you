@@ -102,33 +102,17 @@ RF-07 A aplicação deve permitir o compartilhamento de vagas disponíveis para 
 
 Durante os testes foi possível pesquisar a vaga,considerando o evento, os outros filtros precisam ser ajustados, como o de pesquisa por data e/ou quantidade de veículos:
 
-CT-05 – Apresentar Vagas na região desejada (Em desenvolvimento)
+![Alt text](<img/Show da virada.JPG
 
-RF-01 - A aplicação deve apresentar na página principal o serviço de vagas disponíveis próximo a localidade de interesse do cliente, que será baseado no google maps.
+Reserva da vaga:
+![Alt text](<img/Confirmação de reserva.JPG
 
-
-
-RF-03 - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail.
-
-
-
-- Acessar o navegador
-- Informar o endereço do site
-- Visualizar a página principal
-Acessar página de Login
-- Informar Email e Senha
-- Acessar o ícone "Vagas"
-- Informar o CEP da região
-- Visualizar trajeto até o evento.
+Erro apresentado:
+![Alt text](<img/confirmação de reserva erro.JPG
 
 
 	
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+A aplicação possui uma ideia central muito interessante para os usuários, apresentou alguns erros que podem ser solucionados para a implementação de forma segura.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-
-
-[def]: <img/teste 03.jpg>
