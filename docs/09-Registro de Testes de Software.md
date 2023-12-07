@@ -102,13 +102,13 @@ RF-07 A aplicação deve permitir o compartilhamento de vagas disponíveis para 
 
 Durante os testes foi possível pesquisar a vaga,considerando o evento, os outros filtros precisam ser ajustados, como o de pesquisa por data e/ou quantidade de veículos:
 
-![Alt text](<img/Show da virada.JPG
+![Alt text](<img/Show da virada.JPG>)
 
 Reserva da vaga:
-![Alt text](<img/Confirmação de reserva.JPG
+![Alt text](<img/Confirmação de reserva.JPG>)
 
 Erro apresentado:
-![Alt text](<img/confirmação de reserva erro.JPG
+![Alt text](<img/confirmação de reserva erro.JPG>)
 
 
 	
