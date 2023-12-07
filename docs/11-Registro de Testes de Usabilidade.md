@@ -16,7 +16,7 @@ Visualizar e selecionar vagas:
 ![Alt text](<img/visuu.png>) ![Alt text](<img/visuuu.png>) ![Alt text](<img/visuuuu.png>)
 
 Tentativa de opção inválida:
-![Alt text](<img/inv.png>) ![Alt text](img/invv.png>) 
+![Alt text](<img/inv.png>) ![Alt text](<img/invv.png>) 
 
 Já para o cenário de um locador, os participantes serão solicitados a realizar as seguintes tarefas:
 
